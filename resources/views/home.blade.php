@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Home - Binkab</title>
+    <title>Home - BinKab</title>
 
     <link rel="stylesheet" href="{{asset('css/menu.css')}}">
 </head>
@@ -16,14 +16,13 @@
         <header id="header">
             <div class="inner">
                     <!-- Nav -->
-                        <nav>
-                            
-                            <ul>
-                                <li><a href="#menu">Menu</a></li>
-                            </ul>
-                        </nav>
-                </div>
-            </header>
+                    <nav>    
+                        <ul>
+                            <li><a href="#menu">Menu</a></li>
+                        </ul>
+                    </nav>
+            </div>
+        </header>
 
         <!-- Menu -->
             <nav id="menu">

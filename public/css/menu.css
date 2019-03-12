@@ -28,6 +28,7 @@
 
 	body {
 		background: #ffffff;
+		margin: 0;
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
