@@ -48,17 +48,52 @@
                 <!-- Slides -->
                 <div class="swiper-slide">
                     <div class="slides-home" style="background-image: url({{asset('img/slides/slide-1.jpg')}});"></div>
+                    <div class="filtro"></div>
                 </div>
                 <div class="swiper-slide">
-                    <div class="slides-home" style="background-image: url({{asset('img/slides/slide-2.jpeg')}});"></div> 
+                    <div class="slides-home" style="background-image: url({{asset('img/slides/slide-2.jpeg')}});"></div>
+                    <div class="filtro"></div> 
                 </div>
                 <div class="swiper-slide">
                     <div class="slides-home" style="background-image: url({{asset('img/slides/slide-3.jpg')}});"></div>
+                    <div class="filtro"></div>
                 </div>
-                ...
             </div>
             <!-- Pagination -->
             <div class="swiper-pagination"></div>
+            <!-- Botones 
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>-->
+        </div>
+
+        <!-- Seccion iconos -->
+        <div class="seccion-iconos">
+            <div>
+                <img class="iconos-menu" src="{{asset('img/home/playa.png')}}" alt="playa">
+                <h2>Descansa</h2>
+                <p>Relajate en lugares nuevos</p>
+            </div>
+            <div>
+                <img class="iconos-menu" src="{{asset('img/home/turismo.png')}}" alt="turismo">
+                <h2>Conoce</h2>
+                <p>Descubre cosas increibles</p>
+            </div>
+            <div>
+                <img class="iconos-menu" src="{{asset('img/home/gastronomia.png')}}" alt="gastronomia">
+                <h2>Disfruta</h2>
+                <p>Saborea nuevos sabores</p>
+            </div>
+            <div>
+                <img class="iconos-menu" src="{{asset('img/home/estampa.png')}}" alt="estampa">
+                <h2>Aprende</h2>
+                <p>Aprende sobre nuevas culturas y personas</p>
+            </div>
+        </div>
+        
+        <!----------------------------------Seccion Lugares--------------------------------->
+        <div class="seccion-lugares">
+            <h2>Lugares</h2>
+            
         </div>
 
 

@@ -298,9 +298,9 @@
     	position: fixed;
 		width: 100%;
 		z-index: 1000000;
-		-webkit-box-shadow: inset 0px 34px 53px -34px rgba(0,0,0,0.75);
-		-moz-box-shadow: inset 0px 34px 53px -34px rgba(0,0,0,0.75);
-		box-shadow: inset 0px 34px 53px -34px rgba(0,0,0,0.75);
+		-webkit-box-shadow: inset 0px 32px 88px -25px rgba(0,0,0,0.58);
+		-moz-box-shadow: inset 0px 32px 88px -25px rgba(0,0,0,0.58);
+		box-shadow: inset 0px 32px 88px -25px rgba(0,0,0,0.58);
 	}
 
 		#header div{

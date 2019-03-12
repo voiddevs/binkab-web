@@ -17,16 +17,20 @@
     z-index: 1;
     width: 100%;
     height: 100vh;
+    
 }
 
 .swiper-pagination-bullet {
-    width: 30px;
-    height: 5px;
+    width: 90px;
+    height: 3px;
     border-radius: 0px;
+    background: #ffffff;
+    opacity: 0.4;
 }
 
 .swiper-pagination-bullet-active {
-    background: #890219;
+    background: #ffffff;
+    opacity: 0.8;
 
 }
 
@@ -35,6 +39,27 @@
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
-    filter:brightness(0.7);
+    background-size: cover;   
 }
+
+.filtro{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.67;
+    z-index: 1;
+    background-image: linear-gradient(to right top, #000000, rgba(0,0,0, 0) 56%);
+}
+
+/* Seccion Iconos */
+.seccion-iconos{display:-webkit-inline-box; margin-top: 100px;}
+.seccion-iconos div{}
+.iconos-menu{width: 100px;margin-left: 200px;}
+.seccion-iconos h2{ margin-top: 40px; text-align: center; margin-left: 160px;}
+.seccion-iconos p{width: 180px; text-align: center;color: #a5a2a2; font-size: 18px; margin-left: 152px;}
+
+/* Seccion Lugares*/
+.seccion-lugares{background-color: #f8f8f8;}
+.seccion-lugares h2{text-align: center; font-size: 30px;}

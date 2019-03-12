@@ -6,7 +6,7 @@ $(document).ready(function () {
         effect: 'fade',
         autoplay: {
             delay: 5000,
-        },
+        },   
         pagination: {
           el: '.swiper-pagination',
         },
