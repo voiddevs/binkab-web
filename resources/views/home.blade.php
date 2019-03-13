@@ -1,3 +1,5 @@
+@extends('footer')
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -25,9 +27,9 @@
                 <div id="desktop">
                     <nav>    
                         <ul>
-                            <li><a href="#" class="link-home">INICIO</a></li>
+                            <li><a href="/" class="link-home">INICIO</a></li>
                             <li><a href="#" class="link-home">DESTINOS</a></li>
-                            <li><a href="#" class="link-home">NOSOTROS</a></li>
+                            <li><a href="/nosotros" class="link-home">NOSOTROS</a></li>
                             <li><a href="#" class="link-homelog">SIGN IN <i class="fas fa-sign-in-alt"></i></a></li>
                         </ul>
                     </nav>
@@ -49,29 +51,41 @@
             <ul>
                 <li><a href="/" class="hvr-underline-from-left">INICIO <i class="fas fa-home"></i></a></li>
                 <li><a href="#" class="hvr-underline-from-left">DESTINOS <i class="fas fa-map-marked-alt"></i></a></li>
-                <li><a href="#" class="hvr-underline-from-left">NOSOTROS <i class="fas fa-users"></i></a></li>
+                <li><a href="/nosotros" class="hvr-underline-from-left">NOSOTROS <i class="fas fa-users"></i></a></li>
                 <li><a href="#" class="hvr-underline-from-left">SIGN IN <i class="fas fa-sign-in-alt"></i></a></li>
             </ul>
         </nav>
-
+        
         <!-- Swiper-Home -->
         <div class="swiper-container-home">
             <div class="swiper-wrapper">
                 <!-- Slides -->
                 <div class="swiper-slide">
-                    <div class="slides-home" style="background-image: url({{asset('img/slides/slide-1.jpg')}});"></div>
+                    <div class="slides-home" style="background-image: url({{asset('img/slides/slide-1.jpg')}});">
+                        <h2 class="titulo-slide">Asómbrate con su riqueza arquitectónica</h2>
+                        <a class="vinculo-slide hvr-underline-from-left" href="#">Ver más <i class="fas fa-arrow-right"></i></a>
+                    </div>
                     <div class="filtro"></div>
                 </div>
                 <div class="swiper-slide">
-                    <div class="slides-home" style="background-image: url({{asset('img/slides/slide-2.jpeg')}});"></div>
+                    <div class="slides-home" style="background-image: url({{asset('img/slides/slide-2.jpeg')}});">
+                        <h2 class="titulo-slide">Asómbrate con su riqueza arquitectónica</h2>
+                        <a class="vinculo-slide hvr-underline-from-left" href="#">Ver más <i class="fas fa-arrow-right"></i></a>
+                    </div>
                     <div class="filtro"></div> 
                 </div>
                 <div class="swiper-slide">
-                    <div class="slides-home" style="background-image: url({{asset('img/slides/slide-3.jpg')}});"></div>
+                    <div class="slides-home" style="background-image: url({{asset('img/slides/slide-3.jpg')}});">
+                     <h2 class="titulo-slide">Conoce unos de los malecones más largos del mundo</h2>
+                        <a class="vinculo-slide hvr-underline-from-left" href="#">Ver más <i class="fas fa-arrow-right"></i></a>
+                    </div>
                     <div class="filtro"></div>
                 </div>
                 <div class="swiper-slide">
-                    <div class="slides-home" style="background-image: url({{asset('img/slides/slide-5.jpg')}});"></div>
+                    <div class="slides-home" style="background-image: url({{asset('img/slides/slide-5.jpg')}});">
+                        <h2 class="titulo-slide">Disfruta una espectacular tarde en el clavadista</h2>
+                        <a class="vinculo-slide hvr-underline-from-left" href="#">Ver más <i class="fas fa-arrow-right"></i></a>
+                    </div>
                     <div class="filtro"></div>
                 </div>
             </div>
@@ -137,7 +151,30 @@
             </div>
             <!-- Pagination -->
             <!--<div class="swiper-pagination"></div>-->
+            <div class="parallax-lugares"></div>
         </div>
+
+        <!-- Seccion eventos -->
+        <div id="seccion-eventos">
+          <h2>Eventos</h2>
+          <div class="eventos">
+               <div style="background-image: url({{asset('img/home/musica.jpg')}}); margin-left:150px;" class="evento">
+                   <p>Festival de música</p>
+               </div>
+               <div style="background-image: url({{asset('img/home/cultural.jpg')}})"class="evento">
+                   <p>Festival de cultura</p>
+               </div>
+               <div style="background-image: url({{asset('img/home/cultural.jpg')}})" class="evento">
+                   
+               </div>
+           </div>
+        </div>
+        
+        <!-- Footer -->
+        @section('footer')
+            @parent
+        @endsection
+
     </div>
     <script src="{{asset('js/browser.min.js')}}"></script>
     <script src="{{asset('js/jquery.min.js')}}"></script> 
@@ -147,3 +184,4 @@
     <script src="{{asset('js/home.js')}}"></script>
 </body>
 </html>
+
