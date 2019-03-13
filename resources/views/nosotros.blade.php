@@ -6,10 +6,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Home - BinKab</title>
+    <title>Nosotros - BinKab</title>
 
     <link rel="stylesheet" href="{{asset('css/menu.css')}}">
-    <link rel="stylesheet" href="{{asset('css/swiper.css')}}">
     <link rel="stylesheet" href="{{asset('css/styles.css')}}">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 </head>
@@ -55,6 +54,10 @@
                 <li><a href="#" class="hvr-underline-from-left">SIGN IN <i class="fas fa-sign-in-alt"></i></a></li>
             </ul>
         </nav>
+        <div>
+            <div style="background-image:url({{asset('img/nosotros/banner-nosotros.jpg')}});" class="banner"></div>
+            <div class="filtro-banner"></div>
+        </div>
         
         
         
@@ -67,7 +70,6 @@
     <script src="{{asset('js/browser.min.js')}}"></script>
     <script src="{{asset('js/jquery.min.js')}}"></script> 
     <script src="{{asset('js/breakpoints.min.js')}}"></script>
-    <script src="{{asset('js/swiper.js')}}"></script>
     <script src="{{asset('js/menu.js')}}"></script>
 </body>
 </html>
