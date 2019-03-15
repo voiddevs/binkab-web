@@ -49,6 +49,12 @@
         h.removeClass("show-mobile");
     } 
 
+    if (document.body.scrollHeight > 95){
+        $("#header").addClass("menu-change");
+    }else{
+        $("#header").removeClass("menu-change");
+    }
+
     window.onresize = function(event) {
         if (window.innerWidth < 600){
             f.addClass("hide-desktop");

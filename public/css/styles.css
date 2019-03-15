@@ -179,8 +179,8 @@
 .seccion-iconos p{width: 200px; text-align: center;color: #a5a2a2; font-size: 19px; margin-left: 140px; font-family: "Neue Haas"; margin-top: -5px;}
 
 /* Seccion Lugares*/
-.seccion-lugares{background-color: #f8f8f8;}
-.seccion-lugares h2{text-align: center; font-size: 30px; font-family: "Neue Haas Bold"; }
+.seccion-lugares{background-color: #f8f8f8; }
+.seccion-lugares h2{ text-align: center; font-size: 30px; border-bottom: 2px solid #610011; width: 10%; line-height: 2em; margin: 30px auto; font-family: "Neue Haas Bold";}
 .swiper-container-lugares{margin: 0 auto; position: relative; overflow: hidden; list-style: none; padding: 0; z-index: 1; margin: 0 8%;}
 .swiper-seccion-lugares{height: 500px; margin: 0 20px;}
 .seccion-lugares .swiper-slide p{color: white; font-family: "Neue Haas Bold"; margin-left: 20px; padding-top: 464px;}
@@ -189,7 +189,7 @@
 
 /* Seccion eventos */
 #seccion-eventos{background: #f8f8f8; padding-bottom: 50px;}
-#seccion-eventos h2{text-align: center; font-size: 30px; font-family: "Neue Haas Bold"; padding-top: 50px; margin: 0;}
+#seccion-eventos h2{ text-align: center; font-size: 30px; border-bottom: 2px solid #610011; width: 10%; line-height: 2em; margin: 0 auto 30px auto; font-family: "Neue Haas Bold"; padding-top: 30px;34}
 #seccion-eventos .eventos{ display:-webkit-inline-box;}
 .evento{width: 55%; height: 320px; margin: 5% 8%; background-size: 600px; background-position-x: center; background-repeat: no-repeat;}
 #seccion-eventos .evento p{color: white; font-family: "Neue Haas Bold"; text-align: left; margin-left: 20px; font-size: 24px;margin-top: 80% }
