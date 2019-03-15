@@ -193,9 +193,9 @@
 }
 
 /* Seccion eventos */
-#seccion-eventos{background: #f8f8f8; padding-bottom: 50px;}
+#seccion-eventos{background: #f8f8f8; padding-bottom: 50px; width: 94%; padding-right: 15px; padding-left: 15px; margin: 0 3%;}
 #seccion-eventos h2{ text-align: center; font-size: 30px; border-bottom: 2px solid #610011; width: 150px; line-height: 2em; margin: 0 auto 30px auto; font-family: "Neue Haas Bold"; padding-top: 30px;}
 #seccion-eventos .eventos{ display:-webkit-inline-box;}
-.evento{width: 55%; height: 320px; margin: 5% 8%; background-size: 600px; background-position-x: center; background-repeat: no-repeat;}
-#seccion-eventos .evento p{color: white; font-family: "Neue Haas Bold"; text-align: left; margin-left: 20px; font-size: 24px;margin-top: 80% }
+.evento{height: 320px; background-size: cover; background-position: center; background-repeat: no-repeat;}
+#seccion-eventos .evento p{color: white; font-family: "Neue Haas Bold"; text-align: left; margin-left: 20px; font-size: 24px;margin-top: 270px }
 

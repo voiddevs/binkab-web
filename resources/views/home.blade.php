@@ -169,27 +169,37 @@
             <div class="filtro-lugares"></div>
         </div>
         </div>
-
+        
         <!-- Seccion eventos -->
         <div id="seccion-eventos">
-          <h2>Eventos</h2>
-          <div class="eventos">
-               <div style="background-image: url({{asset('img/home/musica.jpg')}}); margin-left:150px;" class="evento">
-                   <p>Festival de música</p>
-               </div>
-               <div style="background-image: url({{asset('img/home/cultural.jpg')}})"class="evento">
-                   <p>Festival de cultura</p>
-               </div>
-               <div style="background-image: url({{asset('img/home/cultural.jpg')}})" class="evento">
-                   
-               </div>
-           </div>
+        <h2>Eventos</h2>
+        <div class="row">
+            <div class="col-sm-3 evento" style="background-image: url({{asset('img/home/musica.jpg')}})">
+                <p>Festival de música</p>
+            </div>
+            <div class="col-sm-3 evento" style="background-image: url({{asset('img/home/cultural.jpg')}})">
+                <p>Festival de cultura</p>
+            </div>
+            <div class="col-sm-6 evento" style="background-image: url({{asset('img/home/cultural.jpg')}})">
+                <p>Festival de cultura</p>
+            </div>
         </div>
-        
+        <div class="row">
+            <div class="col-sm-6 evento" style="background-image: url({{asset('img/home/musica.jpg')}})">
+                <p>Festival de música</p>
+            </div>
+            <div class="col-sm-3 evento" style="background-image: url({{asset('img/home/cultural.jpg')}})">
+                <p>Festival de cultura</p>
+            </div>
+            <div class="col-sm-3 evento" style="background-image: url({{asset('img/home/cultural.jpg')}})">
+                <p>Festival de cultura</p>
+            </div>
+        </div>
+        </div>
+
         <!-- Footer -->
         @section('footer')
             @parent
-        @endsection
 
     </div>
     <script src="{{asset('js/browser.min.js')}}"></script>
@@ -200,3 +210,4 @@
     <script src="{{asset('js/home.js')}}"></script>
 </body>
 </html>
+@endsection

@@ -90,10 +90,6 @@
             </div>
         </div>
         
-        
-        
-        
-        
         <!-- Footer -->
         @section('footer')
             @parent
