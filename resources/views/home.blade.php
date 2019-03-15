@@ -128,33 +128,43 @@
             <div class="swiper-wrapper">
                 <!-- Slides -->
                 <div class="swiper-slide">
-                    <div style="background-image: url({{asset('img/home/lugares_mazatlan.jpg')}});" class="swiper-seccion-lugares">
+                    <div style="background-image: url({{asset('img/home/lugares-1.jpg')}});" class="swiper-seccion-lugares">
                         <p>Mazatlán</p>
                     </div>
                 </div>
                 <div class="swiper-slide">
-                     <div style="background-image: url({{asset('img/home/lugares_mazatlan.jpg')}});" class="swiper-seccion-lugares">
+                     <div style="background-image: url({{asset('img/home/lugares-2.jpg')}});" class="swiper-seccion-lugares">
                         <p>Mazatlán</p>
                     </div>
                 </div>
                 <div class="swiper-slide">
-                    <div style="background-image: url({{asset('img/home/lugares_mazatlan.jpg')}});" class="swiper-seccion-lugares">
+                    <div style="background-image: url({{asset('img/home/lugares-3.jpg')}});" class="swiper-seccion-lugares">
                         <p>Mazatlán</p>
                     </div>
                 </div>
                 <div class="swiper-slide">
-                    <div style="background-image: url({{asset('img/home/lugares_mazatlan.jpg')}});" class="swiper-seccion-lugares">
+                    <div style="background-image: url({{asset('img/home/lugares-4.jpg')}});" class="swiper-seccion-lugares">
                         <p>Mazatlán</p>
                     </div>
                 </div>
-            </div>
-            </div>
-            <!-- Pagination -->
-            <!--<div class="swiper-pagination"></div>-->
-            <div>
-                <div style="background-image:url({{asset('img/home/parallax.jpg')}});" class="parallax-lugares"></div>
-                <div class="filtro-lugares"></div>
-            </div>
+                <div class="swiper-slide">
+                    <div style="background-image: url({{asset('img/home/lugares-5.jpg')}});" class="swiper-seccion-lugares">
+                        <p>Mazatlán</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div style="background-image: url({{asset('img/home/lugares-6.jpg')}});" class="swiper-seccion-lugares">
+                        <p>Mazatlán</p>
+                    </div>
+                </div>
+            </div>  
+        </div>
+        <div class="swiper-button-prev-lugares"><i class="fas fa-chevron-circle-left"></i></div>
+        <div class="swiper-button-next-lugares"><i class="fas fa-chevron-circle-right"></i></div>
+        <div id="parallax-home">
+            <div style="background-image:url({{asset('img/home/parallax.jpg')}});" class="parallax-lugares"></div>
+            <div class="filtro-lugares"></div>
+        </div>
         </div>
 
         <!-- Seccion eventos -->

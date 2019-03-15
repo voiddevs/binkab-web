@@ -41,29 +41,31 @@
         27 == n.keyCode && i._hide()
     })
 
-    if (window.innerWidth < 600){
+    if (window.innerWidth < 737){
         f.addClass("hide-desktop");
         h.addClass("show-mobile");
-    } else if(window.innerWidth > 599){
+    } else if(window.innerWidth > 736){
         f.removeClass("hide-desktop");
         h.removeClass("show-mobile");
     } 
 
-    if (document.body.scrollHeight > 95){
-        $("#header").addClass("menu-change");
-    }else{
-        $("#header").removeClass("menu-change");
-    }
+    
 
     window.onresize = function(event) {
-        if (window.innerWidth < 600){
+        if (window.innerWidth < 737){
             f.addClass("hide-desktop");
             h.addClass("show-mobile");
-        } else if(window.innerWidth > 599){
+        } else if(window.innerWidth > 736){
             f.removeClass("hide-desktop");
             h.removeClass("show-mobile");
         } 
     };
+
+    if (window.scrollY > 95){
+        $("#header").addClass("menu-change");
+    }else{
+        $("#header").removeClass("menu-change");
+    }
 
     $(window).scroll(function() {
         if ($("#header").offset().top > 96) {
@@ -73,7 +75,4 @@
         }
       });
 
-
-    
-    
 }(jQuery);
