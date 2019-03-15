@@ -151,7 +151,10 @@
             </div>
             <!-- Pagination -->
             <!--<div class="swiper-pagination"></div>-->
-            <div class="parallax-lugares"></div>
+            <div>
+                <div style="background-image:url({{asset('img/home/parallax.jpg')}});" class="parallax-lugares"></div>
+                <div class="filtro-lugares"></div>
+            </div>
         </div>
 
         <!-- Seccion eventos -->
