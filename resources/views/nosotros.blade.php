@@ -8,8 +8,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Nosotros - BinKab</title>
 
-    <link rel="stylesheet" href="{{asset('css/menu.css')}}">
-    <link rel="stylesheet" href="{{asset('css/styles.css')}}">
+    <link rel="stylesheet" href="{{asset('css/basics.css')}}">
+    <link rel="stylesheet" href="{{asset('css/nosotros.css')}}">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 </head>
 <body class="is-preload">
@@ -65,8 +65,8 @@
                 <p>Binkab es una plataforma online que contiene información sobre los destinos  más solicitados, recomendaciones para el viajero e información de gran valor procedente de sus autores. 
                 También ofrecemos una amplia gama de servicios para inspirar y ayudar al viajero a organizar su viaje.</p>
             </div>
-            <div style="background-image:url({{asset('img/nosotros/playa.jpg')}});" class="parallax-lugares"></div>
-            <div class="filtro-lugares"></div>    
+            <div style="background-image:url({{asset('img/nosotros/playa.jpg')}});" class="parallax-nosotros"></div>
+            <div class="filtro-nosotros"></div>    
         </div>
         
         <div id="app-binkab">

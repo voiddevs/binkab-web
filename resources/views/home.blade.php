@@ -8,9 +8,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Home - BinKab</title>
 
-    <link rel="stylesheet" href="{{asset('css/menu.css')}}">
+    <link rel="stylesheet" href="{{asset('css/basics.css')}}">
+    <link rel="stylesheet" href="{{asset('css/app.css')}}">
     <link rel="stylesheet" href="{{asset('css/swiper.css')}}">
-    <link rel="stylesheet" href="{{asset('css/styles.css')}}">
+    <link rel="stylesheet" href="{{asset('css/home.css')}}">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 </head>
 <body class="is-preload">
@@ -97,26 +98,28 @@
         </div>
 
         <!-- Seccion iconos -->
-        <div class="seccion-iconos">
-            <div class="hvr-bob">
-                <img class="iconos-menu" src="{{asset('img/home/playa.png')}}" alt="playa">
-                <h2>Descansa</h2>
-                <p>Relajate en lugares nuevos</p>
-            </div>
-            <div class="hvr-bob">
-                <img class="iconos-menu" src="{{asset('img/home/turismo.png')}}" alt="turismo">
-                <h2>Conoce</h2>
-                <p>Descubre cosas increibles</p>
-            </div>
-            <div class="hvr-bob">
-                <img class="iconos-menu" src="{{asset('img/home/gastronomia.png')}}" alt="gastronomia">
-                <h2>Disfruta</h2>
-                <p>Saborea nuevos sabores</p>
-            </div>
-            <div  class="hvr-bob">
-                <img class="iconos-menu" src="{{asset('img/home/estampa.png')}}" alt="estampa">
-                <h2>Aprende</h2>
-                <p>Aprende sobre nuevas culturas y personas</p>
+        <div class="container-fluid seccion-iconos">
+            <div class="row">
+                <div class="col-sm-3 hvr-bob columnas">
+                    <img class="iconos-menu" src="{{asset('img/home/playa.png')}}" alt="playa">
+                    <h2>Descansa</h2>
+                    <p>Relajate en lugares nuevos</p>
+                </div>
+                <div class="col-sm-3 hvr-bob columnas">
+                    <img class="iconos-menu" src="{{asset('img/home/turismo.png')}}" alt="turismo">
+                    <h2>Conoce</h2>
+                    <p>Descubre cosas increibles</p>
+                </div>
+                <div class="col-sm-3 hvr-bob columnas">
+                    <img class="iconos-menu" src="{{asset('img/home/gastronomia.png')}}" alt="gastronomia">
+                    <h2>Disfruta</h2>
+                    <p>Saborea nuevos sabores</p>
+                </div>
+                <div  class="col-sm-3 hvr-bob columnas">
+                    <img class="iconos-menu" src="{{asset('img/home/estampa.png')}}" alt="estampa">
+                    <h2>Aprende</h2>
+                    <p>Aprende sobre nuevas culturas</p>
+                </div>
             </div>
         </div>
         

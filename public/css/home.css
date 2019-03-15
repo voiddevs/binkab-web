@@ -96,16 +96,7 @@
     bottom: 20px;
   }
 
-.filtro{
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    opacity: 0.67;
-    z-index: 1;
-    background-image: linear-gradient(to right top, #000000, rgba(0,0,0, 0) 56%);
-}
+.filtro{ position: absolute; top: 0; bottom: 0; left: 0; right: 0; opacity: 0.67; z-index: 1; background-image: linear-gradient(to right top, #000000, rgba(0,0,0, 0) 56%);}
 
 /* Seccion Iconos */
 
@@ -150,8 +141,6 @@
   }
 }
 .hvr-bob img {
-  display: inline-block;
-  vertical-align: middle;
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
@@ -173,10 +162,11 @@
   animation-direction: normal, alternate;
 }
 
-.seccion-iconos{display:-webkit-inline-box; margin-top: 50px; margin-bottom: 20px;}
-.iconos-menu{width: 100px;margin-left: 200px;}
-.seccion-iconos h2{ margin-top: 20px; text-align: center; margin-left: 150px; font-family: "Neue Haas Bold"; font-size: 22px;}
-.seccion-iconos p{width: 200px; text-align: center;color: #a5a2a2; font-size: 19px; margin-left: 140px; font-family: "Neue Haas"; margin-top: -5px;}
+.seccion-iconos{margin-top: 50px; margin-bottom: 30px;}
+.iconos-menu{width: 100px; margin: 0 auto; display: block;}
+.seccion-iconos h2{ margin-top: 20px; text-align: center; font-family: "Neue Haas Bold"; font-size: 22px;}
+.seccion-iconos p{text-align: center; color: #a5a2a2; font-size: 19px; font-family: "Neue Haas"; margin-top: -5px; margin: 0 auto;}
+.columnas{margin-bottom: 20px;}
 
 /* Seccion Lugares*/
 .seccion-lugares{background-color: #f8f8f8; position: relative;}
@@ -188,10 +178,19 @@
   background-size: cover; background-attachment: fixed; width: 100%; height: 500px; margin-top: 50px; }
 .filtro-lugares{position: absolute; margin-top: 50px; bottom: 0; left: 0; right: 0; opacity: 0.67; z-index: 9; height: 500px;background-image: linear-gradient(to right top, #000000, rgba(0,0,0, 0) 56%);}
 #parallax-home{position: relative;}
-.swiper-button-prev-lugares{position: absolute; font-size: 3em; top: 30%; left: 3%; color: #656565; transition: ease all .4s; cursor: pointer;}
-.swiper-button-next-lugares{position: absolute; font-size: 3em; top: 30%; right: 3%; color: #656565; transition: ease all .4s; cursor: pointer;}
+.swiper-button-prev-lugares{position: absolute; font-size: 3em; top: 30%; left: 3%; color: #656565; transition: ease all .4s; cursor: pointer; z-index: 10;}
+.swiper-button-next-lugares{position: absolute; font-size: 3em; top: 30%; right: 3%; color: #656565; transition: ease all .4s; cursor: pointer; z-index: 10;}
 .swiper-button-prev-lugares:hover{color: #610011}
 .swiper-button-next-lugares:hover{color: #610011}
+@media screen and (max-width: 650px) {
+  .swiper-button-prev-lugares{font-size: 3em; left: 1%;}
+  .swiper-button-next-lugares{font-size: 3em; right: 1%;}
+}
+@media screen and (max-width: 445px) {
+  .swiper-button-prev-lugares{font-size: 2.5em; left: 1%;}
+  .swiper-button-next-lugares{font-size: 2.5em; right: 1%;}
+
+}
 
 /* Seccion eventos */
 #seccion-eventos{background: #f8f8f8; padding-bottom: 50px;}
@@ -199,124 +198,4 @@
 #seccion-eventos .eventos{ display:-webkit-inline-box;}
 .evento{width: 55%; height: 320px; margin: 5% 8%; background-size: 600px; background-position-x: center; background-repeat: no-repeat;}
 #seccion-eventos .evento p{color: white; font-family: "Neue Haas Bold"; text-align: left; margin-left: 20px; font-size: 24px;margin-top: 80% }
-
-
-/*Nosotros*/
-
-/*Banner*/
-.banner{background-repeat: no-repeat; background-size: cover; background-position: center; width: 100%; height: 400px;}
-.filtro-banner{position: absolute; top: 0; bottom: 0; left: 0; right: 0; opacity: 0.67; z-index: 1; height: 400px; background-image: linear-gradient(to right top, #000000, rgba(0,0,0, 0) 56%);}
-.seccion-banner p{
-    color: white;
-    font-family: "Neue Haas Bold";
-    position: absolute;
-    z-index: 5;
-    padding-left: 12%;
-    padding-top: 175px;
-    font-size: 50px;
-}
-
-/*Info Binkab*/
-#seccion-info{position: relative;}
-#seccion-info .info-binkab{width: 50%; margin-left: 25%; margin-top: 90px; margin-bottom: 90px;}
-#seccion-info .info-binkab p{font-family: 'Neue Haas'; text-align: center; color: #8c8d91; font-size: 24px;}
-
-/*App*/
-#app-binkab{display: -webkit-inline-box; margin-left: 10%;margin-top: 90px;margin-bottom: 90px;}
-#app-binkab div img{width: 120%;}
-.binkab-txt{width: 30%; margin-left: 10%}
-.binkab-txt h2{font-family: 'Neue Haas'; font-size: 32px; color: #65666a;}
-.binkab-txt p{font-family: 'Neue Haas'; font-size: 21px; color: #8c8d91;}
-.binkab-txt a{font-family: 'Neue Haas'; font-size: 21px; color: #8c8d91;}
-
-/*Screen de home*/
-#seccion-screen{display: -webkit-inline-box; margin-left: 35%;margin-bottom: 90px; margin-top: 80px;}
-#seccion-screen div img{width: 120%;}
-.screen-txt{width: 40%; margin-right: 10%}
-.screen-txt h2{font-family: 'Neue Haas'; font-size: 32px; color: #65666a;}
-.screen-txt p{font-family: 'Neue Haas'; font-size: 21px; color: #8c8d91;}
-.screen-txt p a{font-family: 'Neue Haas'; font-size: 21px; color: #8c8d91;}
-
-/*Footer*/
-
-footer{
-  width: 100%;
-  height: auto;
-  position: relative;
-  -webkit-box-shadow: inset 0px 28px 49px -32px rgba(0,0,0,0.46);
-  -moz-box-shadow: inset 0px 28px 49px -32px rgba(0,0,0,0.46);
-  box-shadow: inset 0px 28px 49px -32px rgba(0,0,0,0.46);
-}
-
-#logo-footer{
-  width: 200px;
-  margin: 2em 2em;
-}
-
-#menu-footer{
-  display: inline;
-  margin: 2.6em 3em;
-  position: absolute;
-  border-left: 1px solid dimgrey;
-  border-right: 1px solid dimgrey;
-}
-
-#menu-footer ul{
-  list-style: none;
-  margin: 30px auto;
-  display: inline-flex;
-}
-
-.link-footer{
-  font-family: "Neue Haas Bold";
-  text-decoration: none;
-  color: #000000;
-  font-size: 1.3em;
-  padding: 0 2em;
-  transition: ease all .4s;
-}
-
-.link-footer:hover{
-  color: #610011;
-}
-
-#copy{
-  width: 100%;
-  height: auto;
-  position: relative;
-  background-color: #610011;
-}
-
-#copy p{
-  text-align: center;
-    font-family: "Neue Haas";
-    font-size: 1em;
-    color: #ffffff;
-    margin: 0;
-    padding: 10px 0px;
-}
-
-#spancopy{
-  font-family: "Delimax" !important;
-}
-
-.hvr-float {
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition-property: transform;
-  transition-property: transform;
-  -webkit-transition-timing-function: ease-out;
-  transition-timing-function: ease-out;
-}
-.hvr-float:hover, .hvr-float:focus, .hvr-float:active {
-  -webkit-transform: translateY(-8px);
-  transform: translateY(-8px);
-}
-
-
 
