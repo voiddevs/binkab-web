@@ -28,10 +28,10 @@
                 <div id="desktop">
                     <nav>    
                         <ul>
-                            <li><a href="/" class="link-home">INICIO</a></li>
-                            <li><a href="#" class="link-home">DESTINOS</a></li>
-                            <li><a href="/nosotros" class="link-home">NOSOTROS</a></li>
-                            <li><a href="#" class="link-homelog">SIGN IN <i class="fas fa-sign-in-alt"></i></a></li>
+                            <li><a href="/" class="link-home">Inicio</a></li>
+                            <li><a href="#" class="link-home">Destinos</a></li>
+                            <li><a href="/nosotros" class="link-home">Nosotros</a></li>
+                            <li><a href="#" class="link-homelog">Ingresar</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -50,10 +50,10 @@
         <nav id="menu">
             <h2>Menú</h2>
             <ul>
-                <li><a href="/" class="hvr-underline-from-left">INICIO <i class="fas fa-home"></i></a></li>
-                <li><a href="#" class="hvr-underline-from-left">DESTINOS <i class="fas fa-map-marked-alt"></i></a></li>
-                <li><a href="/nosotros" class="hvr-underline-from-left">NOSOTROS <i class="fas fa-users"></i></a></li>
-                <li><a href="#" class="hvr-underline-from-left">SIGN IN <i class="fas fa-sign-in-alt"></i></a></li>
+                <li><a href="/" class="hvr-underline-from-left">Inicio <i class="fas fa-home"></i></a></li>
+                <li><a href="#" class="hvr-underline-from-left">Destinos <i class="fas fa-map-marked-alt"></i></a></li>
+                <li><a href="/nosotros" class="hvr-underline-from-left">Nosotros <i class="fas fa-users"></i></a></li>
+                <li><a href="#" class="hvr-underline-from-left">Ingresar <i class="fas fa-sign-in-alt"></i></a></li>
             </ul>
         </nav>
         
