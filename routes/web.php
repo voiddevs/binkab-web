@@ -18,3 +18,11 @@ Route::get('/', function () {
 Route::get('/nosotros', function () {
     return view('nosotros');
 });
+
+Route::get('/destinos', function () {
+    return view('destinos');
+});
+
+Route::get('/destinos/mazatlan', function () {
+    return view('destinos-mazatlan');
+});

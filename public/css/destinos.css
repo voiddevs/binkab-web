@@ -1,0 +1,39 @@
+/*Banner*/
+.banner{background-repeat: no-repeat; background-size: cover; background-position: center; width: 100%; height: 400px;}
+.filtro-banner{position: absolute; top: 0; bottom: 0; left: 0; right: 0; opacity: 0.67; z-index: 1; height: 400px; background-image: linear-gradient(to right top, #000000, rgba(0,0,0, 0) 56%);}
+.seccion-banner p{
+  color: white;
+  font-family: "Neue Haas Bold";
+  position: absolute;
+  z-index: 5;
+  font-size: 70px;
+  left: 0;
+  right: 0;
+  display: block;
+  text-align: center;
+  top: 130px;
+}
+
+
+/*--- Destino ---*/
+.slide-seccion-destino{
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.slide-seccion-destino p{
+    color: white; font-family: "Neue Haas Bold"; text-align: left; font-size: 30px;
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    margin: auto;
+}
+
+
+.swiper-container{
+    height: 500px;
+}
