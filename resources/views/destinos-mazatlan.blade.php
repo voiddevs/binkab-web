@@ -17,48 +17,44 @@
 
         <!-- Slider main container -->
         <div class="swiper-container">
+            <div id="title-destino">
+                <h1>Mazatlán</h1>
+                <p>Sinaloa, México</p>
+            </div>
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
                 <!-- Slides -->
                 <div class="swiper-slide">
-                    <div class="slide-seccion-destino" style="background-image: url({{asset('img/destinos/mazatlan/slide-1.jpg')}})">
-                        <p>Turismo</p>
-                    </div>
+                    <div class="slide-seccion-destino" style="background-image: url({{asset('img/destinos/mazatlan/slide-1.jpg')}})"></div>
+                    <p class="titulo-seccion">Turismo</p>
                 </div>
                 <div class="swiper-slide">
-                    <div class="slide-seccion-destino" style="background-image: url({{asset('img/destinos/mazatlan/slide-2.jpg')}})">
-                        <p>Comida</p>
-                    </div>
+                    <div class="slide-seccion-destino" style="background-image: url({{asset('img/destinos/mazatlan/slide-2.jpg')}})"></div>
+                    <p class="titulo-seccion">Comida</p>
                 </div>
                 <div class="swiper-slide">
-                    <div class="slide-seccion-destino" style="background-image: url({{asset('img/destinos/mazatlan/slide-3.jpg')}})">
-                        <p>Cultural</p>
-                    </div>
+                    <div class="slide-seccion-destino" style="background-image: url({{asset('img/destinos/mazatlan/slide-3.jpg')}})"></div>
+                    <p class="titulo-seccion">Cultural</p>
                 </div>
                 <div class="swiper-slide">
-                    <div class="slide-seccion-destino" style="background-image: url({{asset('img/destinos/mazatlan/slide-4.jpg')}})">
-                        <p>Deportes</p>
-                    </div>
+                    <div class="slide-seccion-destino" style="background-image: url({{asset('img/destinos/mazatlan/slide-4.jpg')}})"></div>
+                    <p class="titulo-seccion">Deportes</p>
                 </div>
                 <div class="swiper-slide">
-                    <div class="slide-seccion-destino" style="background-image: url({{asset('img/destinos/mazatlan/slide-5.jpg')}})">
-                        <p>Entretenimiento</p>
-                    </div>
+                    <div class="slide-seccion-destino" style="background-image: url({{asset('img/destinos/mazatlan/slide-5.jpg')}})"></div>
+                    <p class="titulo-seccion">Entretenimiento</p>
                 </div>
                 <div class="swiper-slide">
-                    <div class="slide-seccion-destino" style="background-image: url({{asset('img/destinos/mazatlan/slide-1.jpg')}})">
-                        <p>Souvenirs</p>
-                    </div>
+                    <div class="slide-seccion-destino" style="background-image: url({{asset('img/destinos/mazatlan/slide-1.jpg')}})"></div>
+                    <p class="titulo-seccion">Souvenirs</p>
                 </div>
                 <div class="swiper-slide">
-                    <div class="slide-seccion-destino" style="background-image: url({{asset('img/destinos/mazatlan/slide-1.jpg')}})">
-                        <p>Eventos</p>
-                    </div>
+                    <div class="slide-seccion-destino" style="background-image: url({{asset('img/destinos/mazatlan/slide-1.jpg')}})"></div>
+                    <p class="titulo-seccion">Eventos</p>
                 </div>
                 <div class="swiper-slide">
-                    <div class="slide-seccion-destino" style="background-image: url({{asset('img/destinos/mazatlan/slide-1.jpg')}})">
-                        <p>Tours</p>
-                    </div>
+                    <div class="slide-seccion-destino" style="background-image: url({{asset('img/destinos/mazatlan/slide-1.jpg')}})"></div>
+                    <p class="titulo-seccion">Tours</p>
                 </div>
             </div>
         </div>
