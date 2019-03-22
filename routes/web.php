@@ -15,7 +15,7 @@ Route::get('/', function () {
     return view('home');
 });
 
-<<<<<<< HEAD
+
 Route::get('/lugares',function(){
 	return view('lugares');
 });
@@ -25,7 +25,7 @@ Route::post('/saveTelefonoLugar','telefonos_lugar@store');
 Route::get('/lugares', 'categorias@indexCategoria');
 Route::get('/actividades', 'lugares@index');
 Route::post('/saveCategoria','categorias@store');
-=======
+
 Route::get('/nosotros', function () {
     return view('nosotros');
 });
@@ -36,5 +36,8 @@ Route::get('/destinos', function () {
 
 Route::get('/destinos/mazatlan', function () {
     return view('destinos-mazatlan');
+
 });
->>>>>>> fd4eefe07210f8dfb3e177cd6b3321c805b4150d
+
+
+
