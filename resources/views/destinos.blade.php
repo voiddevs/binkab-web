@@ -44,7 +44,6 @@
             </div>
             <hr class="divisor-home">
         </header>
-        
 
         <nav id="menu">
             <h2>Menú</h2>
@@ -63,20 +62,28 @@
         </div>
                 
         <div id="seccion-opciones-destinos" class="container-fluid">
-        <div class="row">
-            <div class="col-sm-2 col-sm-offset-1 destino" style="background-image: url({{asset('img/destinos/lugares-1.jpg')}})">
-                <p>Mazatlán</p>
+            <div class="row">
+                <div class="col-sm-3" >
+                    <div class="destino" style="background-image: url({{asset('img/destinos/lugares-1.jpg')}})">
+                        <p>Mazatlán</p>
+                    </div>
+                </div>
+                <div class="col-sm-3" >
+                    <div class="destino" style="background-image: url({{asset('img/destinos/lugares-1.jpg')}})">
+                        <p>Mazatlán</p>
+                    </div>
+                </div>
+                <div class="col-sm-3" >
+                    <div class="destino" style="background-image: url({{asset('img/destinos/lugares-1.jpg')}})">
+                        <p>Mazatlán</p>
+                    </div>
+                </div>
+                <div class="col-sm-3" >
+                    <div class="destino" style="background-image: url({{asset('img/destinos/lugares-1.jpg')}})">
+                        <p>Mazatlán</p>
+                    </div>
+                </div>
             </div>
-            <div class="col-sm-2 col-sm-offset-1 destino" style="background-image: url({{asset('img/destinos/lugares-1.jpg')}})">
-                <p>Mazatlán</p>
-            </div>
-            <div class="col-sm-2 col-sm-offset-1 destino" style="background-image: url({{asset('img/destinos/lugares-1.jpg')}})">
-                <p>Mazatlán</p>
-            </div>
-            <div class="col-sm-2 col-sm-offset-1 destino" style="background-image: url({{asset('img/destinos/lugares-1.jpg')}})">
-                <p>Mazatlán</p>
-            </div>
-        </div>
         </div>
         
         
