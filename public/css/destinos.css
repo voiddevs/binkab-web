@@ -72,3 +72,9 @@
     margin: auto;
     z-index: 3;
 }
+
+/*------------Destinos---------*/
+
+#seccion-opciones-destinos {margin-left: 0px}
+#seccion-opciones-destinos .destino{display:-webkit-inline-box;height: 450px; background-size: cover; background-position: center; background-repeat: no-repeat; width: 20%; margin: 78px 4%;}
+#seccion-opciones-destinos .destino p{color: white; font-family: "Neue Haas Bold"; text-align: center; font-size: 30px; margin: 350px 30%;}

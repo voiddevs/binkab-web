@@ -10,6 +10,7 @@
 
     <link rel="stylesheet" href="{{asset('css/basics.css')}}">
     <link rel="stylesheet" href="{{asset('css/destinos.css')}}">
+    <link rel="stylesheet" href="{{asset('css/app.css')}}">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 </head>
 <body class="is-preload">
@@ -59,6 +60,23 @@
            <p>Destinos</p>
             <div style="background-image:url({{asset('img/destinos/banner-destinos.jpg')}});" class="banner"></div>
             <div class="filtro-banner"></div>
+        </div>
+                
+        <div id="seccion-opciones-destinos" class="container-fluid">
+        <div class="row">
+            <div class="col-sm-2 col-sm-offset-1 destino" style="background-image: url({{asset('img/destinos/lugares-1.jpg')}})">
+                <p>Mazatlán</p>
+            </div>
+            <div class="col-sm-2 col-sm-offset-1 destino" style="background-image: url({{asset('img/destinos/lugares-1.jpg')}})">
+                <p>Mazatlán</p>
+            </div>
+            <div class="col-sm-2 col-sm-offset-1 destino" style="background-image: url({{asset('img/destinos/lugares-1.jpg')}})">
+                <p>Mazatlán</p>
+            </div>
+            <div class="col-sm-2 col-sm-offset-1 destino" style="background-image: url({{asset('img/destinos/lugares-1.jpg')}})">
+                <p>Mazatlán</p>
+            </div>
+        </div>
         </div>
         
         
