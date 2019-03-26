@@ -16,6 +16,44 @@
     <!-- Wrapper -->
 	<div id="wrapper">
 
+        <!-- Header -->
+        <header id="header" >
+            <div class="inner">
+                <div>
+                    <a href="/"><img src="{{asset('img/logo_blanco.png')}}" alt="logo-binkab"></a>
+                </div>
+                <!-- Nav -->
+                <div id="desktop">
+                    <nav>    
+                        <ul>
+                            <li><a href="/" class="link-home">Inicio</a></li>
+                            <li><a href="/destinos" class="link-home">Destinos</a></li>
+                            <li><a href="/nosotros" class="link-home">Nosotros</a></li>
+                            <li><a href="#" class="link-homelog">Ingresar</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div id="mobile">
+                    <nav>    
+                        <ul>
+                            <li><a href="#menu">Menu</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <hr class="divisor-home">
+        </header>
+
+        <nav id="menu">
+            <h2>Menú</h2>
+            <ul>
+                <li><a href="/" class="hvr-underline-from-left">Inicio <i class="fas fa-home"></i></a></li>
+                <li><a href="/destinos" class="hvr-underline-from-left">Destinos <i class="fas fa-map-marked-alt"></i></a></li>
+                <li><a href="/nosotros" class="hvr-underline-from-left">Nosotros <i class="fas fa-users"></i></a></li>
+                <li><a href="#" class="hvr-underline-from-left">Ingresar <i class="fas fa-sign-in-alt"></i></a></li>
+            </ul>
+        </nav>
+
         <!-- Slider main container -->
         <div class="swiper-container">
             <div id="title-destino">
@@ -134,7 +172,10 @@
 
 
     </div>
-    <script src="{{asset('js/jquery.min.js')}}"></script>
+    <script src="{{asset('js/browser.min.js')}}"></script>
+    <script src="{{asset('js/jquery.min.js')}}"></script> 
+    <script src="{{asset('js/breakpoints.min.js')}}"></script>
+    <script src="{{asset('js/menu.js')}}"></script>
     <script src="{{asset('js/swiper.js')}}"></script>
     <script>
         var mySwiper = new Swiper ('.swiper-container', {

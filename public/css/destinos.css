@@ -16,8 +16,28 @@
 
 /*------------Destinos---------*/
 
-#seccion-opciones-destinos {margin-top: 50px; margin-bottom: 50px;}
-.destino{height: 450px; background-size: cover; background-position: center; background-repeat: no-repeat; position: relative;}
+#seccion-opciones-destinos {margin-top: 50px; margin-bottom: 50px;     margin-left: 3em;
+  margin-right: 3em;}
+
+.filtrodestino{position: absolute; top: 0; bottom: 0; left: 0; right: 0; opacity: 0.67; z-index: 1; height: 450px; background-image: linear-gradient(to right top, #000000, rgba(0,0,0, 0) 56%);}
+.destino{height: 450px; position: relative; overflow:hidden;}
+.destino img {
+  -webkit-transition:all .9s ease; /* Safari y Chrome */
+  -moz-transition:all .9s ease; /* Firefox */
+  -o-transition:all .9s ease; /* IE 9 */
+  -ms-transition:all .9s ease; /* Opera */
+  width: 140%;
+  height: 110%;
+  }
+
+  .destino:hover img {
+  -webkit-transform:scale(1.05);
+  -moz-transform:scale(1.05);
+  -ms-transform:scale(1.05);
+  -o-transform:scale(1.05);
+  transform:scale(1.05);
+  }
+
 #seccion-opciones-destinos p{    color: white;
   font-family: "Neue Haas Bold";
   text-align: center;
@@ -26,4 +46,5 @@
   bottom: 20px;
   margin: 0 auto;
   left: 0;
-  right: 0;}
+  right: 0;
+  z-index: 2;}

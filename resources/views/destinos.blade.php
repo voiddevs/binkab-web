@@ -61,27 +61,25 @@
             <div class="filtro-banner"></div>
         </div>
                 
-        <div id="seccion-opciones-destinos" class="container-fluid">
+        <div id="seccion-opciones-destinos" class="container-fluid" style="width: auto;">
             <div class="row">
-                <div class="col-sm-3" >
-                    <div class="destino" style="background-image: url({{asset('img/destinos/lugares-1.jpg')}})">
-                        <p>Mazatlán</p>
-                    </div>
+                <div class="col-sm-3">
+                    <a href="/destinos/mazatlan">
+                        <div class="destino">
+                            <img src="{{asset('img/destinos/lugares-1.jpg')}}" alt="">
+                            <div class="filtrodestino"></div>
+                            <p>Mazatlán</p>
+                        </div>
+                    </a>
                 </div>
                 <div class="col-sm-3" >
-                    <div class="destino" style="background-image: url({{asset('img/destinos/lugares-1.jpg')}})">
-                        <p>Mazatlán</p>
-                    </div>
+                  
                 </div>
                 <div class="col-sm-3" >
-                    <div class="destino" style="background-image: url({{asset('img/destinos/lugares-1.jpg')}})">
-                        <p>Mazatlán</p>
-                    </div>
+                   
                 </div>
                 <div class="col-sm-3" >
-                    <div class="destino" style="background-image: url({{asset('img/destinos/lugares-1.jpg')}})">
-                        <p>Mazatlán</p>
-                    </div>
+                   
                 </div>
             </div>
         </div>
