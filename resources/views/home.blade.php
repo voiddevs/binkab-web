@@ -131,9 +131,11 @@
             <div class="swiper-wrapper">
                 <!-- Slides -->
                 <div class="swiper-slide">
-                    <div style="background-image: url({{asset('img/home/lugares-1.jpg')}});" class="swiper-seccion-lugares">
-                        <p>Mazatlán</p>
-                    </div>
+                    <a href="/destinos/mazatlan">
+                        <div style="background-image: url({{asset('img/home/lugares-1.jpg')}});" class="swiper-seccion-lugares">
+                            <p>Mazatlán</p>
+                        </div>
+                    </a> 
                 </div>
                 <div class="swiper-slide">
                      <div style="background-image: url({{asset('img/home/lugares-2.jpg')}});" class="swiper-seccion-lugares">
