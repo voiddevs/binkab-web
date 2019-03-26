@@ -85,8 +85,18 @@
 					<button type="button" class="btn btn-primary col-sm-2 col-form-label" id="btnPer" data-toggle="modal" data-target="#exampleModal">Agregar categoria</button>
 				</div>
 			</div>
+			<div>
+				<input type="checkbox" name="opcion-negocio" id="myCheck" value="negocio" ng-click="checkedButton()"> Negocio<br>
+			</div>
+			<div id="text" style="display:none">
+				<div>
+					<label>Tipo de negocio</label>
+					<input type="text" class="form-control">
+				</div>
+			</div>
 			<button class="btn btn-primary" type="button" ng-click="save()" ng-disabled="!form_lugar.$valid">GUARDAR</button>
 			<button class="btn btn-primary" type="button" ng-click="clean()">LIMPIAR</button>
+			<button class="btn btn-primary" type="button" ng-click="show()">LIMPIAR</button>
 		</form>
 	</div>
     <script src="{{asset('js/angular.js')}}" type="text/javascript"></script>
@@ -106,7 +116,7 @@
                     console.log($scope.lugar);
 					$scope.form_lugar.$setPristine();
 					//LLAMADA A LA FUNCION PARA GUARDAR EN LA TABLA DE LUGARES
-					$http.post('/save',$scope.lugar).then(
+					$http.post('/save/'+4,$scope.lugar).then(
 						function(response){
 							alert("Agregado con exito");
 							console.log(response.data);
@@ -137,6 +147,23 @@
 					
                 }
 
+				$scope.show = function(){
+					$http.get('/view');
+				}
+				$scope.checkedButton = function(){
+                      // Get the checkbox
+					var checkBox = document.getElementById("myCheck");
+					// Get the output text
+					var text = document.getElementById("text");
+
+					// If the checkbox is checked, display the output text
+					if (checkBox.checked == true){
+						text.style.display = "block";
+					} else {
+						text.style.display = "none";
+  }
+				}
+				
                 $scope.clean = function(){
                     $scope.lugar= {};
                     $scope.form_lugar.$setPristine();

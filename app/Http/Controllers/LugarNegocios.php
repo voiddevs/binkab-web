@@ -2,13 +2,13 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Controllers\Actividades;
+use App\Http\Controllers\LugarNegocios;
 use App\Http\Requests;
-use App\Actividad;
+use App\LugarNegocio;
 
 use Illuminate\Http\Request;
 
-class Actividades extends Controller
+class LugarNegocios extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -17,9 +17,9 @@ class Actividades extends Controller
      */
     public function index()
     {
-        $actividad=new Actividad();
-        $dataActividades=$actividad::where('id_lugar', '=', 1)->get();
-        return view('lugares-dinamicos', compact('dataActividades'));
+        $negocio=new Actividad();
+        $dataNegocio=$negocio::where('id_negocio', '=', 1)->get();
+        return view('lugares-dinamicos', compact('dataNegocio'));
     }
 
     /**

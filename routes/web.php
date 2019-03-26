@@ -19,11 +19,16 @@ Route::get('/', function () {
 Route::get('/lugares',function(){
 	return view('lugares');
 });
+Route::get('/productos',function(){
+	return view('productos');
+});
 
-Route::post('/save','lugares@store');
+Route::post('/save/{id}','lugares@store');
+// Route::get('/assing','lugares@idClient');
+// Route::get('/view','lugares@idClientShow');
 Route::post('/saveTelefonoLugar','telefonos_lugar@store');
 Route::get('/lugares', 'categorias@indexCategoria');
-Route::get('/actividades', 'lugares@index');
+// Route::get('/actividades', 'lugares@index');
 Route::post('/saveCategoria','categorias@store');
 
 Route::get('/nosotros', function () {
@@ -36,8 +41,14 @@ Route::get('/destinos', function () {
 
 Route::get('/destinos/mazatlan', function () {
     return view('destinos-mazatlan');
-
 });
 
+//Paginas dinamicas
+Route::get('/lugares-dinamicos', 'lugares@index');
+Route::get('/lugares-admin', 'lugares@indexFull');
+// Route::get('/lugares-dinamicos', 'productos@index');
+// Route::get('/lugares-dinamicos', 'fotografias@index');
+// Route::get('/lugares-dinamicos', 'lugares@index');
+// Route::get('/lugares-dinamicos', 'actividades@index');
 
 

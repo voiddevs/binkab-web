@@ -2,13 +2,14 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Controllers\Actividades;
+
+use App\Http\Controllers\Fotografias;
 use App\Http\Requests;
-use App\Actividad;
+use App\Fotografia;
 
 use Illuminate\Http\Request;
 
-class Actividades extends Controller
+class Fotografias extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -17,9 +18,9 @@ class Actividades extends Controller
      */
     public function index()
     {
-        $actividad=new Actividad();
-        $dataActividades=$actividad::where('id_lugar', '=', 1)->get();
-        return view('lugares-dinamicos', compact('dataActividades'));
+        $fotografia=new Actividad();
+        $dataFotografias=$fotografia::where('id_lugar', '=', 1)->get();
+        return view('lugares-dinamicos', compact('dataFotografias'));
     }
 
     /**
