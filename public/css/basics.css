@@ -24,6 +24,15 @@
 		background-color: #f8f8f8;
 	}
 
+	/*@media screen and (min-width: 1920px) {
+			#wrapper{
+				max-width: 1920px;
+				margin-right: auto;
+				margin-left: auto;
+			}
+	}*/
+
+
 	@media screen and (max-width: 480px) {
 
 		html, body {
@@ -700,6 +709,7 @@
 			transform: scale(1.0) rotate(0deg);
 			opacity: 1;
 		}
+
 
 
 /* Wrapper */

@@ -10,6 +10,7 @@
 
     <link rel="stylesheet" href="{{asset('css/basics.css')}}">
     <link rel="stylesheet" href="{{asset('css/destinos.css')}}">
+    <link rel="stylesheet" href="{{asset('css/app.css')}}">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 </head>
 <body class="is-preload">
@@ -43,7 +44,6 @@
             </div>
             <hr class="divisor-home">
         </header>
-        
 
         <nav id="menu">
             <h2>Menú</h2>
@@ -59,6 +59,29 @@
            <p>Destinos</p>
             <div style="background-image:url({{asset('img/destinos/banner-destinos.jpg')}});" class="banner"></div>
             <div class="filtro-banner"></div>
+        </div>
+                
+        <div id="seccion-opciones-destinos" class="container-fluid" style="width: auto;">
+            <div class="row">
+                <div class="col-sm-3">
+                    <a href="/destinos/mazatlan">
+                        <div class="destino">
+                            <img src="{{asset('img/destinos/lugares-1.jpg')}}" alt="">
+                            <div class="filtrodestino"></div>
+                            <p>Mazatlán</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-sm-3" >
+                  
+                </div>
+                <div class="col-sm-3" >
+                   
+                </div>
+                <div class="col-sm-3" >
+                   
+                </div>
+            </div>
         </div>
         
         

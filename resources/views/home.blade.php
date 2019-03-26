@@ -172,29 +172,29 @@
         
         <!-- Seccion eventos -->
         <div id="seccion-eventos">
-        <h2>Eventos</h2>
-        <div class="row">
-            <div class="col-sm-3 evento" style="background-image: url({{asset('img/home/musica.jpg')}})">
-                <p>Festival de música</p>
+            <h2>Eventos</h2>
+            <div class="row">
+                <div class="col-sm-3 evento" style="background-image: url({{asset('img/home/musica.jpg')}})">
+                    <p>Festival de música</p>
+                </div>
+                <div class="col-sm-3 evento" style="background-image: url({{asset('img/home/cultural.jpg')}})">
+                    <p>Festival de cultura</p>
+                </div>
+                <div class="col-sm-6 evento" style="background-image: url({{asset('img/home/cultural.jpg')}})">
+                    <p>Festival de cultura</p>
+                </div>
             </div>
-            <div class="col-sm-3 evento" style="background-image: url({{asset('img/home/cultural.jpg')}})">
-                <p>Festival de cultura</p>
+            <div class="row">
+                <div class="col-sm-6 evento" style="background-image: url({{asset('img/home/musica.jpg')}})">
+                    <p>Festival de música</p>
+                </div>
+                <div class="col-sm-3 evento" style="background-image: url({{asset('img/home/cultural.jpg')}})">
+                    <p>Festival de cultura</p>
+                </div>
+                <div class="col-sm-3 evento" style="background-image: url({{asset('img/home/cultural.jpg')}})">
+                    <p>Festival de cultura</p>
+                </div>
             </div>
-            <div class="col-sm-6 evento" style="background-image: url({{asset('img/home/cultural.jpg')}})">
-                <p>Festival de cultura</p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-6 evento" style="background-image: url({{asset('img/home/musica.jpg')}})">
-                <p>Festival de música</p>
-            </div>
-            <div class="col-sm-3 evento" style="background-image: url({{asset('img/home/cultural.jpg')}})">
-                <p>Festival de cultura</p>
-            </div>
-            <div class="col-sm-3 evento" style="background-image: url({{asset('img/home/cultural.jpg')}})">
-                <p>Festival de cultura</p>
-            </div>
-        </div>
         </div>
 
         <!-- Footer -->
