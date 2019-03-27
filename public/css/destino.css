@@ -35,11 +35,7 @@
     }
 }
 
-@media screen and (max-width: 1000px) {
-    .swiper-container{
-        height: 500px;
-    }
-}
+
 
 .titulo-seccion{
     color: white; font-family: "Neue Haas"; text-align: center; font-size: 30px;
@@ -170,4 +166,26 @@
 
 .baguetteBox-button {
     background-color: transparent !important;
+}
+
+#seccion-tours h2{ text-align: center; font-size: 30px; border-bottom: 2px solid #610011; width: 120px; line-height: 2em; margin: 0 auto 30px auto; font-family: "Neue Haas Bold"; padding-top: 30px;}
+#seccion-tours{
+    width: auto;
+    height: auto;
+    position: relative;
+    margin: 50px 3em;
+}
+.card-deck{
+    margin-top: 10px;
+}
+.card-img-top{
+    height: 210px;
+}
+.card-title{
+    font-family: "Neue Haas Bold";
+}
+
+.card-text{
+    text-align: justify;
+    font-family: "Neue Haas";
 }
