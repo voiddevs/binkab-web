@@ -29,7 +29,7 @@
                             <li><a href="/" class="link-home">Inicio</a></li>
                             <li><a href="/destinos" class="link-home">Destinos</a></li>
                             <li><a href="/nosotros" class="link-home">Nosotros</a></li>
-                            <li><a href="#" class="link-homelog">Ingresar</a></li>
+                            <li><a href="/login" class="link-homelog">Ingresar</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -51,7 +51,7 @@
                 <li><a href="/" class="hvr-underline-from-left">Inicio <i class="fas fa-home"></i></a></li>
                 <li><a href="/destinos" class="hvr-underline-from-left">Destinos <i class="fas fa-map-marked-alt"></i></a></li>
                 <li><a href="/nosotros" class="hvr-underline-from-left">Nosotros <i class="fas fa-users"></i></a></li>
-                <li><a href="#" class="hvr-underline-from-left">Ingresar <i class="fas fa-sign-in-alt"></i></a></li>
+                <li><a href="/login" class="hvr-underline-from-left">Ingresar <i class="fas fa-sign-in-alt"></i></a></li>
             </ul>
         </nav>
         
