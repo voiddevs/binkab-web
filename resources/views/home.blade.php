@@ -100,22 +100,22 @@
         <!-- Seccion iconos -->
         <div class="container-fluid seccion-iconos">
             <div class="row">
-                <div class="col-sm-3 hvr-bob columnas">
+                <div class="col-sm-6 col-md-6 col-lg-3 hvr-bob columnas">
                     <img class="iconos-menu" src="{{asset('img/home/playa.png')}}" alt="playa">
                     <h2>Descansa</h2>
                     <p>Relajate en lugares nuevos</p>
                 </div>
-                <div class="col-sm-3 hvr-bob columnas">
+                <div class="col-sm-6 col-md-6 col-lg-3 hvr-bob columnas">
                     <img class="iconos-menu" src="{{asset('img/home/turismo.png')}}" alt="turismo">
                     <h2>Conoce</h2>
                     <p>Descubre cosas increibles</p>
                 </div>
-                <div class="col-sm-3 hvr-bob columnas">
+                <div class="col-sm-6 col-md-6 col-lg-3 hvr-bob columnas">
                     <img class="iconos-menu" src="{{asset('img/home/gastronomia.png')}}" alt="gastronomia">
                     <h2>Disfruta</h2>
                     <p>Saborea nuevos sabores</p>
                 </div>
-                <div  class="col-sm-3 hvr-bob columnas">
+                <div  class="col-sm-6 col-md-6 col-lg-3 hvr-bob columnas">
                     <img class="iconos-menu" src="{{asset('img/home/estampa.png')}}" alt="estampa">
                     <h2>Aprende</h2>
                     <p>Aprende sobre nuevas culturas</p>
@@ -176,25 +176,35 @@
         <div id="seccion-eventos">
             <h2>Eventos</h2>
             <div class="row">
-                <div class="col-sm-3 evento" style="background-image: url({{asset('img/home/musica.jpg')}})">
-                    <p>Festival de música</p>
+                <div class="col-sm-6 col-md-6 col-lg-3">
+                    <div class="evento" style="background-image: url({{asset('img/eventos/mazatlan/eventos-1.jpg')}})">
+                        <p>Semana de la moto</p>
+                    </div>
                 </div>
-                <div class="col-sm-3 evento" style="background-image: url({{asset('img/home/cultural.jpg')}})">
-                    <p>Festival de cultura</p>
+                <div class="col-sm-6 col-md-6 col-lg-3">
+                    <div class="evento" style="background-image: url({{asset('img/eventos/mazatlan/eventos-2.jpg')}})">
+                        <p>Festival cultural</p>
+                    </div>
                 </div>
-                <div class="col-sm-6 evento" style="background-image: url({{asset('img/home/cultural.jpg')}})">
-                    <p>Festival de cultura</p>
+                <div class="col-sm-6 col-md-12 col-lg-6">
+                    <div class="evento" style="background-image: url({{asset('img/eventos/mazatlan/eventos-3.jpg')}})">
+                        <p>Combate naval</p>
+                    </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-6 evento" style="background-image: url({{asset('img/home/musica.jpg')}})">
-                    <p>Festival de música</p>
+                <div class="col-sm-6 col-md-12 col-lg-6">
+                    <div class="evento" style="background-image: url({{asset('img/eventos/mazatlan/eventos-4.jpg')}})">
+                        <p>Carnaval</p>
+                    </div>
                 </div>
-                <div class="col-sm-3 evento" style="background-image: url({{asset('img/home/cultural.jpg')}})">
-                    <p>Festival de cultura</p>
+                <div class="col-sm-6 col-md-6 col-lg-3">
+                    <div class="evento" style="background-image: url({{asset('img/eventos/mazatlan/eventos-5.jpg')}})">
+                        <p>Maratón</p>
+                    </div>
                 </div>
-                <div class="col-sm-3 evento" style="background-image: url({{asset('img/home/cultural.jpg')}})">
-                    <p>Festival de cultura</p>
+                <div class="col-sm-6 col-md-6 col-lg-3">
+                    <div class="evento" style="background-image: url({{asset('img/eventos/mazatlan/eventos-6.jpg')}})">
+                        <p>Triatlón</p>
+                    </div>
                 </div>
             </div>
         </div>
