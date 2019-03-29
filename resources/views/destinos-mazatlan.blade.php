@@ -1,3 +1,4 @@
+@extends('footer')
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -140,7 +141,7 @@
     
         <!-- Parallax -->
         <div style="background-image:url({{asset('img/destinos/mazatlan/parallax.jpg')}});" class="parallax-destino"><div class="filtro-destino"></div></div>
-        
+
         <!-- Eventos del destino -->
         <div id="seccion-eventos">
             <h2>Eventos</h2>
@@ -174,6 +175,80 @@
                     <div class="evento" style="background-image: url({{asset('img/eventos/mazatlan/eventos-6.jpg')}})">
                         <p>Triatlón</p>
                     </div>
+                </div>
+            </div>
+        </div>
+
+          <!-- ¿A dónde ir? -->
+          <div id="seccion-adondeir">
+            <h2>¿A dónde ir?</h2>
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-4">
+                    <img id="img-adondeir" src="{{asset('img/destinos/mazatlan/catedral-degradado.png')}}" alt="Catedral Mazatlán">
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <ul>
+                        <li>
+                            <div class="opcion-imagen" style="background-image: url({{asset('img/destinos/mazatlan/recomendacion/donde-1.jpg')}})"></div>
+                            <div class="opcion-info">
+                                <p class="opcion-nombre">La Marea</p>
+                                <p class="opcion-ubicacion">Restaurant</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="opcion-imagen" style="background-image: url({{asset('img/destinos/mazatlan/recomendacion/donde-2.jpg')}})"></div>
+                            <div class="opcion-info">
+                                <p class="opcion-nombre">Acuario Mazatlán</p>
+                                <p class="opcion-ubicacion">Recreación</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="opcion-imagen" style="background-image: url({{asset('img/destinos/mazatlan/recomendacion/donde-3.jpg')}})"></div>
+                            <div class="opcion-info">
+                                <p class="opcion-nombre">Plaza Machado</p>
+                                <p class="opcion-ubicacion">Recreación</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="opcion-imagen" style="background-image: url({{asset('img/destinos/mazatlan/recomendacion/donde-4.jpg')}})"></div>
+                            <div class="opcion-info">
+                                <p class="opcion-nombre">Mazagua</p>
+                                <p class="opcion-ubicacion">Parque</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <ul>
+                        <li>
+                            <div class="opcion-imagen" style="background-image: url({{asset('img/destinos/mazatlan/recomendacion/donde-5.jpg')}})"></div>
+                            <div class="opcion-info">
+                                <p class="opcion-nombre">Presidio</p>
+                                <p class="opcion-ubicacion">Restaurant</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="opcion-imagen" style="background-image: url({{asset('img/destinos/mazatlan/recomendacion/donde-6.jpg')}})"></div>
+                            <div class="opcion-info">
+                                <p class="opcion-nombre">Classico</p>
+                                <p class="opcion-ubicacion">Nocturno</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="opcion-imagen" style="background-image: url({{asset('img/destinos/mazatlan/recomendacion/donde-7.jpg')}})"></div>
+                            <div class="opcion-info">
+                                <p class="opcion-nombre">Ángela Peralta</p>
+                                <p class="opcion-ubicacion">Cultural</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="opcion-imagen" style="background-image: url({{asset('img/destinos/mazatlan/recomendacion/donde-8.jpg')}})"></div>
+                            <div class="opcion-info">
+                                <p class="opcion-nombre">Catedral</p>
+                                <p class="opcion-ubicacion">Cultural</p>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -312,7 +387,9 @@
             </div>
         </div>
 
-
+        <!-- Footer -->
+        @section('footer')
+            @parent
 
     </div>
     <script src="{{asset('js/browser.min.js')}}"></script>
@@ -349,3 +426,4 @@
     </script>
 </body>
 </html>
+@endsection

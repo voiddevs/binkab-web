@@ -1,5 +1,9 @@
 /*--- Destino ---*/
 
+body{
+    background-color: #ffffff !important;
+}
+
 .swiper-slide{
     transition: ease all .5s !important;
 }
@@ -87,6 +91,14 @@
     color: #000000; font-family: "Neue Haas"; text-align: center; font-size: 23px; margin-top: 100px;
 }
 
+@media screen and (max-width: 576px) {
+    #img-info-izq{
+        display: none;
+    }
+    #img-info-der{
+        display: none;
+    }
+}
 #img-info-izq{
     width: 100%;
     margin-left: -15px;
@@ -102,7 +114,7 @@
 
 .filtro-destino{position: absolute; margin-top: 0px; bottom: 0; left: 0; right: 0; opacity: 0.67; z-index: 9; height: 500px;background-image: linear-gradient(to right top, #000000, rgba(0,0,0, 0) 56%);}
   
-#seccion-eventos{ padding-bottom: 50px; width: 94%; padding-right: 15px; padding-left: 15px; margin: 0 3%;}
+#seccion-eventos{ padding-bottom: 20px; width: 94%; padding-right: 15px; padding-left: 15px; margin: 0 3%;}
 #seccion-eventos h2{ text-align: center; font-size: 30px; border-bottom: 2px solid #610011; width: 150px; line-height: 2em; margin: 0 auto 30px auto; font-family: "Neue Haas Bold"; padding-top: 30px;}
 .evento{height: 320px; background-size: cover; background-position: center; background-repeat: no-repeat;}
 #seccion-eventos p{color: white; font-family: "Neue Haas Bold"; text-align: left; padding-left: 20px; font-size: 24px;padding-top: 270px }
@@ -147,6 +159,7 @@
     color: #35373a;
     min-height: 100vh;
     padding: 30px 4em;
+    margin-bottom: 30px;
 }
 
 .gallery-container h2{ text-align: center; font-size: 30px; border-bottom: 2px solid #610011; width: 250px; line-height: 2em; margin: 0 auto 30px auto; font-family: "Neue Haas Bold"; padding-top: 30px;
@@ -222,4 +235,68 @@
 .card-text{
     text-align: justify;
     font-family: "Neue Haas";
+}
+
+#seccion-adondeir{
+    width: auto;
+    height: auto;
+    position: relative;
+    margin: 50px 3em;
+    background-color: #ffffff
+}
+
+#seccion-adondeir h2{ text-align: center; font-size: 30px; border-bottom: 2px solid #610011; width: 210px; line-height: 2em; margin: 0 auto 30px auto; font-family: "Neue Haas Bold";}
+#img-adondeir{
+    width: 100%
+}
+
+#seccion-adondeir ul{
+    list-style: none;
+}
+
+#seccion-adondeir li{
+    display: flex;
+    margin: 30px 50px;
+}
+
+.opcion-imagen{
+    background-position: center;
+    background-size: cover;
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+}
+
+.opcion-info{
+    margin-left: 20px;
+}
+.opcion-nombre{
+    text-align: left; font-size: 18px; font-family: "Neue Haas Bold"; color: #000000;
+}
+.opcion-ubicacion{
+    text-align: left; font-size: 18px; font-family: "Neue Haas"; color: #000000;
+}
+
+@media screen and (max-width: 1260px){
+    #seccion-adondeir li{
+        margin: 30px 30px;
+    }
+}
+
+@media screen and (max-width: 1139px){
+    #seccion-adondeir li{
+        margin: 30px 0px;
+    }
+}
+
+
+
+@media screen and (max-width: 991px){
+    #img-adondeir{
+        display: none;
+    }
+
+    #seccion-adondeir li{
+        margin: 30px 50px;
+    }
 }
