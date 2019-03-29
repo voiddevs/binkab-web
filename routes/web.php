@@ -52,3 +52,5 @@ Route::get('/lugares-admin', 'lugares@indexFull');
 // Route::get('/lugares-dinamicos', 'actividades@index');
 
 
+Route::put('/lugaresUpdate/{id}','lugares@update');
+Route::resource('lugar','Lugares');

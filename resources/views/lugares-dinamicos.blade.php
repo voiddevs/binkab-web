@@ -13,7 +13,9 @@
 </head>
 <body ng-app="app">
     <div class="container" ng-controller="ctrl">
+    <h1>Vista Clientes</h1>
         <div id="contenedor-principal">
+        
         </div>
 	</div>
     <script src="{{asset('js/angular.js')}}" type="text/javascript"></script>
@@ -25,9 +27,6 @@
             $scope.lugares = {!! json_encode($dataLugares->toArray()) !!}
             console.log($scope.lugares);
             $scope.lugarNombre= $scope.lugares[0].nombre
-            console.log($scope.lugarNombre);
-
-
             var myEl = angular.element( document.querySelector( '#contenedor-principal' ) );
             for(var x=0; x<$scope.lugares.length;x++){
                 myEl.append(

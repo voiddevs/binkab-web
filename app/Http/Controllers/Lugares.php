@@ -87,9 +87,22 @@ class Lugares extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request)
     {
-        //
+        $data= Lugar::findOrFail($request->input('id'));
+        echo ($data);
+        try{
+            // $data= Lugar::findOrFail($request->input('id'));
+
+            if($data->status == 1){
+                $data->status = 0;
+            }else
+                $data->status = 1;
+
+            $data->save();    
+        }
+        catch(ModelNotFoundException $err){
+        }
     }
 
     /**
