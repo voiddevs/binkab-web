@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('home');
+    return view('inicio');
 });
 
 Route::get('/nosotros', function () {
@@ -26,3 +26,12 @@ Route::get('/destinos', function () {
 Route::get('/destinos/mazatlan', function () {
     return view('destinos-mazatlan');
 });
+
+Route::get('/login', function () {
+    return view('auth.login');
+});
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+

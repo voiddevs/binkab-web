@@ -30,7 +30,7 @@
                             <li><a href="/" class="link-home">Inicio</a></li>
                             <li><a href="/destinos" class="link-home">Destinos</a></li>
                             <li><a href="/nosotros" class="link-home">Nosotros</a></li>
-                            <li><a href="#" class="link-homelog">Ingresar</a></li>
+                            <li><a href="/login" class="link-homelog">Ingresar</a></li>
                         </ul>
                     </nav>
                 </div>
