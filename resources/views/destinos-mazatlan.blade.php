@@ -188,8 +188,9 @@
                 </div>
                 <div class="col-sm-12 col-md-6 col-lg-4">
                     <ul>
-                        <li>
-                            <div class="opcion-imagen" style="background-image: url({{asset('img/destinos/mazatlan/recomendacion/donde-1.jpg')}})"></div>
+                       
+                        <li data-toggle="modal" data-target="#exampleModalScrollable">
+                            <div data-toggle="modal" data-target="#myModal" class="opcion-imagen" style="background-image: url({{asset('img/destinos/mazatlan/recomendacion/donde-1.jpg')}})"></div>
                             <div class="opcion-info">
                                 <p class="opcion-nombre">La Marea</p>
                                 <p class="opcion-ubicacion">Restaurant</p>
@@ -251,8 +252,35 @@
                     </ul>
                 </div>
             </div>
-        </div>
+            
+            <!--MODAL-->
 
+              <!-- Modal--> 
+              <div style="margin-top:65px;" class="modal fade" id="exampleModalScrollable" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable" role="document" style="height:570px">
+          <div class="modal-content"  >
+              <div class="modal-header img-modal" style="background-image: url({{asset('img/destinos/mazatlan-01.jpeg')}});" >
+              </div>
+              <div class="modal-header" >
+                <h5 class="modal-title" id="exampleModalScrollableTitle">Modal title</h5>
+            </div>
+              <div class="modal-body">
+
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est natus pariatur itaque quisquam corporis debitis tempora, neque autem vel laudantium blanditiis sequi modi quis quae fugit cum magni reprehenderit repellendus.
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam maiores qui quos fuga, atque voluptate! Ut adipisci sunt quas, in laboriosam cumque sed, sequi blanditiis iste repudiandae nisi recusandae debitis.
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto tempora debitis dolor ipsam, eum necessitatibus officia nostrum quod provident veniam facilis cupiditate aliquid consequatur! Beatae aspernatur nulla veniam repudiandae fugit!
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, quam distinctio dicta delectus eum est culpa non fugit accusamus, rerum nostrum iste provident atque, ea dolorem. Consectetur ullam consequuntur similique.
+                  </p>
+              </div>
+              <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+              </div>
+          </div>
+      </div>
+  </div>
+  </div>
+        </div>
         <!-- Tours -->
         <div id="seccion-tours">
             <h2>Tours</h2>
@@ -398,6 +426,7 @@
     <script src="{{asset('js/menu.js')}}"></script>
     <script src="{{asset('js/swiper.js')}}"></script>
     <script src="{{asset('js/gallery.js')}}"></script>
+    <script src="{{asset('js/app.js')}}"></script>
     <script>
         baguetteBox.run('.tz-gallery');
         var mySwiper = new Swiper ('.swiper-container', {
