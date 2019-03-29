@@ -271,7 +271,7 @@ body{
     margin-left: 20px;
 }
 .opcion-nombre{
-    text-align: left; font-size: 18px; font-family: "Neue Haas Bold"; color: #000000;
+    text-align: left; font-size: 18px; font-family: "Neue Haas Bold"; color: #000000;    margin-bottom: .5em;
 }
 .opcion-ubicacion{
     text-align: left; font-size: 18px; font-family: "Neue Haas"; color: #000000;
