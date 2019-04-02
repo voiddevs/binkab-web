@@ -181,37 +181,39 @@
 
           <!-- ¿A dónde ir? -->
           <div id="seccion-adondeir">
-            <h2>¿A dónde ir?</h2>
-            <div class="row">
+               <h2>¿A dónde ir?</h2>
+                <div class="row">
                 <div class="col-sm-12 col-md-12 col-lg-4">
                     <img id="img-adondeir" src="{{asset('img/destinos/mazatlan/catedral-degradado.png')}}" alt="Catedral Mazatlán">
                 </div>
                 <div class="col-sm-12 col-md-6 col-lg-4">
                     <ul>
-                       
-                        <li data-toggle="modal" data-target="#exampleModalScrollable">
+                       <!--La Marea-->
+                        <li data-toggle="modal" data-target="#laMarea">
                             <div data-toggle="modal" data-target="#myModal" class="opcion-imagen" style="background-image: url({{asset('img/destinos/mazatlan/recomendacion/donde-1.jpg')}})"></div>
                             <div class="opcion-info">
                                 <p class="opcion-nombre">La Marea</p>
                                 <p class="opcion-ubicacion">Restaurant</p>
                             </div>
                         </li>
-                        <li>
-                            <div class="opcion-imagen" style="background-image: url({{asset('img/destinos/mazatlan/recomendacion/donde-2.jpg')}})"></div>
+                        
+                        <!--Acuario-->
+                        <li data-toggle="modal" data-target="#acuario">
+                            <div data-toggle="modal" data-target="#myModal" class="opcion-imagen" style="background-image: url({{asset('img/destinos/mazatlan/recomendacion/donde-2.jpg')}})"></div>
                             <div class="opcion-info">
                                 <p class="opcion-nombre">Acuario Mazatlán</p>
                                 <p class="opcion-ubicacion">Recreación</p>
                             </div>
                         </li>
-                        <li>
-                            <div class="opcion-imagen" style="background-image: url({{asset('img/destinos/mazatlan/recomendacion/donde-3.jpg')}})"></div>
+                        <li data-toggle="modal" data-target="#machado">
+                            <div data-toggle="modal" data-target="#myModal" class="opcion-imagen" style="background-image: url({{asset('img/destinos/mazatlan/recomendacion/donde-3.jpg')}})"></div>
                             <div class="opcion-info">
                                 <p class="opcion-nombre">Plaza Machado</p>
                                 <p class="opcion-ubicacion">Recreación</p>
                             </div>
                         </li>
-                        <li>
-                            <div class="opcion-imagen" style="background-image: url({{asset('img/destinos/mazatlan/recomendacion/donde-4.jpg')}})"></div>
+                        <li data-toggle="modal" data-target="#mazagua">
+                            <div data-toggle="modal" data-target="#myModal" class="opcion-imagen" style="background-image: url({{asset('img/destinos/mazatlan/recomendacion/donde-4.jpg')}})"></div>
                             <div class="opcion-info">
                                 <p class="opcion-nombre">Mazagua</p>
                                 <p class="opcion-ubicacion">Parque</p>
@@ -221,29 +223,29 @@
                 </div>
                 <div class="col-sm-12 col-md-6 col-lg-4">
                     <ul>
-                        <li>
-                            <div class="opcion-imagen" style="background-image: url({{asset('img/destinos/mazatlan/recomendacion/donde-5.jpg')}})"></div>
+                        <li data-toggle="modal" data-target="#presidio">
+                            <div data-toggle="modal" data-target="#myModal" class="opcion-imagen" style="background-image: url({{asset('img/destinos/mazatlan/recomendacion/donde-5.jpg')}})"></div>
                             <div class="opcion-info">
                                 <p class="opcion-nombre">Presidio</p>
                                 <p class="opcion-ubicacion">Restaurant</p>
                             </div>
                         </li>
-                        <li>
-                            <div class="opcion-imagen" style="background-image: url({{asset('img/destinos/mazatlan/recomendacion/donde-6.jpg')}})"></div>
+                        <li data-toggle="modal" data-target="#classico">
+                            <div data-toggle="modal" data-target="#myModal" class="opcion-imagen" style="background-image: url({{asset('img/destinos/mazatlan/recomendacion/donde-6.jpg')}})"></div>
                             <div class="opcion-info">
                                 <p class="opcion-nombre">Classico</p>
                                 <p class="opcion-ubicacion">Nocturno</p>
                             </div>
                         </li>
-                        <li>
-                            <div class="opcion-imagen" style="background-image: url({{asset('img/destinos/mazatlan/recomendacion/donde-7.jpg')}})"></div>
+                        <li data-toggle="modal" data-target="#angelaPeralta">
+                            <div data-toggle="modal" data-target="#myModal" class="opcion-imagen" style="background-image: url({{asset('img/destinos/mazatlan/recomendacion/donde-7.jpg')}})"></div>
                             <div class="opcion-info">
                                 <p class="opcion-nombre">Ángela Peralta</p>
                                 <p class="opcion-ubicacion">Cultural</p>
                             </div>
                         </li>
-                        <li>
-                            <div class="opcion-imagen" style="background-image: url({{asset('img/destinos/mazatlan/recomendacion/donde-8.jpg')}})"></div>
+                        <li data-toggle="modal" data-target="#catedral">
+                            <div data-toggle="modal" data-target="#myModal" class="opcion-imagen" style="background-image: url({{asset('img/destinos/mazatlan/recomendacion/donde-8.jpg')}})"></div>
                             <div class="opcion-info">
                                 <p class="opcion-nombre">Catedral</p>
                                 <p class="opcion-ubicacion">Cultural</p>
@@ -254,32 +256,174 @@
             </div>
             
             <!--MODAL-->
-
-              <!-- Modal--> 
-              <div style="margin-top:65px;" class="modal fade" id="exampleModalScrollable" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-scrollable" role="document" style="height:570px">
-          <div class="modal-content"  >
-              <div class="modal-header img-modal" style="background-image: url({{asset('img/destinos/mazatlan-01.jpeg')}});" >
-              </div>
-              <div class="modal-header" >
-                <h5 class="modal-title" id="exampleModalScrollableTitle">Modal title</h5>
+            
+            <!--La marea-->
+            <div style="margin-top:65px;" class="modal fade" id="laMarea" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+               
+                <div class="modal-dialog modal-dialog-scrollable" role="document" style="height:570px">
+                    <div class="modal-content"  >
+                        <div class="modal-header img-modal" style="background-image: url({{asset('img/destinos/mazatlan/recomendacion/donde-1.jpg')}});" >
+                            <button type="button" class="close" data-dismiss="modal"><img class="img-close" src="{{asset('img/close.png')}}" alt=""></button>
+                        </div>
+                        <div class="modal-header" >
+                            <h5 class="modal-title" id="exampleModalScrollableTitle">Modal title</h5>
+                        </div>
+                        <div class="modal-body">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est natus pariatur itaque quisquam corporis debitis tempora, neque autem vel laudantium blanditiis sequi modi quis quae fugit cum magni reprehenderit repellendus.
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam maiores qui quos fuga, atque voluptate! Ut adipisci sunt quas, in laboriosam cumque sed, sequi blanditiis iste repudiandae nisi recusandae debitis.
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
-              <div class="modal-body">
-
-                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est natus pariatur itaque quisquam corporis debitis tempora, neque autem vel laudantium blanditiis sequi modi quis quae fugit cum magni reprehenderit repellendus.
-                      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam maiores qui quos fuga, atque voluptate! Ut adipisci sunt quas, in laboriosam cumque sed, sequi blanditiis iste repudiandae nisi recusandae debitis.
-                      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto tempora debitis dolor ipsam, eum necessitatibus officia nostrum quod provident veniam facilis cupiditate aliquid consequatur! Beatae aspernatur nulla veniam repudiandae fugit!
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, quam distinctio dicta delectus eum est culpa non fugit accusamus, rerum nostrum iste provident atque, ea dolorem. Consectetur ullam consequuntur similique.
-                  </p>
-              </div>
-              <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                  <button type="button" class="btn btn-primary">Save changes</button>
-              </div>
-          </div>
-      </div>
-  </div>
-  </div>
+            
+            <!--Acuario-->
+            <div style="margin-top:65px;" class="modal fade" id="acuario" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+               
+                <div class="modal-dialog modal-dialog-scrollable" role="document" style="height:570px">
+                    <div class="modal-content"  >
+                       
+                        <div class="modal-header img-modal" style="background-image: url({{asset('img/destinos/mazatlan/recomendacion/donde-2.jpg')}});" >
+                            <button type="button" class="close" data-dismiss="modal"><img class="img-close" src="{{asset('img/close.png')}}" alt=""></button>
+                        </div>
+                        <div class="modal-header" >
+                            <h5 class="modal-title" id="exampleModalScrollableTitle">Modal title</h5>
+                        </div>
+                        <div class="modal-body">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est natus pariatur itaque quisquam corporis debitis tempora, neque autem vel laudantium blanditiis sequi modi quis quae fugit cum magni reprehenderit repellendus.
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam maiores qui quos fuga, atque voluptate! Ut adipisci sunt quas, in laboriosam cumque sed, sequi blanditiis iste repudiandae nisi recusandae debitis.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!--Machado-->
+            <div style="margin-top:65px;" class="modal fade" id="machado" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+               
+                <div class="modal-dialog modal-dialog-scrollable" role="document" style="height:570px">
+                    <div class="modal-content"  >
+                        <div class="modal-header img-modal" style="background-image: url({{asset('img/destinos/mazatlan/recomendacion/donde-3.jpg')}});" >
+                            <button type="button" class="close" data-dismiss="modal"><img class="img-close" src="{{asset('img/close.png')}}" alt=""></button>
+                        </div>
+                        <div class="modal-header" >
+                            <h5 class="modal-title" id="exampleModalScrollableTitle">Modal title</h5>
+                        </div>
+                        <div class="modal-body">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est natus pariatur itaque quisquam corporis debitis tempora, neque autem vel laudantium blanditiis sequi modi quis quae fugit cum magni reprehenderit repellendus.
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam maiores qui quos fuga, atque voluptate! Ut adipisci sunt quas, in laboriosam cumque sed, sequi blanditiis iste repudiandae nisi recusandae debitis.
+                            
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!--Mazagua-->
+            <div style="margin-top:65px;" class="modal fade" id="mazagua" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+               
+                <div class="modal-dialog modal-dialog-scrollable" role="document" style="height:570px">
+                    <div class="modal-content"  >
+                        <div class="modal-header img-modal" style="background-image: url({{asset('img/destinos/mazatlan/recomendacion/donde-4.jpg')}});" >
+                            <button type="button" class="close" data-dismiss="modal"><img class="img-close" src="{{asset('img/close.png')}}" alt=""></button>
+                        </div>
+                        <div class="modal-header" >
+                            <h5 class="modal-title" id="exampleModalScrollableTitle">Modal title</h5>
+                        </div>
+                        <div class="modal-body">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est natus pariatur itaque quisquam corporis debitis tempora, neque autem vel laudantium blanditiis sequi modi quis quae fugit cum magni reprehenderit repellendus.
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam maiores qui quos fuga, atque voluptate! Ut adipisci sunt quas, in laboriosam cumque sed, sequi blanditiis iste repudiandae nisi recusandae debitis.
+                            
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!--Presidio-->
+            <div style="margin-top:65px;" class="modal fade" id="presidio" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+               
+                <div class="modal-dialog modal-dialog-scrollable" role="document" style="height:570px">
+                    <div class="modal-content"  >
+                        <div class="modal-header img-modal" style="background-image: url({{asset('img/destinos/mazatlan/recomendacion/donde-5.jpg')}});" >
+                            <button type="button" class="close" data-dismiss="modal"><img class="img-close" src="{{asset('img/close.png')}}" alt=""></button>
+                        </div>
+                        <div class="modal-header" >
+                            <h5 class="modal-title" id="exampleModalScrollableTitle">Modal title</h5>
+                        </div>
+                        <div class="modal-body">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est natus pariatur itaque quisquam corporis debitis tempora, neque autem vel laudantium blanditiis sequi modi quis quae fugit cum magni reprehenderit repellendus.
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam maiores qui quos fuga, atque voluptate! Ut adipisci sunt quas, in laboriosam cumque sed, sequi blanditiis iste repudiandae nisi recusandae debitis.
+                            
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!--Classico-->
+            <div style="margin-top:65px;" class="modal fade" id="classico" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+               
+                <div class="modal-dialog modal-dialog-scrollable" role="document" style="height:570px">
+                    <div class="modal-content"  >
+                        <div class="modal-header img-modal" style="background-image: url({{asset('img/destinos/mazatlan/recomendacion/donde-6.jpg')}});" >
+                            <button type="button" class="close" data-dismiss="modal"><img class="img-close" src="{{asset('img/close.png')}}" alt=""></button>
+                        </div>
+                        <div class="modal-header" >
+                            <h5 class="modal-title" id="exampleModalScrollableTitle">Modal title</h5>
+                        </div>
+                        <div class="modal-body">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est natus pariatur itaque quisquam corporis debitis tempora, neque autem vel laudantium blanditiis sequi modi quis quae fugit cum magni reprehenderit repellendus.
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam maiores qui quos fuga, atque voluptate! Ut adipisci sunt quas, in laboriosam cumque sed, sequi blanditiis iste repudiandae nisi recusandae debitis.
+                            
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!--Angela Peralta-->
+            <div style="margin-top:65px;" class="modal fade" id="angelaPeralta" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+               
+                <div class="modal-dialog modal-dialog-scrollable" role="document" style="height:570px">
+                    <div class="modal-content"  >
+                        <div class="modal-header img-modal" style="background-image: url({{asset('img/destinos/mazatlan/recomendacion/donde-7.jpg')}});" >
+                            <button type="button" class="close" data-dismiss="modal"><img class="img-close" src="{{asset('img/close.png')}}" alt=""></button>
+                        </div>
+                        <div class="modal-header" >
+                            <h5 class="modal-title" id="exampleModalScrollableTitle">Modal title</h5>
+                        </div>
+                        <div class="modal-body">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est natus pariatur itaque quisquam corporis debitis tempora, neque autem vel laudantium blanditiis sequi modi quis quae fugit cum magni reprehenderit repellendus.
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam maiores qui quos fuga, atque voluptate! Ut adipisci sunt quas, in laboriosam cumque sed, sequi blanditiis iste repudiandae nisi recusandae debitis.
+                            
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!--Catedral-->
+            <div style="margin-top:65px;" class="modal fade" id="catedral" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+               
+                <div class="modal-dialog modal-dialog-scrollable" role="document" style="height:570px">
+                    <div class="modal-content"  >
+                        <div class="modal-header img-modal" style="background-image: url({{asset('img/destinos/mazatlan/recomendacion/donde-8.jpg')}});" >
+                            <button type="button" class="close" data-dismiss="modal"><img class="img-close" src="{{asset('img/close.png')}}" alt=""></button>
+                        </div>
+                        <div class="modal-header" >
+                            <h5 class="modal-title" id="exampleModalScrollableTitle">Modal title</h5>
+                        </div>
+                        <div class="modal-body">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est natus pariatur itaque quisquam corporis debitis tempora, neque autem vel laudantium blanditiis sequi modi quis quae fugit cum magni reprehenderit repellendus.
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam maiores qui quos fuga, atque voluptate! Ut adipisci sunt quas, in laboriosam cumque sed, sequi blanditiis iste repudiandae nisi recusandae debitis.
+                            
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
         </div>
         <!-- Tours -->
         <div id="seccion-tours">
