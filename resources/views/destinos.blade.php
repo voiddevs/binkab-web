@@ -30,7 +30,13 @@
                             <li><a href="/" class="link-home">Inicio</a></li>
                             <li><a href="/destinos" class="link-home">Destinos</a></li>
                             <li><a href="/nosotros" class="link-home">Nosotros</a></li>
-                            <li><a href="/login" class="link-homelog">Ingresar</a></li>
+                            @guest
+                            @if (Route::has('register'))
+                                <li><a href="/login" class="link-homelog">Ingresar</a></li>
+                            @endif
+                            @else
+                                <li><a href="/home" class="link-homelog">{{ Auth::user()->name }}</a></li>
+                            @endguest
                         </ul>
                     </nav>
                 </div>
@@ -44,6 +50,7 @@
             </div>
             <hr class="divisor-home">
         </header>
+        
 
         <nav id="menu">
             <h2>Menú</h2>
@@ -51,7 +58,14 @@
                 <li><a href="/" class="hvr-underline-from-left">Inicio <i class="fas fa-home"></i></a></li>
                 <li><a href="/destinos" class="hvr-underline-from-left">Destinos <i class="fas fa-map-marked-alt"></i></a></li>
                 <li><a href="/nosotros" class="hvr-underline-from-left">Nosotros <i class="fas fa-users"></i></a></li>
-                <li><a href="/login" class="hvr-underline-from-left">Ingresar <i class="fas fa-sign-in-alt"></i></a></li>
+                @guest
+                @if (Route::has('register'))
+                    <li><a href="/login" class="hvr-underline-from-left">Ingresar <i class="fas fa-sign-in-alt"></i></a></li>
+                @endif
+                @else
+                    <li><a href="/home" class="hvr-underline-from-left">{{ Auth::user()->name }} <i class="fas fa-sign-in-alt"></i></a></li>
+                @endguest
+                
             </ul>
         </nav>
         
