@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Home - BinKab</title>
+    <title>Inicio - BinKab</title>
 
     <link rel="stylesheet" href="{{asset('css/basics.css')}}">
     <link rel="stylesheet" href="{{asset('css/app.css')}}">
@@ -31,7 +31,14 @@
                             <li><a href="/" class="link-home">Inicio</a></li>
                             <li><a href="/destinos" class="link-home">Destinos</a></li>
                             <li><a href="/nosotros" class="link-home">Nosotros</a></li>
-                            <li><a href="/login" class="link-homelog">Ingresar</a></li>
+                            @guest
+                            @if (Route::has('register'))
+                                <li><a href="/login" class="link-homelog">Ingresar</a></li>
+                            @endif
+                        @else
+                            <li><a href="/home" class="link-homelog">{{ Auth::user()->name }}</a></li>
+                        @endguest
+                            
                         </ul>
                     </nav>
                 </div>
