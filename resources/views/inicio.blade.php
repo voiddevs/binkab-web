@@ -187,9 +187,9 @@
         <div id="seccion-eventos">
             <h2>Eventos</h2>
             <div class="row">
-                <div class="col-sm-6 col-md-6 col-lg-3">
-                    <div class="evento" style="background-image: url({{asset('img/eventos/mazatlan/eventos-1.jpg')}})">
-                        <p>Semana de la moto</p>
+            <div class="col-sm-6 col-md-6 col-lg-3">
+                    <div class="evento" style="background-image: url({{asset('img/eventos/monterrey/eventos-1.jpg')}})">
+                        <p>Pa'l Norte</p>
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-6 col-lg-3">
@@ -208,13 +208,13 @@
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-6 col-lg-3">
-                    <div class="evento" style="background-image: url({{asset('img/eventos/mazatlan/eventos-5.jpg')}})">
-                        <p>Maratón</p>
+                    <div class="evento" style="background-image: url({{asset('img/eventos/monterrey/eventos-6.jpg')}})">
+                        <p>Abierto GNP</p>
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-6 col-lg-3">
-                    <div class="evento" style="background-image: url({{asset('img/eventos/mazatlan/eventos-6.jpg')}})">
-                        <p>Triatlón</p>
+                    <div class="evento" style="background-image: url({{asset('img/eventos/mazatlan/eventos-5.jpg')}})">
+                        <p>Maratón</p>
                     </div>
                 </div>
             </div>
