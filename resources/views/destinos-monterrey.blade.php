@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Mazatlán - BinKab</title>
+    <title>Monterrey - BinKab</title>
 
     <link rel="stylesheet" href="{{asset('css/basics.css')}}">
     <link rel="stylesheet" href="{{asset('css/destino.css')}}">
@@ -73,30 +73,30 @@
         <!-- Slider main container -->
         <div class="swiper-container">
             <div id="title-destino">
-                <h1>Mazatlán</h1>
-                <p>Sinaloa, México</p>
+                <h1>Monterrey</h1>
+                <p>Nuevo León, México</p>
             </div>
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
                 <!-- Slides -->
                 <div class="swiper-slide">
-                    <div class="slide-seccion-destino" style="background-image: url({{asset('img/destinos/mazatlan/slide-1.jpg')}})"></div>
+                    <div class="slide-seccion-destino" style="background-image: url({{asset('img/destinos/monterrey/slide-1.jpg')}})"></div>
                     <p class="titulo-seccion">Turismo</p>
                 </div>
                 <div class="swiper-slide">
-                    <div class="slide-seccion-destino" style="background-image: url({{asset('img/destinos/mazatlan/slide-2.jpg')}})"></div>
+                    <div class="slide-seccion-destino" style="background-image: url({{asset('img/destinos/monterrey/slide-2.jpg')}})"></div>
                     <p class="titulo-seccion">Comida</p>
                 </div>
                 <div class="swiper-slide">
-                    <div class="slide-seccion-destino" style="background-image: url({{asset('img/destinos/mazatlan/slide-3.jpg')}})"></div>
+                    <div class="slide-seccion-destino" style="background-image: url({{asset('img/destinos/monterrey/slide-3.jpg')}})"></div>
                     <p class="titulo-seccion">Cultural</p>
                 </div>
                 <div class="swiper-slide">
-                    <div class="slide-seccion-destino" style="background-image: url({{asset('img/destinos/mazatlan/slide-4.jpg')}})"></div>
+                    <div class="slide-seccion-destino" style="background-image: url({{asset('img/destinos/monterrey/slide-4.jpg')}})"></div>
                     <p class="titulo-seccion">Deportes</p>
                 </div>
                 <div class="swiper-slide">
-                    <div class="slide-seccion-destino" style="background-image: url({{asset('img/destinos/mazatlan/slide-5.jpg')}})"></div>
+                    <div class="slide-seccion-destino" style="background-image: url({{asset('img/destinos/monterrey/slide-5.jpg')}})"></div>
                     <p class="titulo-seccion">Entretenimiento</p>
                 </div>
             </div>
@@ -154,7 +154,7 @@
         </div>
     
         <!-- Parallax -->
-        <div style="background-image:url({{asset('img/destinos/mazatlan/parallax.jpg')}});" class="parallax-destino"><div class="filtro-destino"></div></div>
+        <div style="background-image:url({{asset('img/destinos/monterrey/parallax.jpg')}});" class="parallax-destino"><div class="filtro-destino"></div></div>
 
         <!-- Eventos del destino -->
         <div id="seccion-eventos">
@@ -205,8 +205,8 @@
                        <!--La Marea-->
                         <li data-toggle="modal" data-target="#laMarea">
                             <div data-toggle="modal" data-target="#myModal" class="opcion-imagen" style="background-image: url({{asset('img/destinos/mazatlan/recomendacion/donde-1.jpg')}})"></div>
-                            <div class="opcion-info hvr-forward">
-                                <p class="opcion-nombre ">La Marea</p>
+                            <div class="opcion-info">
+                                <p class="opcion-nombre">La Marea</p>
                                 <p class="opcion-ubicacion">Restaurant</p>
                             </div>
                         </li>
@@ -214,21 +214,21 @@
                         <!--Acuario-->
                         <li data-toggle="modal" data-target="#acuario">
                             <div data-toggle="modal" data-target="#myModal" class="opcion-imagen" style="background-image: url({{asset('img/destinos/mazatlan/recomendacion/donde-2.jpg')}})"></div>
-                            <div class="opcion-info hvr-forward">
+                            <div class="opcion-info">
                                 <p class="opcion-nombre">Acuario Mazatlán</p>
                                 <p class="opcion-ubicacion">Recreación</p>
                             </div>
                         </li>
                         <li data-toggle="modal" data-target="#machado">
                             <div data-toggle="modal" data-target="#myModal" class="opcion-imagen" style="background-image: url({{asset('img/destinos/mazatlan/recomendacion/donde-3.jpg')}})"></div>
-                            <div class="opcion-info hvr-forward">
+                            <div class="opcion-info">
                                 <p class="opcion-nombre">Plaza Machado</p>
                                 <p class="opcion-ubicacion">Recreación</p>
                             </div>
                         </li>
                         <li data-toggle="modal" data-target="#mazagua">
                             <div data-toggle="modal" data-target="#myModal" class="opcion-imagen" style="background-image: url({{asset('img/destinos/mazatlan/recomendacion/donde-4.jpg')}})"></div>
-                            <div class="opcion-info hvr-forward">
+                            <div class="opcion-info">
                                 <p class="opcion-nombre">Mazagua</p>
                                 <p class="opcion-ubicacion">Parque</p>
                             </div>
@@ -239,28 +239,28 @@
                     <ul>
                         <li data-toggle="modal" data-target="#presidio">
                             <div data-toggle="modal" data-target="#myModal" class="opcion-imagen" style="background-image: url({{asset('img/destinos/mazatlan/recomendacion/donde-5.jpg')}})"></div>
-                            <div class="opcion-info hvr-forward">
+                            <div class="opcion-info">
                                 <p class="opcion-nombre">Presidio</p>
                                 <p class="opcion-ubicacion">Restaurant</p>
                             </div>
                         </li>
                         <li data-toggle="modal" data-target="#classico">
                             <div data-toggle="modal" data-target="#myModal" class="opcion-imagen" style="background-image: url({{asset('img/destinos/mazatlan/recomendacion/donde-6.jpg')}})"></div>
-                            <div class="opcion-info hvr-forward">
+                            <div class="opcion-info">
                                 <p class="opcion-nombre">Classico</p>
                                 <p class="opcion-ubicacion">Nocturno</p>
                             </div>
                         </li>
                         <li data-toggle="modal" data-target="#angelaPeralta">
                             <div data-toggle="modal" data-target="#myModal" class="opcion-imagen" style="background-image: url({{asset('img/destinos/mazatlan/recomendacion/donde-7.jpg')}})"></div>
-                            <div class="opcion-info hvr-forward">
+                            <div class="opcion-info">
                                 <p class="opcion-nombre">Ángela Peralta</p>
                                 <p class="opcion-ubicacion">Cultural</p>
                             </div>
                         </li>
                         <li data-toggle="modal" data-target="#catedral">
                             <div data-toggle="modal" data-target="#myModal" class="opcion-imagen" style="background-image: url({{asset('img/destinos/mazatlan/recomendacion/donde-8.jpg')}})"></div>
-                            <div class="opcion-info hvr-forward">
+                            <div class="opcion-info">
                                 <p class="opcion-nombre">Catedral</p>
                                 <p class="opcion-ubicacion">Cultural</p>
                             </div>
@@ -510,63 +510,63 @@
             <div class="tz-gallery">
                 <div class="row">
                     <div class="col-sm-6 col-md-4 col-lg-3">
-                        <a class="lightbox" href="{{asset('img/destinos/mazatlan/galeria/MAZ-1.jpg')}}">
-                            <div class="imagen-galeria" style="background-image: url({{asset('img/destinos/mazatlan/galeria/MAZ-1.jpg')}})"></div>
+                        <a class="lightbox" href="{{asset('img/destinos/monterrey/galeria/MON-1.jpg')}}">
+                            <div class="imagen-galeria" style="background-image: url({{asset('img/destinos/monterrey/galeria/MON-1.jpg')}})"></div>
                         </a>
                     </div>
                     <div class="col-sm-6 col-md-4 col-lg-3">
-                        <a class="lightbox" href="{{asset('img/destinos/mazatlan/galeria/MAZ-2.jpg')}}">
-                            <div class="imagen-galeria" style="background-image: url({{asset('img/destinos/mazatlan/galeria/MAZ-2.jpg')}})"></div>
+                        <a class="lightbox" href="{{asset('img/destinos/monterrey/galeria/MON-2.jpg')}}">
+                            <div class="imagen-galeria" style="background-image: url({{asset('img/destinos/monterrey/galeria/MON-2.jpg')}})"></div>
                         </a>
                     </div>
                     <div class="col-sm-6 col-md-4 col-lg-3">
-                        <a class="lightbox" href="{{asset('img/destinos/mazatlan/galeria/MAZ-6.jpg')}}">
-                            <div class="imagen-galeria" style="background-image: url({{asset('img/destinos/mazatlan/galeria/MAZ-6.jpg')}})"></div>
+                        <a class="lightbox" href="{{asset('img/destinos/monterrey/galeria/MON-3.jpg')}}">
+                            <div class="imagen-galeria" style="background-image: url({{asset('img/destinos/monterrey/galeria/MON-3.jpg')}})"></div>
                         </a>
                     </div>
                     <div class="col-sm-6 col-md-4 col-lg-3">
-                        <a class="lightbox" href="{{asset('img/destinos/mazatlan/galeria/MAZ-4.jpg')}}">
-                            <div class="imagen-galeria" style="background-image: url({{asset('img/destinos/mazatlan/galeria/MAZ-4.jpg')}})"></div>
+                        <a class="lightbox" href="{{asset('img/destinos/monterrey/galeria/MON-4.jpg')}}">
+                            <div class="imagen-galeria" style="background-image: url({{asset('img/destinos/monterrey/galeria/MON-4.jpg')}})"></div>
                         </a>
                     </div>
                     <div class="col-sm-6 col-md-4 col-lg-3">
-                        <a class="lightbox" href="{{asset('img/destinos/mazatlan/galeria/MAZ-5.jpg')}}">
-                            <div class="imagen-galeria" style="background-image: url({{asset('img/destinos/mazatlan/galeria/MAZ-5.jpg')}})"></div>
-                        </a>
-                    </div> 
-                    <div class="col-sm-6 col-md-4 col-lg-3">
-                        <a class="lightbox" href="{{asset('img/destinos/mazatlan/galeria/MAZ-7.jpg')}}">
-                            <div class="imagen-galeria" style="background-image: url({{asset('img/destinos/mazatlan/galeria/MAZ-7.jpg')}})"></div>
+                        <a class="lightbox" href="{{asset('img/destinos/monterrey/galeria/MON-5.jpg')}}">
+                            <div class="imagen-galeria" style="background-image: url({{asset('img/destinos/monterrey/galeria/MON-5.jpg')}})"></div>
                         </a>
                     </div>
                     <div class="col-sm-6 col-md-4 col-lg-3">
-                        <a class="lightbox" href="{{asset('img/destinos/mazatlan/galeria/MAZ-8.jpg')}}">
-                            <div class="imagen-galeria" style="background-image: url({{asset('img/destinos/mazatlan/galeria/MAZ-8.jpg')}})"></div>
+                        <a class="lightbox" href="{{asset('img/destinos/monterrey/galeria/MON-6.jpg')}}">
+                            <div class="imagen-galeria" style="background-image: url({{asset('img/destinos/monterrey/galeria/MON-6.jpg')}})"></div>
                         </a>
                     </div>
                     <div class="col-sm-6 col-md-4 col-lg-3">
-                        <a class="lightbox" href="{{asset('img/destinos/mazatlan/galeria/MAZ-9.jpg')}}">
-                            <div class="imagen-galeria" style="background-image: url({{asset('img/destinos/mazatlan/galeria/MAZ-9.jpg')}})"></div>
+                        <a class="lightbox" href="{{asset('img/destinos/monterrey/galeria/MON-7.jpg')}}">
+                            <div class="imagen-galeria" style="background-image: url({{asset('img/destinos/monterrey/galeria/MON-7.jpg')}})"></div>
                         </a>
                     </div>
                     <div class="col-sm-6 col-md-4 col-lg-3">
-                        <a class="lightbox" href="{{asset('img/destinos/mazatlan/galeria/MAZ-10.jpg')}}">
-                            <div class="imagen-galeria" style="background-image: url({{asset('img/destinos/mazatlan/galeria/MAZ-10.jpg')}})"></div>
+                        <a class="lightbox" href="{{asset('img/destinos/monterrey/galeria/MON-8.jpg')}}">
+                            <div class="imagen-galeria" style="background-image: url({{asset('img/destinos/monterrey/galeria/MON-8.jpg')}})"></div>
                         </a>
                     </div>
                     <div class="col-sm-6 col-md-4 col-lg-3">
-                        <a class="lightbox" href="{{asset('img/destinos/mazatlan/galeria/MAZ-11.jpg')}}">
-                            <div class="imagen-galeria" style="background-image: url({{asset('img/destinos/mazatlan/galeria/MAZ-11.jpg')}})"></div>
+                        <a class="lightbox" href="{{asset('img/destinos/monterrey/galeria/MON-9.jpg')}}">
+                            <div class="imagen-galeria" style="background-image: url({{asset('img/destinos/monterrey/galeria/MON-9.jpg')}})"></div>
                         </a>
                     </div>
                     <div class="col-sm-6 col-md-4 col-lg-3">
-                        <a class="lightbox" href="{{asset('img/destinos/mazatlan/galeria/MAZ-12.jpg')}}">
-                            <div class="imagen-galeria" style="background-image: url({{asset('img/destinos/mazatlan/galeria/MAZ-12.jpg')}})"></div>
+                        <a class="lightbox" href="{{asset('img/destinos/monterrey/galeria/MON-10.jpg')}}">
+                            <div class="imagen-galeria" style="background-image: url({{asset('img/destinos/monterrey/galeria/MON-10.jpg')}})"></div>
                         </a>
                     </div>
                     <div class="col-sm-6 col-md-4 col-lg-3">
-                        <a class="lightbox" href="{{asset('img/destinos/mazatlan/galeria/MAZ-13.jpg')}}">
-                            <div class="imagen-galeria" style="background-image: url({{asset('img/destinos/mazatlan/galeria/MAZ-13.jpg')}})"></div>
+                        <a class="lightbox" href="{{asset('img/destinos/monterrey/galeria/MON-11.jpg')}}">
+                            <div class="imagen-galeria" style="background-image: url({{asset('img/destinos/monterrey/galeria/MON-11.jpg')}})"></div>
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <a class="lightbox" href="{{asset('img/destinos/monterrey/galeria/MON-12.jpg')}}">
+                            <div class="imagen-galeria" style="background-image: url({{asset('img/destinos/monterrey/galeria/MON-12.jpg')}})"></div>
                         </a>
                     </div>
                 </div>

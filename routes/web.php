@@ -27,6 +27,14 @@ Route::get('/destinos/mazatlan', function () {
     return view('destinos-mazatlan');
 });
 
+Route::get('/destinos/monterrey', function () {
+    return view('destinos-monterrey');
+});
+
+Route::get('/destinos/guanajuato', function () {
+    return view('destinos-guanajuato');
+});
+
 Route::get('/login', function () {
     return view('auth.login');
 });
@@ -35,3 +43,8 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
+Route::get('passwords/email','Auth\PasswordController@getEmail');
+Route::post('passwords/email', 'Auth\PasswordController@postEmail');
+
+Route::get('passwords/reset/{token}', 'Auth\PasswordController@getReset');
+Route::post('passwords/reset', 'Auth\PasswordController@postReset');
