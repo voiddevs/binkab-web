@@ -44,8 +44,9 @@ Route::get('/destinos/mazatlan', function () {
 });
 
 //Paginas dinamicas
-Route::get('/lugares-dinamicos', 'lugares@index');
+Route::get('/lugares-dinamicos/{id}', 'lugares@index');
 Route::get('/lugares-admin', 'lugares@indexFull');
+Route::get('/vista-actividades/{id}', 'lugares@indexJoin');
 // Route::get('/lugares-dinamicos', 'productos@index');
 // Route::get('/lugares-dinamicos', 'fotografias@index');
 // Route::get('/lugares-dinamicos', 'lugares@index');

@@ -7,23 +7,22 @@ use App\Http\Requests;
 use App\Lugar;
 
 use Illuminate\Http\Request;
-// $idClient=0;
 class Lugares extends Controller
 {
-    // private $idClient=0;
+
     
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index($id)
     {
         // $lugar=new Lugar();
         // $data=$lugar::where('id_usuario', '=', 1)->get();
         // return view('actividades', compact('data'));
         $lugar=new Lugar();
-        $dataLugares=$lugar::where('id_categoria', '=', 4)->where('status', '=', 1)->join('telefonos_lugar','lugares.id','=','telefonos_lugar.id_negocio')->get();
+        $dataLugares=$lugar::where('id_categoria', '=', $id)->where('status', '=', 1)->join('telefonos_lugar','lugares.id','=','telefonos_lugar.id_negocio')->get();
         return view('lugares-dinamicos', compact('dataLugares'));
     }
 
@@ -130,5 +129,17 @@ class Lugares extends Controller
         $lugar=new Lugar();
         $dataLugares=$lugar::where('id_categoria', '=', 4)->join('telefonos_lugar','lugares.id','=','telefonos_lugar.id_negocio')->get();
         return view('lugares-admin', compact('dataLugares'));
+    }
+
+    public function indexJoin($id)
+    {
+        // $lugar=new Lugar();
+        // $data=$lugar::where('id_usuario', '=', 1)->get();
+        // return view('actividades', compact('data'));
+        $lugar=new Lugar();
+        $dataLugares=$lugar::where('lugares.id', '=', $id)->join('fotografias','lugares.id','=','fotografias.id_lugar')->get();
+        $dataLugares2=$lugar::where('lugares.id', '=', $id)->join('actividades','lugares.id','=','actividades.id_lugar')->get();
+        echo ($id);
+        return view('vista-actividades', compact('dataLugares','dataLugares2'));
     }
 }

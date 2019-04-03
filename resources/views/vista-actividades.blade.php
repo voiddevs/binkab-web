@@ -13,9 +13,12 @@
 </head>
 <body ng-app="app">
     <div class="container" ng-controller="ctrl">
-    <h1>Vista Clientes</h1>
+    <h1>Vista Actividades</h1>
         <div id="contenedor-principal">
-        
+        <p>Fotografias</p>
+        </div>
+        <div id="contenedor-principal2">
+        <p>Actividades</p>
         </div>
 	</div>
     <script src="{{asset('js/angular.js')}}" type="text/javascript"></script>
@@ -25,26 +28,28 @@
     var app=angular.module('app',[]);
         app.controller('ctrl',function($scope, $http, $filter, $compile){ 
             $scope.lugares = {!! json_encode($dataLugares->toArray()) !!}
-            $scope.titulo="hola";
+            $scope.lugares2 = {!! json_encode($dataLugares2->toArray()) !!}
             console.log($scope.lugares);
-            $scope.lugarNombre= $scope.lugares[0].nombre
+            console.log($scope.lugares2);
+
             var myEl = angular.element( document.querySelector( '#contenedor-principal' ) );
+            var myEl2 = angular.element( document.querySelector( '#contenedor-principal2' ) );  
             for(var x=0; x<$scope.lugares.length;x++){
                 myEl.append(
                 '<div class="titulo">'+$scope.lugares[x].nombre+'</div>'
                 +'<div class="imagen">'+$scope.lugares[x].imagen+'</div>'
-                +'<div class="descripcion">'+$scope.lugares[x].descripcion+'</div>'
-                +'<div class="telefono">Telefono: '+$scope.lugares[x].telefono+'</div>'
-                +'<div class="ubicacion">'+$scope.lugares[x].ubicacion+'</div>'
+                // +'<div class="ubicacion">Estado:'+texto+'</div>'
                 ); 
-                myEl.append($compile(
-                    "<form action='/vista-actividades/"+$scope.lugares[x].id+"' method='get'>"
-                    +"<input  id='button"+x+"' type='submit' value='ver mas' class = 'btn btn-primary' ng-click='seeMore(1)'></input>"
-                    +"</form>"
-                    )($scope));
             }
 
-
+            for(var x=0; x<$scope.lugares2.length;x++){
+                myEl2.append(
+                '<div class="titulo">'+$scope.lugares2[x].nombre+'</div>'
+                +'<div class="imagen">'+$scope.lugares2[x].imagen+'</div>'
+                +'<div class="imagen">'+$scope.lugares2[x].descripcion+'</div>'
+                // +'<div class="ubicacion">Estado:'+texto+'</div>'
+                ); 
+            }
         });
         
 </script>

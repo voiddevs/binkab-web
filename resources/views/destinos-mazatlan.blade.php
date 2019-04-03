@@ -92,22 +92,22 @@
         <div id="menu-destino">
             <ul class="nav justify-content-center ">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Turismo</a>
+                    <a class="nav-link" href="/lugares-dinamicos/3">Turismo</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Comida</a>
+                    <a class="nav-link" href="/lugares-dinamicos/4">Comida</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Cultura</a>
+                    <a class="nav-link" href="/lugares-dinamicos/2">Cultura</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Deporte</a>
+                    <a class="nav-link" href="/lugares-dinamicos/1">Deporte</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Entretenimiento</a>
+                    <a class="nav-link" href="/lugares-dinamicos/5">Entretenimiento</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Souvenirs</a>
+                    <a class="nav-link" href="/lugares-dinamicos/6">Souvenirs</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Eventos</a>
