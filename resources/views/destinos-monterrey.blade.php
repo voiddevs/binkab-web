@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Mazatlán - BinKab</title>
+    <title>Monterrey - BinKab</title>
 
     <link rel="stylesheet" href="{{asset('css/basics.css')}}">
     <link rel="stylesheet" href="{{asset('css/destino.css')}}">
@@ -73,30 +73,30 @@
         <!-- Slider main container -->
         <div class="swiper-container">
             <div id="title-destino">
-                <h1>Mazatlán</h1>
-                <p>Sinaloa, México</p>
+                <h1>Monterrey</h1>
+                <p>Nuevo León, México</p>
             </div>
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
                 <!-- Slides -->
                 <div class="swiper-slide">
-                    <div class="slide-seccion-destino" style="background-image: url({{asset('img/destinos/mazatlan/slide-1.jpg')}})"></div>
+                    <div class="slide-seccion-destino" style="background-image: url({{asset('img/destinos/monterrey/slide-1.jpg')}})"></div>
                     <p class="titulo-seccion">Turismo</p>
                 </div>
                 <div class="swiper-slide">
-                    <div class="slide-seccion-destino" style="background-image: url({{asset('img/destinos/mazatlan/slide-2.jpg')}})"></div>
+                    <div class="slide-seccion-destino" style="background-image: url({{asset('img/destinos/monterrey/slide-2.jpg')}})"></div>
                     <p class="titulo-seccion">Comida</p>
                 </div>
                 <div class="swiper-slide">
-                    <div class="slide-seccion-destino" style="background-image: url({{asset('img/destinos/mazatlan/slide-3.jpg')}})"></div>
+                    <div class="slide-seccion-destino" style="background-image: url({{asset('img/destinos/monterrey/slide-3.jpg')}})"></div>
                     <p class="titulo-seccion">Cultural</p>
                 </div>
                 <div class="swiper-slide">
-                    <div class="slide-seccion-destino" style="background-image: url({{asset('img/destinos/mazatlan/slide-4.jpg')}})"></div>
+                    <div class="slide-seccion-destino" style="background-image: url({{asset('img/destinos/monterrey/slide-4.jpg')}})"></div>
                     <p class="titulo-seccion">Deportes</p>
                 </div>
                 <div class="swiper-slide">
-                    <div class="slide-seccion-destino" style="background-image: url({{asset('img/destinos/mazatlan/slide-5.jpg')}})"></div>
+                    <div class="slide-seccion-destino" style="background-image: url({{asset('img/destinos/monterrey/slide-5.jpg')}})"></div>
                     <p class="titulo-seccion">Entretenimiento</p>
                 </div>
             </div>
@@ -106,22 +106,22 @@
         <div id="menu-destino">
             <ul class="nav justify-content-center ">
                 <li class="nav-item">
-                    <a class="nav-link" href="/lugares-dinamicos/3">Turismo</a>
+                    <a class="nav-link" href="#">Turismo</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/lugares-dinamicos/4">Comida</a>
+                    <a class="nav-link" href="#">Comida</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/lugares-dinamicos/2">Cultura</a>
+                    <a class="nav-link" href="#">Cultura</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/lugares-dinamicos/1">Deporte</a>
+                    <a class="nav-link" href="#">Deporte</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/lugares-dinamicos/5">Entretenimiento</a>
+                    <a class="nav-link" href="#">Entretenimiento</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/lugares-dinamicos/6">Souvenirs</a>
+                    <a class="nav-link" href="#">Souvenirs</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Eventos</a>
@@ -139,13 +139,12 @@
                     <img id="img-info-izq" src="{{asset('img/destinos/mazatlan/palmera_izq.png')}}" alt="palmera izquierda">
                 </div>
                 <div class="col-sm-6">
-                    <p>Gracias a los 20 km de playas arenosas, Mazatlán se convirtió en uno de los destinos de playa más
-                    atractivos y visitados de México a mediados del siglo XX, antes de que pasara de su apogeo a una
-                    categoría de paquetes turísticos de paquete medio. Recientemente, sin embargo, el núcleo
-                    histórico de Mazatlán, conocido como neoclásico tropical, ha sido restaurado y poblado por la
-                    clase creativa. El resultado es una ciudad costera con mucho encanto. Una nueva carretera
-                    audazmente diseñada desde el interior significa que las playas ahora son más accesibles para los
-                    mexicanos también, y que las buenas vibraciones han regresado.</p>
+                    <p>Posee una gran cultura e historia y además con el paso de los años la ciudad ha ido desarrollándose 
+                    y hoy por hoy es un centro de negocios, industrial y económico muy importante. Es rica también en 
+                    paisajes espectaculares, zonas verdes y monumentos históricos. Hay muchos lugares que te encantará 
+                    conocer como El Cerro de la Silla, El Cerro de las Mitras, La Sierra Madre, donde están sus paisajes 
+                    montañosos, sus aguas termales y numerosos museos. Además, la librería Conarte es considerada una de las 
+                    más bellas de la Tierra como lo reconoce la revista Wired.</p>
                 </div>
                 <div  class="col-sm-3">
                     <img id="img-info-der" src="{{asset('img/destinos/mazatlan/palmera_der.png')}}" alt="palmera derecha">       
@@ -154,45 +153,46 @@
         </div>
     
         <!-- Parallax -->
-        <div style="background-image:url({{asset('img/destinos/mazatlan/parallax.jpg')}});" class="parallax-destino"><div class="filtro-destino"></div></div>
+        <div style="background-image:url({{asset('img/destinos/monterrey/parallax.jpg')}});" class="parallax-destino"><div class="filtro-destino"></div></div>
 
         <!-- Eventos del destino -->
         <div id="seccion-eventos">
             <h2>Eventos</h2>
             <div class="row">
                 <div class="col-sm-6 col-md-6 col-lg-3">
-                    <div class="evento" style="background-image: url({{asset('img/eventos/mazatlan/eventos-1.jpg')}})">
-                        <p>Semana de la moto</p>
+                    <div class="evento" style="background-image: url({{asset('img/eventos/monterrey/eventos-1.jpg')}})">
+                        <p>Pa'l Norte</p>
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-6 col-lg-3">
-                    <div class="evento" style="background-image: url({{asset('img/eventos/mazatlan/eventos-2.jpg')}})">
-                        <p>Festival cultural</p>
+                    <div class="evento" style="background-image: url({{asset('img/eventos/monterrey/eventos-2.jpg')}})">
+                        <p>MLB México</p>
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-12 col-lg-6">
-                    <div class="evento" style="background-image: url({{asset('img/eventos/mazatlan/eventos-3.jpg')}})">
-                        <p>Combate naval</p>
+                    <div class="evento" style="background-image: url({{asset('img/eventos/monterrey/eventos-3.jpg')}})">
+                        <p>Campeonato Superwelter</p>
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-12 col-lg-6">
-                    <div class="evento" style="background-image: url({{asset('img/eventos/mazatlan/eventos-4.jpg')}})">
-                        <p>Carnaval</p>
+                    <div class="evento" style="background-image: url({{asset('img/eventos/monterrey/eventos-4.jpg')}})">
+                        <p>Beyond Wonderland</p>
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-6 col-lg-3">
-                    <div class="evento" style="background-image: url({{asset('img/eventos/mazatlan/eventos-5.jpg')}})">
-                        <p>Maratón</p>
+                    <div class="evento" style="background-image: url({{asset('img/eventos/monterrey/eventos-5.jpg')}})">
+                        <p>Liga MX</p>
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-6 col-lg-3">
-                    <div class="evento" style="background-image: url({{asset('img/eventos/mazatlan/eventos-6.jpg')}})">
-                        <p>Triatlón</p>
+                    <div class="evento" style="background-image: url({{asset('img/eventos/monterrey/eventos-6.jpg')}})">
+                        <p>Abierto GNP</p>
                     </div>
                 </div>
             </div>
         </div>
 
+          <!-- ¿A dónde ir? -->
           <!-- ¿A dónde ir? -->
           <div id="seccion-adondeir">
                <h2>¿A dónde ir?</h2>
@@ -436,6 +436,7 @@
                 </div>
             </div>
         </div>
+
         <!-- Tours -->
         <div id="seccion-tours">
             <h2>Tours</h2>
@@ -507,63 +508,63 @@
             <div class="tz-gallery">
                 <div class="row">
                     <div class="col-sm-6 col-md-4 col-lg-3">
-                        <a class="lightbox" href="{{asset('img/destinos/mazatlan/galeria/MAZ-1.jpg')}}">
-                            <div class="imagen-galeria" style="background-image: url({{asset('img/destinos/mazatlan/galeria/MAZ-1.jpg')}})"></div>
+                        <a class="lightbox" href="{{asset('img/destinos/monterrey/galeria/MON-1.jpg')}}">
+                            <div class="imagen-galeria" style="background-image: url({{asset('img/destinos/monterrey/galeria/MON-1.jpg')}})"></div>
                         </a>
                     </div>
                     <div class="col-sm-6 col-md-4 col-lg-3">
-                        <a class="lightbox" href="{{asset('img/destinos/mazatlan/galeria/MAZ-2.jpg')}}">
-                            <div class="imagen-galeria" style="background-image: url({{asset('img/destinos/mazatlan/galeria/MAZ-2.jpg')}})"></div>
+                        <a class="lightbox" href="{{asset('img/destinos/monterrey/galeria/MON-2.jpg')}}">
+                            <div class="imagen-galeria" style="background-image: url({{asset('img/destinos/monterrey/galeria/MON-2.jpg')}})"></div>
                         </a>
                     </div>
                     <div class="col-sm-6 col-md-4 col-lg-3">
-                        <a class="lightbox" href="{{asset('img/destinos/mazatlan/galeria/MAZ-6.jpg')}}">
-                            <div class="imagen-galeria" style="background-image: url({{asset('img/destinos/mazatlan/galeria/MAZ-6.jpg')}})"></div>
+                        <a class="lightbox" href="{{asset('img/destinos/monterrey/galeria/MON-3.jpg')}}">
+                            <div class="imagen-galeria" style="background-image: url({{asset('img/destinos/monterrey/galeria/MON-3.jpg')}})"></div>
                         </a>
                     </div>
                     <div class="col-sm-6 col-md-4 col-lg-3">
-                        <a class="lightbox" href="{{asset('img/destinos/mazatlan/galeria/MAZ-4.jpg')}}">
-                            <div class="imagen-galeria" style="background-image: url({{asset('img/destinos/mazatlan/galeria/MAZ-4.jpg')}})"></div>
+                        <a class="lightbox" href="{{asset('img/destinos/monterrey/galeria/MON-4.jpg')}}">
+                            <div class="imagen-galeria" style="background-image: url({{asset('img/destinos/monterrey/galeria/MON-4.jpg')}})"></div>
                         </a>
                     </div>
                     <div class="col-sm-6 col-md-4 col-lg-3">
-                        <a class="lightbox" href="{{asset('img/destinos/mazatlan/galeria/MAZ-5.jpg')}}">
-                            <div class="imagen-galeria" style="background-image: url({{asset('img/destinos/mazatlan/galeria/MAZ-5.jpg')}})"></div>
-                        </a>
-                    </div> 
-                    <div class="col-sm-6 col-md-4 col-lg-3">
-                        <a class="lightbox" href="{{asset('img/destinos/mazatlan/galeria/MAZ-7.jpg')}}">
-                            <div class="imagen-galeria" style="background-image: url({{asset('img/destinos/mazatlan/galeria/MAZ-7.jpg')}})"></div>
+                        <a class="lightbox" href="{{asset('img/destinos/monterrey/galeria/MON-5.jpg')}}">
+                            <div class="imagen-galeria" style="background-image: url({{asset('img/destinos/monterrey/galeria/MON-5.jpg')}})"></div>
                         </a>
                     </div>
                     <div class="col-sm-6 col-md-4 col-lg-3">
-                        <a class="lightbox" href="{{asset('img/destinos/mazatlan/galeria/MAZ-8.jpg')}}">
-                            <div class="imagen-galeria" style="background-image: url({{asset('img/destinos/mazatlan/galeria/MAZ-8.jpg')}})"></div>
+                        <a class="lightbox" href="{{asset('img/destinos/monterrey/galeria/MON-6.jpg')}}">
+                            <div class="imagen-galeria" style="background-image: url({{asset('img/destinos/monterrey/galeria/MON-6.jpg')}})"></div>
                         </a>
                     </div>
                     <div class="col-sm-6 col-md-4 col-lg-3">
-                        <a class="lightbox" href="{{asset('img/destinos/mazatlan/galeria/MAZ-9.jpg')}}">
-                            <div class="imagen-galeria" style="background-image: url({{asset('img/destinos/mazatlan/galeria/MAZ-9.jpg')}})"></div>
+                        <a class="lightbox" href="{{asset('img/destinos/monterrey/galeria/MON-7.jpg')}}">
+                            <div class="imagen-galeria" style="background-image: url({{asset('img/destinos/monterrey/galeria/MON-7.jpg')}})"></div>
                         </a>
                     </div>
                     <div class="col-sm-6 col-md-4 col-lg-3">
-                        <a class="lightbox" href="{{asset('img/destinos/mazatlan/galeria/MAZ-10.jpg')}}">
-                            <div class="imagen-galeria" style="background-image: url({{asset('img/destinos/mazatlan/galeria/MAZ-10.jpg')}})"></div>
+                        <a class="lightbox" href="{{asset('img/destinos/monterrey/galeria/MON-8.jpg')}}">
+                            <div class="imagen-galeria" style="background-image: url({{asset('img/destinos/monterrey/galeria/MON-8.jpg')}})"></div>
                         </a>
                     </div>
                     <div class="col-sm-6 col-md-4 col-lg-3">
-                        <a class="lightbox" href="{{asset('img/destinos/mazatlan/galeria/MAZ-11.jpg')}}">
-                            <div class="imagen-galeria" style="background-image: url({{asset('img/destinos/mazatlan/galeria/MAZ-11.jpg')}})"></div>
+                        <a class="lightbox" href="{{asset('img/destinos/monterrey/galeria/MON-9.jpg')}}">
+                            <div class="imagen-galeria" style="background-image: url({{asset('img/destinos/monterrey/galeria/MON-9.jpg')}})"></div>
                         </a>
                     </div>
                     <div class="col-sm-6 col-md-4 col-lg-3">
-                        <a class="lightbox" href="{{asset('img/destinos/mazatlan/galeria/MAZ-12.jpg')}}">
-                            <div class="imagen-galeria" style="background-image: url({{asset('img/destinos/mazatlan/galeria/MAZ-12.jpg')}})"></div>
+                        <a class="lightbox" href="{{asset('img/destinos/monterrey/galeria/MON-10.jpg')}}">
+                            <div class="imagen-galeria" style="background-image: url({{asset('img/destinos/monterrey/galeria/MON-10.jpg')}})"></div>
                         </a>
                     </div>
                     <div class="col-sm-6 col-md-4 col-lg-3">
-                        <a class="lightbox" href="{{asset('img/destinos/mazatlan/galeria/MAZ-13.jpg')}}">
-                            <div class="imagen-galeria" style="background-image: url({{asset('img/destinos/mazatlan/galeria/MAZ-13.jpg')}})"></div>
+                        <a class="lightbox" href="{{asset('img/destinos/monterrey/galeria/MON-11.jpg')}}">
+                            <div class="imagen-galeria" style="background-image: url({{asset('img/destinos/monterrey/galeria/MON-11.jpg')}})"></div>
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <a class="lightbox" href="{{asset('img/destinos/monterrey/galeria/MON-12.jpg')}}">
+                            <div class="imagen-galeria" style="background-image: url({{asset('img/destinos/monterrey/galeria/MON-12.jpg')}})"></div>
                         </a>
                     </div>
                 </div>

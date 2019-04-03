@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Mazatlán - BinKab</title>
+    <title>Guanajuato - BinKab</title>
 
     <link rel="stylesheet" href="{{asset('css/basics.css')}}">
     <link rel="stylesheet" href="{{asset('css/destino.css')}}">
@@ -73,8 +73,8 @@
         <!-- Slider main container -->
         <div class="swiper-container">
             <div id="title-destino">
-                <h1>Mazatlán</h1>
-                <p>Sinaloa, México</p>
+                <h1>Guanajuato</h1>
+                <p>Guanajuato, México</p>
             </div>
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
@@ -106,22 +106,22 @@
         <div id="menu-destino">
             <ul class="nav justify-content-center ">
                 <li class="nav-item">
-                    <a class="nav-link" href="/lugares-dinamicos/3">Turismo</a>
+                    <a class="nav-link" href="#">Turismo</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/lugares-dinamicos/4">Comida</a>
+                    <a class="nav-link" href="#">Comida</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/lugares-dinamicos/2">Cultura</a>
+                    <a class="nav-link" href="#">Cultura</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/lugares-dinamicos/1">Deporte</a>
+                    <a class="nav-link" href="#">Deporte</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/lugares-dinamicos/5">Entretenimiento</a>
+                    <a class="nav-link" href="#">Entretenimiento</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/lugares-dinamicos/6">Souvenirs</a>
+                    <a class="nav-link" href="#">Souvenirs</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Eventos</a>
@@ -194,7 +194,8 @@
         </div>
 
           <!-- ¿A dónde ir? -->
-          <div id="seccion-adondeir">
+         <!-- ¿A dónde ir? -->
+         <div id="seccion-adondeir">
                <h2>¿A dónde ir?</h2>
                 <div class="row">
                 <div class="col-sm-12 col-md-12 col-lg-4">
@@ -436,6 +437,7 @@
                 </div>
             </div>
         </div>
+        
         <!-- Tours -->
         <div id="seccion-tours">
             <h2>Tours</h2>
