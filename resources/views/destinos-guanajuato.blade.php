@@ -194,7 +194,8 @@
         </div>
 
           <!-- ¿A dónde ir? -->
-          <div id="seccion-adondeir">
+         <!-- ¿A dónde ir? -->
+         <div id="seccion-adondeir">
                <h2>¿A dónde ir?</h2>
                 <div class="row">
                 <div class="col-sm-12 col-md-12 col-lg-4">
@@ -205,8 +206,8 @@
                        <!--La Marea-->
                         <li data-toggle="modal" data-target="#laMarea">
                             <div data-toggle="modal" data-target="#myModal" class="opcion-imagen" style="background-image: url({{asset('img/destinos/mazatlan/recomendacion/donde-1.jpg')}})"></div>
-                            <div class="opcion-info">
-                                <p class="opcion-nombre">La Marea</p>
+                            <div class="opcion-info hvr-forward">
+                                <p class="opcion-nombre ">La Marea</p>
                                 <p class="opcion-ubicacion">Restaurant</p>
                             </div>
                         </li>
@@ -214,21 +215,21 @@
                         <!--Acuario-->
                         <li data-toggle="modal" data-target="#acuario">
                             <div data-toggle="modal" data-target="#myModal" class="opcion-imagen" style="background-image: url({{asset('img/destinos/mazatlan/recomendacion/donde-2.jpg')}})"></div>
-                            <div class="opcion-info">
+                            <div class="opcion-info hvr-forward">
                                 <p class="opcion-nombre">Acuario Mazatlán</p>
                                 <p class="opcion-ubicacion">Recreación</p>
                             </div>
                         </li>
                         <li data-toggle="modal" data-target="#machado">
                             <div data-toggle="modal" data-target="#myModal" class="opcion-imagen" style="background-image: url({{asset('img/destinos/mazatlan/recomendacion/donde-3.jpg')}})"></div>
-                            <div class="opcion-info">
+                            <div class="opcion-info hvr-forward">
                                 <p class="opcion-nombre">Plaza Machado</p>
                                 <p class="opcion-ubicacion">Recreación</p>
                             </div>
                         </li>
                         <li data-toggle="modal" data-target="#mazagua">
                             <div data-toggle="modal" data-target="#myModal" class="opcion-imagen" style="background-image: url({{asset('img/destinos/mazatlan/recomendacion/donde-4.jpg')}})"></div>
-                            <div class="opcion-info">
+                            <div class="opcion-info hvr-forward">
                                 <p class="opcion-nombre">Mazagua</p>
                                 <p class="opcion-ubicacion">Parque</p>
                             </div>
@@ -239,28 +240,28 @@
                     <ul>
                         <li data-toggle="modal" data-target="#presidio">
                             <div data-toggle="modal" data-target="#myModal" class="opcion-imagen" style="background-image: url({{asset('img/destinos/mazatlan/recomendacion/donde-5.jpg')}})"></div>
-                            <div class="opcion-info">
+                            <div class="opcion-info hvr-forward">
                                 <p class="opcion-nombre">Presidio</p>
                                 <p class="opcion-ubicacion">Restaurant</p>
                             </div>
                         </li>
                         <li data-toggle="modal" data-target="#classico">
                             <div data-toggle="modal" data-target="#myModal" class="opcion-imagen" style="background-image: url({{asset('img/destinos/mazatlan/recomendacion/donde-6.jpg')}})"></div>
-                            <div class="opcion-info">
+                            <div class="opcion-info hvr-forward">
                                 <p class="opcion-nombre">Classico</p>
                                 <p class="opcion-ubicacion">Nocturno</p>
                             </div>
                         </li>
                         <li data-toggle="modal" data-target="#angelaPeralta">
                             <div data-toggle="modal" data-target="#myModal" class="opcion-imagen" style="background-image: url({{asset('img/destinos/mazatlan/recomendacion/donde-7.jpg')}})"></div>
-                            <div class="opcion-info">
+                            <div class="opcion-info hvr-forward">
                                 <p class="opcion-nombre">Ángela Peralta</p>
                                 <p class="opcion-ubicacion">Cultural</p>
                             </div>
                         </li>
                         <li data-toggle="modal" data-target="#catedral">
                             <div data-toggle="modal" data-target="#myModal" class="opcion-imagen" style="background-image: url({{asset('img/destinos/mazatlan/recomendacion/donde-8.jpg')}})"></div>
-                            <div class="opcion-info">
+                            <div class="opcion-info hvr-forward">
                                 <p class="opcion-nombre">Catedral</p>
                                 <p class="opcion-ubicacion">Cultural</p>
                             </div>
@@ -419,7 +420,6 @@
             
             <!--Catedral-->
             <div style="margin-top:65px;" class="modal fade" id="catedral" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
-               
                 <div class="modal-dialog modal-dialog-scrollable" role="document" style="height:570px">
                     <div class="modal-content"  >
                         <div class="modal-header img-modal" style="background-image: url({{asset('img/destinos/mazatlan/recomendacion/donde-8.jpg')}});" >
@@ -431,14 +431,13 @@
                         <div class="modal-body">
                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est natus pariatur itaque quisquam corporis debitis tempora, neque autem vel laudantium blanditiis sequi modi quis quae fugit cum magni reprehenderit repellendus.
                             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam maiores qui quos fuga, atque voluptate! Ut adipisci sunt quas, in laboriosam cumque sed, sequi blanditiis iste repudiandae nisi recusandae debitis.
-                            
                             </p>
                         </div>
                     </div>
                 </div>
             </div>
-            
         </div>
+        
         <!-- Tours -->
         <div id="seccion-tours">
             <h2>Tours</h2>

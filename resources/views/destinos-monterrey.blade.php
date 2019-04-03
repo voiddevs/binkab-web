@@ -139,13 +139,12 @@
                     <img id="img-info-izq" src="{{asset('img/destinos/mazatlan/palmera_izq.png')}}" alt="palmera izquierda">
                 </div>
                 <div class="col-sm-6">
-                    <p>Gracias a los 20 km de playas arenosas, Mazatlán se convirtió en uno de los destinos de playa más
-                    atractivos y visitados de México a mediados del siglo XX, antes de que pasara de su apogeo a una
-                    categoría de paquetes turísticos de paquete medio. Recientemente, sin embargo, el núcleo
-                    histórico de Mazatlán, conocido como neoclásico tropical, ha sido restaurado y poblado por la
-                    clase creativa. El resultado es una ciudad costera con mucho encanto. Una nueva carretera
-                    audazmente diseñada desde el interior significa que las playas ahora son más accesibles para los
-                    mexicanos también, y que las buenas vibraciones han regresado.</p>
+                    <p>Posee una gran cultura e historia y además con el paso de los años la ciudad ha ido desarrollándose 
+                    y hoy por hoy es un centro de negocios, industrial y económico muy importante. Es rica también en 
+                    paisajes espectaculares, zonas verdes y monumentos históricos. Hay muchos lugares que te encantará 
+                    conocer como El Cerro de la Silla, El Cerro de las Mitras, La Sierra Madre, donde están sus paisajes 
+                    montañosos, sus aguas termales y numerosos museos. Además, la librería Conarte es considerada una de las 
+                    más bellas de la Tierra como lo reconoce la revista Wired.</p>
                 </div>
                 <div  class="col-sm-3">
                     <img id="img-info-der" src="{{asset('img/destinos/mazatlan/palmera_der.png')}}" alt="palmera derecha">       
@@ -161,38 +160,39 @@
             <h2>Eventos</h2>
             <div class="row">
                 <div class="col-sm-6 col-md-6 col-lg-3">
-                    <div class="evento" style="background-image: url({{asset('img/eventos/mazatlan/eventos-1.jpg')}})">
-                        <p>Semana de la moto</p>
+                    <div class="evento" style="background-image: url({{asset('img/eventos/monterrey/eventos-1.jpg')}})">
+                        <p>Pa'l Norte</p>
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-6 col-lg-3">
-                    <div class="evento" style="background-image: url({{asset('img/eventos/mazatlan/eventos-2.jpg')}})">
-                        <p>Festival cultural</p>
+                    <div class="evento" style="background-image: url({{asset('img/eventos/monterrey/eventos-2.jpg')}})">
+                        <p>MLB México</p>
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-12 col-lg-6">
-                    <div class="evento" style="background-image: url({{asset('img/eventos/mazatlan/eventos-3.jpg')}})">
-                        <p>Combate naval</p>
+                    <div class="evento" style="background-image: url({{asset('img/eventos/monterrey/eventos-3.jpg')}})">
+                        <p>Campeonato Superwelter</p>
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-12 col-lg-6">
-                    <div class="evento" style="background-image: url({{asset('img/eventos/mazatlan/eventos-4.jpg')}})">
-                        <p>Carnaval</p>
+                    <div class="evento" style="background-image: url({{asset('img/eventos/monterrey/eventos-4.jpg')}})">
+                        <p>Beyond Wonderland</p>
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-6 col-lg-3">
-                    <div class="evento" style="background-image: url({{asset('img/eventos/mazatlan/eventos-5.jpg')}})">
-                        <p>Maratón</p>
+                    <div class="evento" style="background-image: url({{asset('img/eventos/monterrey/eventos-5.jpg')}})">
+                        <p>Liga MX</p>
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-6 col-lg-3">
-                    <div class="evento" style="background-image: url({{asset('img/eventos/mazatlan/eventos-6.jpg')}})">
-                        <p>Triatlón</p>
+                    <div class="evento" style="background-image: url({{asset('img/eventos/monterrey/eventos-6.jpg')}})">
+                        <p>Abierto GNP</p>
                     </div>
                 </div>
             </div>
         </div>
 
+          <!-- ¿A dónde ir? -->
           <!-- ¿A dónde ir? -->
           <div id="seccion-adondeir">
                <h2>¿A dónde ir?</h2>
@@ -205,8 +205,8 @@
                        <!--La Marea-->
                         <li data-toggle="modal" data-target="#laMarea">
                             <div data-toggle="modal" data-target="#myModal" class="opcion-imagen" style="background-image: url({{asset('img/destinos/mazatlan/recomendacion/donde-1.jpg')}})"></div>
-                            <div class="opcion-info">
-                                <p class="opcion-nombre">La Marea</p>
+                            <div class="opcion-info hvr-forward">
+                                <p class="opcion-nombre ">La Marea</p>
                                 <p class="opcion-ubicacion">Restaurant</p>
                             </div>
                         </li>
@@ -214,21 +214,21 @@
                         <!--Acuario-->
                         <li data-toggle="modal" data-target="#acuario">
                             <div data-toggle="modal" data-target="#myModal" class="opcion-imagen" style="background-image: url({{asset('img/destinos/mazatlan/recomendacion/donde-2.jpg')}})"></div>
-                            <div class="opcion-info">
+                            <div class="opcion-info hvr-forward">
                                 <p class="opcion-nombre">Acuario Mazatlán</p>
                                 <p class="opcion-ubicacion">Recreación</p>
                             </div>
                         </li>
                         <li data-toggle="modal" data-target="#machado">
                             <div data-toggle="modal" data-target="#myModal" class="opcion-imagen" style="background-image: url({{asset('img/destinos/mazatlan/recomendacion/donde-3.jpg')}})"></div>
-                            <div class="opcion-info">
+                            <div class="opcion-info hvr-forward">
                                 <p class="opcion-nombre">Plaza Machado</p>
                                 <p class="opcion-ubicacion">Recreación</p>
                             </div>
                         </li>
                         <li data-toggle="modal" data-target="#mazagua">
                             <div data-toggle="modal" data-target="#myModal" class="opcion-imagen" style="background-image: url({{asset('img/destinos/mazatlan/recomendacion/donde-4.jpg')}})"></div>
-                            <div class="opcion-info">
+                            <div class="opcion-info hvr-forward">
                                 <p class="opcion-nombre">Mazagua</p>
                                 <p class="opcion-ubicacion">Parque</p>
                             </div>
@@ -239,28 +239,28 @@
                     <ul>
                         <li data-toggle="modal" data-target="#presidio">
                             <div data-toggle="modal" data-target="#myModal" class="opcion-imagen" style="background-image: url({{asset('img/destinos/mazatlan/recomendacion/donde-5.jpg')}})"></div>
-                            <div class="opcion-info">
+                            <div class="opcion-info hvr-forward">
                                 <p class="opcion-nombre">Presidio</p>
                                 <p class="opcion-ubicacion">Restaurant</p>
                             </div>
                         </li>
                         <li data-toggle="modal" data-target="#classico">
                             <div data-toggle="modal" data-target="#myModal" class="opcion-imagen" style="background-image: url({{asset('img/destinos/mazatlan/recomendacion/donde-6.jpg')}})"></div>
-                            <div class="opcion-info">
+                            <div class="opcion-info hvr-forward">
                                 <p class="opcion-nombre">Classico</p>
                                 <p class="opcion-ubicacion">Nocturno</p>
                             </div>
                         </li>
                         <li data-toggle="modal" data-target="#angelaPeralta">
                             <div data-toggle="modal" data-target="#myModal" class="opcion-imagen" style="background-image: url({{asset('img/destinos/mazatlan/recomendacion/donde-7.jpg')}})"></div>
-                            <div class="opcion-info">
+                            <div class="opcion-info hvr-forward">
                                 <p class="opcion-nombre">Ángela Peralta</p>
                                 <p class="opcion-ubicacion">Cultural</p>
                             </div>
                         </li>
                         <li data-toggle="modal" data-target="#catedral">
                             <div data-toggle="modal" data-target="#myModal" class="opcion-imagen" style="background-image: url({{asset('img/destinos/mazatlan/recomendacion/donde-8.jpg')}})"></div>
-                            <div class="opcion-info">
+                            <div class="opcion-info hvr-forward">
                                 <p class="opcion-nombre">Catedral</p>
                                 <p class="opcion-ubicacion">Cultural</p>
                             </div>
@@ -419,7 +419,6 @@
             
             <!--Catedral-->
             <div style="margin-top:65px;" class="modal fade" id="catedral" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
-               
                 <div class="modal-dialog modal-dialog-scrollable" role="document" style="height:570px">
                     <div class="modal-content"  >
                         <div class="modal-header img-modal" style="background-image: url({{asset('img/destinos/mazatlan/recomendacion/donde-8.jpg')}});" >
@@ -431,14 +430,13 @@
                         <div class="modal-body">
                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est natus pariatur itaque quisquam corporis debitis tempora, neque autem vel laudantium blanditiis sequi modi quis quae fugit cum magni reprehenderit repellendus.
                             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam maiores qui quos fuga, atque voluptate! Ut adipisci sunt quas, in laboriosam cumque sed, sequi blanditiis iste repudiandae nisi recusandae debitis.
-                            
                             </p>
                         </div>
                     </div>
                 </div>
             </div>
-            
         </div>
+
         <!-- Tours -->
         <div id="seccion-tours">
             <h2>Tours</h2>
