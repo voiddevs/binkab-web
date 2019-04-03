@@ -87,10 +87,22 @@
                     </a>
                 </div>
                 <div class="col-sm-3" >
-                  
+                    <a href="/destinos/guanajuato">
+                        <div class="destino">
+                            <img src="{{asset('img/destinos/lugares-2.jpg')}}" alt="">
+                            <div class="filtrodestino"></div>
+                            <p>Guanajuato</p>
+                        </div>
+                    </a>
                 </div>
                 <div class="col-sm-3" >
-                   
+                    <a href="/destinos/monterrey">
+                        <div class="destino">
+                            <img src="{{asset('img/destinos/lugares-3.jpg')}}" alt="">
+                            <div class="filtrodestino"></div>
+                            <p>Monterrey</p>
+                        </div>
+                    </a>
                 </div>
                 <div class="col-sm-3" >
                    

@@ -77,37 +77,34 @@
                 <div class="swiper-slide">
                     <div class="slides-home" style="background-image: url({{asset('img/slides/slide-1.jpg')}});">
                         <h2 class="titulo-slide">Asómbrate con su riqueza arquitectónica</h2>
-                        <a class="vinculo-slide hvr-underline-from-left" href="#">Ver más <i class="fas fa-arrow-right"></i></a>
+                        <a class="vinculo-slide hvr-underline-from-left" href="/destinos/mazatlan">Ver más <i class="fas fa-arrow-right"></i></a>
                     </div>
                     <div class="filtro"></div>
                 </div>
                 <div class="swiper-slide">
                     <div class="slides-home" style="background-image: url({{asset('img/slides/slide-2.jpeg')}});">
-                        <h2 class="titulo-slide">Asómbrate con su riqueza arquitectónica</h2>
-                        <a class="vinculo-slide hvr-underline-from-left" href="#">Ver más <i class="fas fa-arrow-right"></i></a>
+                        <h2 class="titulo-slide">Conoce unos de los malecones más largos del mundo</h2>
+                        <a class="vinculo-slide hvr-underline-from-left" href="/destinos/mazatlan">Ver más <i class="fas fa-arrow-right"></i></a>
                     </div>
                     <div class="filtro"></div> 
                 </div>
                 <div class="swiper-slide">
                     <div class="slides-home" style="background-image: url({{asset('img/slides/slide-3.jpg')}});">
-                     <h2 class="titulo-slide">Conoce unos de los malecones más largos del mundo</h2>
-                        <a class="vinculo-slide hvr-underline-from-left" href="#">Ver más <i class="fas fa-arrow-right"></i></a>
+                     <h2 class="titulo-slide">Aqui pon tus mamadas galeana</h2>
+                        <a class="vinculo-slide hvr-underline-from-left" href="/destinos/monterrey">Ver más <i class="fas fa-arrow-right"></i></a>
                     </div>
                     <div class="filtro"></div>
                 </div>
                 <div class="swiper-slide">
-                    <div class="slides-home" style="background-image: url({{asset('img/slides/slide-5.jpg')}});">
-                        <h2 class="titulo-slide">Disfruta una espectacular tarde en el clavadista</h2>
-                        <a class="vinculo-slide hvr-underline-from-left" href="#">Ver más <i class="fas fa-arrow-right"></i></a>
+                    <div class="slides-home" style="background-image: url({{asset('img/slides/slide-4.jpg')}});">
+                        <h2 class="titulo-slide">Aqui pon tus mamadas galeana</h2>
+                        <a class="vinculo-slide hvr-underline-from-left" href="/destinos/guanajuato">Ver más <i class="fas fa-arrow-right"></i></a>
                     </div>
                     <div class="filtro"></div>
                 </div>
             </div>
             <!-- Pagination -->
             <div class="swiper-pagination"></div>
-            <!-- Botones 
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>-->
         </div>
 
         <!-- Seccion iconos -->
@@ -151,28 +148,29 @@
                     </a> 
                 </div>
                 <div class="swiper-slide">
-                     <div style="background-image: url({{asset('img/home/lugares-2.jpg')}});" class="swiper-seccion-lugares">
-                        <p>Mazatlán</p>
+                    <a href="/destinos/guanajuato">
+                        <div style="background-image: url({{asset('img/home/lugares-2.jpg')}});" class="swiper-seccion-lugares">
+                            <p>Guanajuato</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="/destinos/monterrey">
+                        <div style="background-image: url({{asset('img/home/lugares-3.jpg')}});" class="swiper-seccion-lugares">
+                            <p>Monterrey</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <div style="background-image: url({{asset('img/home/unknow.png')}});" class="swiper-seccion-lugares">
                     </div>
                 </div>
                 <div class="swiper-slide">
-                    <div style="background-image: url({{asset('img/home/lugares-3.jpg')}});" class="swiper-seccion-lugares">
-                        <p>Mazatlán</p>
+                    <div style="background-image: url({{asset('img/home/unknow.png')}});" class="swiper-seccion-lugares">
                     </div>
                 </div>
                 <div class="swiper-slide">
-                    <div style="background-image: url({{asset('img/home/lugares-4.jpg')}});" class="swiper-seccion-lugares">
-                        <p>Mazatlán</p>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div style="background-image: url({{asset('img/home/lugares-5.jpg')}});" class="swiper-seccion-lugares">
-                        <p>Mazatlán</p>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div style="background-image: url({{asset('img/home/lugares-6.jpg')}});" class="swiper-seccion-lugares">
-                        <p>Mazatlán</p>
+                    <div style="background-image: url({{asset('img/home/unknow.png')}});" class="swiper-seccion-lugares">
                     </div>
                 </div>
             </div>  
