@@ -191,8 +191,8 @@
                        <!--La Marea-->
                         <li data-toggle="modal" data-target="#laMarea">
                             <div data-toggle="modal" data-target="#myModal" class="opcion-imagen" style="background-image: url({{asset('img/destinos/mazatlan/recomendacion/donde-1.jpg')}})"></div>
-                            <div class="opcion-info">
-                                <p class="opcion-nombre">La Marea</p>
+                            <div class="opcion-info hvr-forward">
+                                <p class="opcion-nombre ">La Marea</p>
                                 <p class="opcion-ubicacion">Restaurant</p>
                             </div>
                         </li>
@@ -200,21 +200,21 @@
                         <!--Acuario-->
                         <li data-toggle="modal" data-target="#acuario">
                             <div data-toggle="modal" data-target="#myModal" class="opcion-imagen" style="background-image: url({{asset('img/destinos/mazatlan/recomendacion/donde-2.jpg')}})"></div>
-                            <div class="opcion-info">
+                            <div class="opcion-info hvr-forward">
                                 <p class="opcion-nombre">Acuario Mazatlán</p>
                                 <p class="opcion-ubicacion">Recreación</p>
                             </div>
                         </li>
                         <li data-toggle="modal" data-target="#machado">
                             <div data-toggle="modal" data-target="#myModal" class="opcion-imagen" style="background-image: url({{asset('img/destinos/mazatlan/recomendacion/donde-3.jpg')}})"></div>
-                            <div class="opcion-info">
+                            <div class="opcion-info hvr-forward">
                                 <p class="opcion-nombre">Plaza Machado</p>
                                 <p class="opcion-ubicacion">Recreación</p>
                             </div>
                         </li>
                         <li data-toggle="modal" data-target="#mazagua">
                             <div data-toggle="modal" data-target="#myModal" class="opcion-imagen" style="background-image: url({{asset('img/destinos/mazatlan/recomendacion/donde-4.jpg')}})"></div>
-                            <div class="opcion-info">
+                            <div class="opcion-info hvr-forward">
                                 <p class="opcion-nombre">Mazagua</p>
                                 <p class="opcion-ubicacion">Parque</p>
                             </div>
@@ -225,28 +225,28 @@
                     <ul>
                         <li data-toggle="modal" data-target="#presidio">
                             <div data-toggle="modal" data-target="#myModal" class="opcion-imagen" style="background-image: url({{asset('img/destinos/mazatlan/recomendacion/donde-5.jpg')}})"></div>
-                            <div class="opcion-info">
+                            <div class="opcion-info hvr-forward">
                                 <p class="opcion-nombre">Presidio</p>
                                 <p class="opcion-ubicacion">Restaurant</p>
                             </div>
                         </li>
                         <li data-toggle="modal" data-target="#classico">
                             <div data-toggle="modal" data-target="#myModal" class="opcion-imagen" style="background-image: url({{asset('img/destinos/mazatlan/recomendacion/donde-6.jpg')}})"></div>
-                            <div class="opcion-info">
+                            <div class="opcion-info hvr-forward">
                                 <p class="opcion-nombre">Classico</p>
                                 <p class="opcion-ubicacion">Nocturno</p>
                             </div>
                         </li>
                         <li data-toggle="modal" data-target="#angelaPeralta">
                             <div data-toggle="modal" data-target="#myModal" class="opcion-imagen" style="background-image: url({{asset('img/destinos/mazatlan/recomendacion/donde-7.jpg')}})"></div>
-                            <div class="opcion-info">
+                            <div class="opcion-info hvr-forward">
                                 <p class="opcion-nombre">Ángela Peralta</p>
                                 <p class="opcion-ubicacion">Cultural</p>
                             </div>
                         </li>
                         <li data-toggle="modal" data-target="#catedral">
                             <div data-toggle="modal" data-target="#myModal" class="opcion-imagen" style="background-image: url({{asset('img/destinos/mazatlan/recomendacion/donde-8.jpg')}})"></div>
-                            <div class="opcion-info">
+                            <div class="opcion-info hvr-forward">
                                 <p class="opcion-nombre">Catedral</p>
                                 <p class="opcion-ubicacion">Cultural</p>
                             </div>
