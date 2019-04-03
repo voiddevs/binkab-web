@@ -43,3 +43,8 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
+Route::get('passwords/email','Auth\PasswordController@getEmail');
+Route::post('passwords/email', 'Auth\PasswordController@postEmail');
+
+Route::get('passwords/reset/{token}', 'Auth\PasswordController@getReset');
+Route::post('passwords/reset', 'Auth\PasswordController@postReset');
