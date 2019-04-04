@@ -19,7 +19,7 @@
 	<div id="wrapper">
 
         <!-- Header -->
-        <header id="header" >
+        <header id="header">
             <div class="inner">
                 <div>
                     <a href="/"><img src="{{asset('img/logo_blanco.png')}}" alt="logo-binkab"></a>
@@ -31,7 +31,13 @@
                             <li><a href="/" class="link-home">Inicio</a></li>
                             <li><a href="/destinos" class="link-home">Destinos</a></li>
                             <li><a href="/nosotros" class="link-home">Nosotros</a></li>
-                            <li><a href="#" class="link-homelog">Ingresar</a></li>
+                            @guest
+                            @if (Route::has('register'))
+                                <li><a href="/login" class="link-homelog">Ingresar</a></li>
+                            @endif
+                            @else
+                                <li><a href="/home" class="link-homelog">{{ Auth::user()->name }}</a></li>
+                            @endguest
                         </ul>
                     </nav>
                 </div>
@@ -45,6 +51,7 @@
             </div>
             <hr class="divisor-home">
         </header>
+        
 
         <nav id="menu">
             <h2>Menú</h2>
@@ -52,7 +59,14 @@
                 <li><a href="/" class="hvr-underline-from-left">Inicio <i class="fas fa-home"></i></a></li>
                 <li><a href="/destinos" class="hvr-underline-from-left">Destinos <i class="fas fa-map-marked-alt"></i></a></li>
                 <li><a href="/nosotros" class="hvr-underline-from-left">Nosotros <i class="fas fa-users"></i></a></li>
-                <li><a href="#" class="hvr-underline-from-left">Ingresar <i class="fas fa-sign-in-alt"></i></a></li>
+                @guest
+                @if (Route::has('register'))
+                    <li><a href="/login" class="hvr-underline-from-left">Ingresar <i class="fas fa-sign-in-alt"></i></a></li>
+                @endif
+                @else
+                    <li><a href="/home" class="hvr-underline-from-left">{{ Auth::user()->name }} <i class="fas fa-sign-in-alt"></i></a></li>
+                @endguest
+                
             </ul>
         </nav>
 
@@ -92,22 +106,22 @@
         <div id="menu-destino">
             <ul class="nav justify-content-center ">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Turismo</a>
+                    <a class="nav-link" href="/lugares-dinamicos/3">Turismo</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Comida</a>
+                    <a class="nav-link" href="/lugares-dinamicos/4">Comida</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Cultura</a>
+                    <a class="nav-link" href="/lugares-dinamicos/2">Cultura</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Deporte</a>
+                    <a class="nav-link" href="/lugares-dinamicos/1">Deporte</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Entretenimiento</a>
+                    <a class="nav-link" href="/lugares-dinamicos/5">Entretenimiento</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Souvenirs</a>
+                    <a class="nav-link" href="/lugares-dinamicos/6">Souvenirs</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Eventos</a>
@@ -181,37 +195,40 @@
 
           <!-- ¿A dónde ir? -->
           <div id="seccion-adondeir">
-            <h2>¿A dónde ir?</h2>
-            <div class="row">
+               <h2>¿A dónde ir?</h2>
+                <div class="row">
                 <div class="col-sm-12 col-md-12 col-lg-4">
                     <img id="img-adondeir" src="{{asset('img/destinos/mazatlan/catedral-degradado.png')}}" alt="Catedral Mazatlán">
                 </div>
                 <div class="col-sm-12 col-md-6 col-lg-4">
                     <ul>
-                        <li>
-                            <div class="opcion-imagen" style="background-image: url({{asset('img/destinos/mazatlan/recomendacion/donde-1.jpg')}})"></div>
-                            <div class="opcion-info">
-                                <p class="opcion-nombre">La Marea</p>
+                       <!--La Marea-->
+                        <li data-toggle="modal" data-target="#laMarea">
+                            <div data-toggle="modal" data-target="#myModal" class="opcion-imagen" style="background-image: url({{asset('img/destinos/mazatlan/recomendacion/donde-1.jpg')}})"></div>
+                            <div class="opcion-info hvr-forward">
+                                <p class="opcion-nombre ">La Marea</p>
                                 <p class="opcion-ubicacion">Restaurant</p>
                             </div>
                         </li>
-                        <li>
-                            <div class="opcion-imagen" style="background-image: url({{asset('img/destinos/mazatlan/recomendacion/donde-2.jpg')}})"></div>
-                            <div class="opcion-info">
+                        
+                        <!--Acuario-->
+                        <li data-toggle="modal" data-target="#acuario">
+                            <div data-toggle="modal" data-target="#myModal" class="opcion-imagen" style="background-image: url({{asset('img/destinos/mazatlan/recomendacion/donde-2.jpg')}})"></div>
+                            <div class="opcion-info hvr-forward">
                                 <p class="opcion-nombre">Acuario Mazatlán</p>
                                 <p class="opcion-ubicacion">Recreación</p>
                             </div>
                         </li>
-                        <li>
-                            <div class="opcion-imagen" style="background-image: url({{asset('img/destinos/mazatlan/recomendacion/donde-3.jpg')}})"></div>
-                            <div class="opcion-info">
+                        <li data-toggle="modal" data-target="#machado">
+                            <div data-toggle="modal" data-target="#myModal" class="opcion-imagen" style="background-image: url({{asset('img/destinos/mazatlan/recomendacion/donde-3.jpg')}})"></div>
+                            <div class="opcion-info hvr-forward">
                                 <p class="opcion-nombre">Plaza Machado</p>
                                 <p class="opcion-ubicacion">Recreación</p>
                             </div>
                         </li>
-                        <li>
-                            <div class="opcion-imagen" style="background-image: url({{asset('img/destinos/mazatlan/recomendacion/donde-4.jpg')}})"></div>
-                            <div class="opcion-info">
+                        <li data-toggle="modal" data-target="#mazagua">
+                            <div data-toggle="modal" data-target="#myModal" class="opcion-imagen" style="background-image: url({{asset('img/destinos/mazatlan/recomendacion/donde-4.jpg')}})"></div>
+                            <div class="opcion-info hvr-forward">
                                 <p class="opcion-nombre">Mazagua</p>
                                 <p class="opcion-ubicacion">Parque</p>
                             </div>
@@ -220,30 +237,30 @@
                 </div>
                 <div class="col-sm-12 col-md-6 col-lg-4">
                     <ul>
-                        <li>
-                            <div class="opcion-imagen" style="background-image: url({{asset('img/destinos/mazatlan/recomendacion/donde-5.jpg')}})"></div>
-                            <div class="opcion-info">
+                        <li data-toggle="modal" data-target="#presidio">
+                            <div data-toggle="modal" data-target="#myModal" class="opcion-imagen" style="background-image: url({{asset('img/destinos/mazatlan/recomendacion/donde-5.jpg')}})"></div>
+                            <div class="opcion-info hvr-forward">
                                 <p class="opcion-nombre">Presidio</p>
                                 <p class="opcion-ubicacion">Restaurant</p>
                             </div>
                         </li>
-                        <li>
-                            <div class="opcion-imagen" style="background-image: url({{asset('img/destinos/mazatlan/recomendacion/donde-6.jpg')}})"></div>
-                            <div class="opcion-info">
+                        <li data-toggle="modal" data-target="#classico">
+                            <div data-toggle="modal" data-target="#myModal" class="opcion-imagen" style="background-image: url({{asset('img/destinos/mazatlan/recomendacion/donde-6.jpg')}})"></div>
+                            <div class="opcion-info hvr-forward">
                                 <p class="opcion-nombre">Classico</p>
                                 <p class="opcion-ubicacion">Nocturno</p>
                             </div>
                         </li>
-                        <li>
-                            <div class="opcion-imagen" style="background-image: url({{asset('img/destinos/mazatlan/recomendacion/donde-7.jpg')}})"></div>
-                            <div class="opcion-info">
+                        <li data-toggle="modal" data-target="#angelaPeralta">
+                            <div data-toggle="modal" data-target="#myModal" class="opcion-imagen" style="background-image: url({{asset('img/destinos/mazatlan/recomendacion/donde-7.jpg')}})"></div>
+                            <div class="opcion-info hvr-forward">
                                 <p class="opcion-nombre">Ángela Peralta</p>
                                 <p class="opcion-ubicacion">Cultural</p>
                             </div>
                         </li>
-                        <li>
-                            <div class="opcion-imagen" style="background-image: url({{asset('img/destinos/mazatlan/recomendacion/donde-8.jpg')}})"></div>
-                            <div class="opcion-info">
+                        <li data-toggle="modal" data-target="#catedral">
+                            <div data-toggle="modal" data-target="#myModal" class="opcion-imagen" style="background-image: url({{asset('img/destinos/mazatlan/recomendacion/donde-8.jpg')}})"></div>
+                            <div class="opcion-info hvr-forward">
                                 <p class="opcion-nombre">Catedral</p>
                                 <p class="opcion-ubicacion">Cultural</p>
                             </div>
@@ -251,8 +268,175 @@
                     </ul>
                 </div>
             </div>
+            
+            <!--MODAL-->
+            
+            <!--La marea-->
+            <div style="margin-top:65px;" class="modal fade" id="laMarea" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+               
+                <div class="modal-dialog modal-dialog-scrollable" role="document" style="height:570px">
+                    <div class="modal-content"  >
+                        <div class="modal-header img-modal" style="background-image: url({{asset('img/destinos/mazatlan/recomendacion/modal/modal-1.jpg')}});" >
+                            <button type="button" class="close" data-dismiss="modal"><img class="img-close" src="{{asset('img/close.png')}}" alt=""></button>
+                        </div>
+                        <div class="modal-header" >
+                            <h5 class="modal-title" id="exampleModalScrollableTitle">La Marea - Restaurant</h5>
+                        </div>
+                        <div class="modal-body">
+                            <p>Bienvenidos a La Marea, prometemos una experiencia única y relajada que ofrece algo diferente a todos nuestros clientes locales y extranjeros. Venga y disfrute de nuestra terraza y su hermosa vista al pacífico.
+                            <br><br>Disfrute de familiares y amigos nuestros deliciosos platillos, espectaculares  bebidas  y un servicio único.
+                            <br><br>En La Marea ofrecemos una experiencia culinaria memorable y única. Nuestro menú esta inspirado en los platillos favoritos tradicionales preparaos con ingredientes mexicanos, frescos y de gran calidad.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!--Acuario-->
+            <div style="margin-top:65px;" class="modal fade" id="acuario" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+               
+                <div class="modal-dialog modal-dialog-scrollable" role="document" style="height:570px">
+                    <div class="modal-content"  >
+                       
+                        <div class="modal-header img-modal" style="background-image: url({{asset('img/destinos/mazatlan/recomendacion/modal/modal-2.jpg')}});" >
+                            <button type="button" class="close" data-dismiss="modal"><img class="img-close" src="{{asset('img/close.png')}}" alt=""></button>
+                        </div>
+                        <div class="modal-header" >
+                            <h5 class="modal-title" id="exampleModalScrollableTitle">Acuario Mazatlán - Recreación</h5>
+                        </div>
+                        <div class="modal-body">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est natus pariatur itaque quisquam corporis debitis tempora, neque autem vel laudantium blanditiis sequi modi quis quae fugit cum magni reprehenderit repellendus.
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam maiores qui quos fuga, atque voluptate! Ut adipisci sunt quas, in laboriosam cumque sed, sequi blanditiis iste repudiandae nisi recusandae debitis.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!--Machado-->
+            <div style="margin-top:65px;" class="modal fade" id="machado" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+               
+                <div class="modal-dialog modal-dialog-scrollable" role="document" style="height:570px">
+                    <div class="modal-content"  >
+                        <div class="modal-header img-modal" style="background-image: url({{asset('img/destinos/mazatlan/recomendacion/donde-3.jpg')}});" >
+                            <button type="button" class="close" data-dismiss="modal"><img class="img-close" src="{{asset('img/close.png')}}" alt=""></button>
+                        </div>
+                        <div class="modal-header" >
+                            <h5 class="modal-title" id="exampleModalScrollableTitle">Modal title</h5>
+                        </div>
+                        <div class="modal-body">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est natus pariatur itaque quisquam corporis debitis tempora, neque autem vel laudantium blanditiis sequi modi quis quae fugit cum magni reprehenderit repellendus.
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam maiores qui quos fuga, atque voluptate! Ut adipisci sunt quas, in laboriosam cumque sed, sequi blanditiis iste repudiandae nisi recusandae debitis.
+                            
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!--Mazagua-->
+            <div style="margin-top:65px;" class="modal fade" id="mazagua" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+               
+                <div class="modal-dialog modal-dialog-scrollable" role="document" style="height:570px">
+                    <div class="modal-content"  >
+                        <div class="modal-header img-modal" style="background-image: url({{asset('img/destinos/mazatlan/recomendacion/donde-4.jpg')}});" >
+                            <button type="button" class="close" data-dismiss="modal"><img class="img-close" src="{{asset('img/close.png')}}" alt=""></button>
+                        </div>
+                        <div class="modal-header" >
+                            <h5 class="modal-title" id="exampleModalScrollableTitle">Modal title</h5>
+                        </div>
+                        <div class="modal-body">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est natus pariatur itaque quisquam corporis debitis tempora, neque autem vel laudantium blanditiis sequi modi quis quae fugit cum magni reprehenderit repellendus.
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam maiores qui quos fuga, atque voluptate! Ut adipisci sunt quas, in laboriosam cumque sed, sequi blanditiis iste repudiandae nisi recusandae debitis.
+                            
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!--Presidio-->
+            <div style="margin-top:65px;" class="modal fade" id="presidio" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+               
+                <div class="modal-dialog modal-dialog-scrollable" role="document" style="height:570px">
+                    <div class="modal-content"  >
+                        <div class="modal-header img-modal" style="background-image: url({{asset('img/destinos/mazatlan/recomendacion/donde-5.jpg')}});" >
+                            <button type="button" class="close" data-dismiss="modal"><img class="img-close" src="{{asset('img/close.png')}}" alt=""></button>
+                        </div>
+                        <div class="modal-header" >
+                            <h5 class="modal-title" id="exampleModalScrollableTitle">Modal title</h5>
+                        </div>
+                        <div class="modal-body">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est natus pariatur itaque quisquam corporis debitis tempora, neque autem vel laudantium blanditiis sequi modi quis quae fugit cum magni reprehenderit repellendus.
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam maiores qui quos fuga, atque voluptate! Ut adipisci sunt quas, in laboriosam cumque sed, sequi blanditiis iste repudiandae nisi recusandae debitis.
+                            
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!--Classico-->
+            <div style="margin-top:65px;" class="modal fade" id="classico" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+               
+                <div class="modal-dialog modal-dialog-scrollable" role="document" style="height:570px">
+                    <div class="modal-content"  >
+                        <div class="modal-header img-modal" style="background-image: url({{asset('img/destinos/mazatlan/recomendacion/donde-6.jpg')}});" >
+                            <button type="button" class="close" data-dismiss="modal"><img class="img-close" src="{{asset('img/close.png')}}" alt=""></button>
+                        </div>
+                        <div class="modal-header" >
+                            <h5 class="modal-title" id="exampleModalScrollableTitle">Modal title</h5>
+                        </div>
+                        <div class="modal-body">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est natus pariatur itaque quisquam corporis debitis tempora, neque autem vel laudantium blanditiis sequi modi quis quae fugit cum magni reprehenderit repellendus.
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam maiores qui quos fuga, atque voluptate! Ut adipisci sunt quas, in laboriosam cumque sed, sequi blanditiis iste repudiandae nisi recusandae debitis.
+                            
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!--Angela Peralta-->
+            <div style="margin-top:65px;" class="modal fade" id="angelaPeralta" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+               
+                <div class="modal-dialog modal-dialog-scrollable" role="document" style="height:570px">
+                    <div class="modal-content"  >
+                        <div class="modal-header img-modal" style="background-image: url({{asset('img/destinos/mazatlan/recomendacion/donde-7.jpg')}});" >
+                            <button type="button" class="close" data-dismiss="modal"><img class="img-close" src="{{asset('img/close.png')}}" alt=""></button>
+                        </div>
+                        <div class="modal-header" >
+                            <h5 class="modal-title" id="exampleModalScrollableTitle">Modal title</h5>
+                        </div>
+                        <div class="modal-body">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est natus pariatur itaque quisquam corporis debitis tempora, neque autem vel laudantium blanditiis sequi modi quis quae fugit cum magni reprehenderit repellendus.
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam maiores qui quos fuga, atque voluptate! Ut adipisci sunt quas, in laboriosam cumque sed, sequi blanditiis iste repudiandae nisi recusandae debitis.
+                            
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!--Catedral-->
+            <div style="margin-top:65px;" class="modal fade" id="catedral" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-scrollable" role="document" style="height:570px">
+                    <div class="modal-content"  >
+                        <div class="modal-header img-modal" style="background-image: url({{asset('img/destinos/mazatlan/recomendacion/donde-8.jpg')}});" >
+                            <button type="button" class="close" data-dismiss="modal"><img class="img-close" src="{{asset('img/close.png')}}" alt=""></button>
+                        </div>
+                        <div class="modal-header" >
+                            <h5 class="modal-title" id="exampleModalScrollableTitle">Modal title</h5>
+                        </div>
+                        <div class="modal-body">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est natus pariatur itaque quisquam corporis debitis tempora, neque autem vel laudantium blanditiis sequi modi quis quae fugit cum magni reprehenderit repellendus.
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam maiores qui quos fuga, atque voluptate! Ut adipisci sunt quas, in laboriosam cumque sed, sequi blanditiis iste repudiandae nisi recusandae debitis.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-
         <!-- Tours -->
         <div id="seccion-tours">
             <h2>Tours</h2>
@@ -398,6 +582,7 @@
     <script src="{{asset('js/menu.js')}}"></script>
     <script src="{{asset('js/swiper.js')}}"></script>
     <script src="{{asset('js/gallery.js')}}"></script>
+    <script src="{{asset('js/app.js')}}"></script>
     <script>
         baguetteBox.run('.tz-gallery');
         var mySwiper = new Swiper ('.swiper-container', {
