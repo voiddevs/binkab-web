@@ -136,7 +136,7 @@
         <div class="container-fluid" id="info-destino">
             <div class="row">
                 <div class="col-sm-3">
-                    <img id="img-info-izq" src="{{asset('img/destinos/mazatlan/palmera_izq.png')}}" alt="palmera izquierda">
+                     <!-- <img id="img-info-der" src="{{asset('img/destinos/mazatlan/palmera_der.png')}}" alt="palmera derecha">  -->
                 </div>
                 <div class="col-sm-6">
                     <p>Posee una gran cultura e historia y además con el paso de los años la ciudad ha ido desarrollándose 
@@ -147,7 +147,7 @@
                     más bellas de la Tierra como lo reconoce la revista Wired.</p>
                 </div>
                 <div  class="col-sm-3">
-                    <img id="img-info-der" src="{{asset('img/destinos/mazatlan/palmera_der.png')}}" alt="palmera derecha">       
+                    <!-- <img id="img-info-der" src="{{asset('img/destinos/mazatlan/palmera_der.png')}}" alt="palmera derecha">  -->      
                 </div>
             </div>    
         </div>
@@ -202,11 +202,11 @@
                 </div>
                 <div class="col-sm-12 col-md-6 col-lg-4">
                     <ul>
-                       <!--La Marea-->
+                       <!--La Mar del zur-->
                         <li data-toggle="modal" data-target="#laMarea">
                             <div data-toggle="modal" data-target="#myModal" class="opcion-imagen" style="background-image: url({{asset('img/destinos/mazatlan/recomendacion/donde-1.jpg')}})"></div>
                             <div class="opcion-info hvr-forward">
-                                <p class="opcion-nombre ">La Marea</p>
+                                <p class="opcion-nombre ">Mar del Zur</p>
                                 <p class="opcion-ubicacion">Restaurant</p>
                             </div>
                         </li>

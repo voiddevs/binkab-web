@@ -136,13 +136,13 @@
         <div class="container-fluid" id="info-destino">
             <div class="row">
                 <div class="col-sm-3">
-                    <img id="img-info-izq" src="{{asset('img/destinos/mazatlan/palmera_izq.png')}}" alt="palmera izquierda">
+                    <!--  <img id="img-info-izq" src="{{asset('img/destinos/mazatlan/palmera_izq.png')}}" alt="palmera izquierda"> -->
                 </div>
                 <div class="col-sm-6">
                     <p>La extraordinaria ciudad de Guanajuato, patrimonio mundial de la Unesco, fue fundada en 1559 debido a los ricos yacimientos de plata y oro de la región. Los opulentos edificios coloniales, las impresionantes plazas llenas de árboles y las casas de colores brillantes se amontonan en las empinadas laderas de un estrecho barranco donde se encuentran excelentes museos, hermosos teatros y un mercado fino en las calles empedradas. Las carreteras principales de la ciudad giran alrededor de las laderas y se sumergen en largos túneles subterráneos y húmedos, antes ríos.</p>
                 </div>
                 <div  class="col-sm-3">
-                    <img id="img-info-der" src="{{asset('img/destinos/mazatlan/palmera_der.png')}}" alt="palmera derecha">       
+                   <!-- <img id="img-info-der" src="{{asset('img/destinos/mazatlan/palmera_der.png')}}" alt="palmera derecha"> -->      
                 </div>
             </div>    
         </div>
@@ -192,7 +192,7 @@
                <h2>¿A dónde ir?</h2>
                 <div class="row">
                 <div class="col-sm-12 col-md-12 col-lg-4">
-                    <img id="img-adondeir" src="{{asset('img/destinos/mazatlan/catedral-degradado.png')}}" alt="Catedral Mazatlán">
+                    <img id="img-adondeir" src="{{asset('img/destinos/guanajuato/guanajuato.png')}}" alt="Teatro juarez">
                 </div>
                 <div class="col-sm-12 col-md-6 col-lg-4">
                     <ul>
