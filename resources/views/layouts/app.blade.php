@@ -27,6 +27,8 @@
                 <a class="navbar-brand" href="{{ url('/') }}">
                     <img class="logo" src="{{asset('img/logo_negro.png')}}" alt="logo binkab negro">
                 </a>
+               
+                
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -47,10 +49,18 @@
                                 </li>
                             @endif
                         @else
+                        <li class="nav-item">
+                                    <a class="nav-link" href="/lugares/{{ Auth::user()->id }}">Nuevo lugar</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/personal/{{ Auth::user()->id }}">Mis Lugares</a>
+                                </li>
                             <li class="nav-item dropdown">
+                               
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                     {{ Auth::user()->name }} <span class="caret"></span>
                                 </a>
+                               
 
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                                     <a class="dropdown-item" href="{{ route('logout') }}"

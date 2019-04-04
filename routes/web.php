@@ -19,11 +19,26 @@ Route::get('/', function () {
 Route::get('/lugares',function(){
 	return view('lugares');
 });
+// Route::get('/actividades',function(){
+// 	return view('actividades');
+// });
+// Route::get('/fotografias',function(){
+// 	return view('fotografias');
+// });
 Route::get('/productos',function(){
 	return view('productos');
 });
+// Route::get('/personal',function(){
+// 	return view('lugar-personal');
+// });
+Route::get('/personal/{id}', 'lugares@indexPersonal');
+Route::get('/actividades/{id}', 'actividades@indexUsuario');
+Route::get('/fotografias/{id}', 'fotografias@indexUsuarioFoto');
+Route::get('/lugares/{id}', 'lugares@indexUsuarioLugar');
 
-Route::post('/save/{id}','lugares@store');
+Route::post('/save','lugares@store');
+Route::post('/saveActividad','actividades@store');
+Route::post('/saveFotografia','fotografias@store');
 // Route::get('/assing','lugares@idClient');
 // Route::get('/view','lugares@idClientShow');
 Route::post('/saveTelefonoLugar','telefonos_lugar@store');

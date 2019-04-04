@@ -41,7 +41,16 @@ class Fotografias extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $data = new Fotografia();
+        $datos=request()->except('_token');
+        if($request->hasFile('imagen')){
+            $datos['imagen']=$request->file('imagen')->store('Imagenes','public');
+        }
+        $data->nombre = $datos['nombre'];
+        $data->imagen = $datos['imagen'];
+        $data->id_lugar =  $datos['idLugar'];
+        $data->save();
+        return view('home');
     }
 
     /**
@@ -87,5 +96,15 @@ class Fotografias extends Controller
     public function destroy($id)
     {
         //
+    }
+    public function indexUsuarioFoto($id)
+    {
+        // $lugar=new Lugar();
+        // $data=$lugar::where('id_usuario', '=', 1)->get();
+        // return view('actividades', compact('data'));
+
+        $lugar=new Fotografia();
+        $dataLugares=$id;
+        return view('fotografias', compact('dataLugares'));
     }
 }

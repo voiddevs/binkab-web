@@ -22,7 +22,7 @@ class Lugares extends Controller
         // $data=$lugar::where('id_usuario', '=', 1)->get();
         // return view('actividades', compact('data'));
         $lugar=new Lugar();
-        $dataLugares=$lugar::where('id_categoria', '=', $id)->where('status', '=', 1)->join('telefonos_lugar','lugares.id','=','telefonos_lugar.id_negocio')->get();
+        $dataLugares=$lugar::where('id_categoria', '=', $id)->where('status', '=', 1)->get();
         return view('lugares-dinamicos', compact('dataLugares'));
     }
 
@@ -42,19 +42,37 @@ class Lugares extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request, $idClient2)
+    public function store(Request $request)
     {
+        // $data = new Lugar();
+        // $data->id_usuario= 1;
+        // $data->nombre = $request->input('nombre');
+        // $data->descripcion = $request->input('descripcion');
+        // $data->imagen = $request->input('imagen');
+        // $data->ubicacion = $request->input('ubicacion');   
+        // $data->id_categoria = $request->input('categoria.id');
+        // // $idClient=(int)$idClient2;
+        // // echo ($idClient);
+        // $data->save();
+        // return $data->id;
         $data = new Lugar();
-        $data->id_usuario= 1;
-        $data->nombre = $request->input('nombre');
-        $data->descripcion = $request->input('descripcion');
-        $data->imagen = $request->input('imagen');
-        $data->ubicacion = $request->input('ubicacion');   
-        $data->id_categoria = $request->input('categoria.id');
-        // $idClient=(int)$idClient2;
-        // echo ($idClient);
+        $datos=request()->except('_token');
+        if($request->hasFile('imagen')){
+            $datos['imagen']=$request->file('imagen')->store('Imagenes','public');
+        }
+        // $datos['categoria']=$datos['categoria'].value;
+        // Lugar::insert($datos);
+        $data->nombre = $datos['nombre'];
+        $data->descripcion = $datos['descripcion'];
+        $data->imagen = $datos['imagen'];
+        $data->ubicacion = $datos['ubicacion'];   
+        $data->id_categoria =$datos['categoria'];   
+        $data->telefono =$datos['telefono'];  
+        $data->id_usuario = $datos['idUsuario'];  
         $data->save();
-        return $data->id;
+        $datosnew=$data->id;
+        return view('home');
+        // return response()->json($datos);
     }
 
     /**
@@ -127,7 +145,7 @@ class Lugares extends Controller
         // $data=$lugar::where('id_usuario', '=', 1)->get();
         // return view('actividades', compact('data'));
         $lugar=new Lugar();
-        $dataLugares=$lugar::where('id_categoria', '=', 4)->join('telefonos_lugar','lugares.id','=','telefonos_lugar.id_negocio')->get();
+        $dataLugares=$lugar::all();
         return view('lugares-admin', compact('dataLugares'));
     }
 
@@ -141,5 +159,26 @@ class Lugares extends Controller
         $dataLugares2=$lugar::where('lugares.id', '=', $id)->join('actividades','lugares.id','=','actividades.id_lugar')->get();
         echo ($id);
         return view('vista-actividades', compact('dataLugares','dataLugares2'));
+    }
+
+    public function indexPersonal($id)
+    {
+        // $lugar=new Lugar();
+        // $data=$lugar::where('id_usuario', '=', 1)->get();
+        // return view('actividades', compact('data'));
+        $lugar=new Lugar();
+        $dataLugares=$lugar::where('id_usuario', '=', $id)->get();
+        return view('lugar-personal', compact('dataLugares'));
+    }
+
+    public function indexUsuarioLugar($id)
+    {
+        // $lugar=new Lugar();
+        // $data=$lugar::where('id_usuario', '=', 1)->get();
+        // return view('actividades', compact('data'));
+
+        $lugar=new Lugar();
+        $dataLugares=$id;
+        return view('lugares', compact('dataLugares'));
     }
 }

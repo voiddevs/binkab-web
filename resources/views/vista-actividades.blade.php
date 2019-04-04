@@ -12,6 +12,7 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </head>
 <body ng-app="app">
+
     <div class="container" ng-controller="ctrl">
     <h1>Vista Actividades</h1>
         <div id="contenedor-principal">
@@ -36,17 +37,18 @@
             var myEl2 = angular.element( document.querySelector( '#contenedor-principal2' ) );  
             for(var x=0; x<$scope.lugares.length;x++){
                 myEl.append(
-                '<div class="titulo">'+$scope.lugares[x].nombre+'</div>'
-                +'<div class="imagen">'+$scope.lugares[x].imagen+'</div>'
-                // +'<div class="ubicacion">Estado:'+texto+'</div>'
+                '<div class="titulo">'+$scope.lugares[x].nombre+'</div>'    
+                +'<img  src=" http://127.0.0.1:8000/storage/'+$scope.lugares[x].imagen+'" width="400px" height="300px>'
+                +'<div class="nada"></div>'
+                // +'<div class="ubicacion">Estado:'+texto+'</div>' 
                 ); 
             }
 
             for(var x=0; x<$scope.lugares2.length;x++){
                 myEl2.append(
                 '<div class="titulo">'+$scope.lugares2[x].nombre+'</div>'
-                +'<div class="imagen">'+$scope.lugares2[x].imagen+'</div>'
-                +'<div class="imagen">'+$scope.lugares2[x].descripcion+'</div>'
+                +'<img  src=" http://127.0.0.1:8000/storage/'+$scope.lugares2[x].imagen+'" width="400px" height="300px>'
+                +'<div class="descripcion">'+$scope.lugares2[x].descripcion+'</div>'
                 // +'<div class="ubicacion">Estado:'+texto+'</div>'
                 ); 
             }

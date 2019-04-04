@@ -31,10 +31,11 @@
             var myEl = angular.element( document.querySelector( '#contenedor-principal' ) );
             for(var x=0; x<$scope.lugares.length;x++){
                 myEl.append(
-                '<div class="titulo">'+$scope.lugares[x].nombre+'</div>'
-                +'<div class="imagen">'+$scope.lugares[x].imagen+'</div>'
-                +'<div class="descripcion">'+$scope.lugares[x].descripcion+'</div>'
+                    '<div class="titulo">'+$scope.lugares[x].nombre+'</div>'
+                +'<img  src=" http://127.0.0.1:8000/storage/'+$scope.lugares[x].imagen+'" width="400px" height="300px>'
+                +'<div class="telefono"></div>'
                 +'<div class="telefono">Telefono: '+$scope.lugares[x].telefono+'</div>'
+                +'<div class="descripcion">Descripcion:'+$scope.lugares[x].descripcion+'</div>'
                 +'<div class="ubicacion">'+$scope.lugares[x].ubicacion+'</div>'
                 ); 
                 myEl.append($compile(

@@ -40,7 +40,18 @@ class Actividades extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $data = new Actividad();
+        $datos=request()->except('_token');
+        if($request->hasFile('imagen')){
+            $datos['imagen']=$request->file('imagen')->store('Imagenes','public');
+        }
+        $data->nombre = $datos['nombre'];
+        $data->descripcion = $datos['descripcion'];
+        $data->imagen = $datos['imagen'];
+        $data->id_lugar =  $datos['idLugar'];
+        $data->save();
+        return view('home');
+        // $datosnew=$data->id;
     }
 
     /**
@@ -86,5 +97,15 @@ class Actividades extends Controller
     public function destroy($id)
     {
         //
+    }
+    public function indexUsuario($id)
+    {
+        // $lugar=new Lugar();
+        // $data=$lugar::where('id_usuario', '=', 1)->get();
+        // return view('actividades', compact('data'));
+
+        $lugar=new Actividad();
+        $dataLugares=$id;
+        return view('actividades', compact('dataLugares'));
     }
 }

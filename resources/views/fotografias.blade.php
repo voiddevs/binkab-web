@@ -12,45 +12,18 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </head>
 <body ng-app="app">
-    <div class="container" ng-controller="ctrl">
-		<form action="{{ url('/save')}}" method="post" enctype="multipart/form-data">
+<div class="container" ng-controller="ctrl">
+		<form action="{{ url('/saveFotografia')}}" method="post" enctype="multipart/form-data">
 		{{ csrf_field() }}
 			<label for="nombre">{{'Nombre'}}</label>
 			<input type="text" name="nombre" id="nombre" value="" class="form-control">
 
-			<label for="descripcion">{{'Descripcion'}}</label>
-			<input type="text" name="descripcion" id="descripcion" value="" class="form-control">
-
 			<label for="imagen">{{'Imagen'}}</label>
 			<input type="file" name="imagen" id="imagen" value="" class="form-control">	
 
-			<label for="ubicacion">{{'Ubicacion'}}</label>
-			<input type="text" name="ubicacion" id="ubicacion" value="" class="form-control"> 
+			<input type="number" name="idLugar" id="idLugar" value="@{{lugares}}" class="form-control" style="visibility: hidden">	
 
-			<label for="telefono">{{'telefono'}}</label>
-			<input type="text" name="telefono" id="telefono" value="" class="form-control">
-
-
-
-			<div>
-				<label>Categoria</label>
-				<div class="form-group row">
-					<div class="col-sm-10">
-					<select  name="categoria"   class="form-control" id="categoria"  ng-required="true" class="form-control">
-					<option value="">Selecciona una categoria</option>
-					<option value=1>Area de deportes</option>
-					<option value=2>Cultural</option>
-					<option value=5>Entretenimiento</option>
-					<option value=4>Restaurante</option>
-					<option value=3>Turismo</option>
-					<option value=6>Souvenirs</option>
-					</select>
-					</div>
-				</div>
-			</div>
-
-			<input type="submit" value="agregar" ng-click="savePhone()">
-			<input type="number" name="idUsuario" id="idUsuario" value="@{{lugares}}" class="form-control" style="visibility: hidden">	
+			<input type="submit" value="agregar">
 		</form>
 
 	</div>
