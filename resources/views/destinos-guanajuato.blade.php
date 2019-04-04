@@ -80,23 +80,23 @@
             <div class="swiper-wrapper">
                 <!-- Slides -->
                 <div class="swiper-slide">
-                    <div class="slide-seccion-destino" style="background-image: url({{asset('img/destinos/mazatlan/slide-1.jpg')}})"></div>
+                    <div class="slide-seccion-destino" style="background-image: url({{asset('img/destinos/guanajuato/slide-1.jpg')}})"></div>
                     <p class="titulo-seccion">Turismo</p>
                 </div>
                 <div class="swiper-slide">
-                    <div class="slide-seccion-destino" style="background-image: url({{asset('img/destinos/mazatlan/slide-2.jpg')}})"></div>
+                    <div class="slide-seccion-destino" style="background-image: url({{asset('img/destinos/guanajuato/slide-2.jpg')}})"></div>
                     <p class="titulo-seccion">Comida</p>
                 </div>
                 <div class="swiper-slide">
-                    <div class="slide-seccion-destino" style="background-image: url({{asset('img/destinos/mazatlan/slide-3.jpg')}})"></div>
+                    <div class="slide-seccion-destino" style="background-image: url({{asset('img/destinos/guanajuato/slide-3.jpg')}})"></div>
                     <p class="titulo-seccion">Cultural</p>
                 </div>
                 <div class="swiper-slide">
-                    <div class="slide-seccion-destino" style="background-image: url({{asset('img/destinos/mazatlan/slide-4.jpg')}})"></div>
+                    <div class="slide-seccion-destino" style="background-image: url({{asset('img/destinos/guanajuato/slide-4.jpg')}})"></div>
                     <p class="titulo-seccion">Deportes</p>
                 </div>
                 <div class="swiper-slide">
-                    <div class="slide-seccion-destino" style="background-image: url({{asset('img/destinos/mazatlan/slide-5.jpg')}})"></div>
+                    <div class="slide-seccion-destino" style="background-image: url({{asset('img/destinos/guanajuato/slide-5.jpg')}})"></div>
                     <p class="titulo-seccion">Entretenimiento</p>
                 </div>
             </div>
@@ -139,13 +139,7 @@
                     <img id="img-info-izq" src="{{asset('img/destinos/mazatlan/palmera_izq.png')}}" alt="palmera izquierda">
                 </div>
                 <div class="col-sm-6">
-                    <p>Gracias a los 20 km de playas arenosas, Mazatlán se convirtió en uno de los destinos de playa más
-                    atractivos y visitados de México a mediados del siglo XX, antes de que pasara de su apogeo a una
-                    categoría de paquetes turísticos de paquete medio. Recientemente, sin embargo, el núcleo
-                    histórico de Mazatlán, conocido como neoclásico tropical, ha sido restaurado y poblado por la
-                    clase creativa. El resultado es una ciudad costera con mucho encanto. Una nueva carretera
-                    audazmente diseñada desde el interior significa que las playas ahora son más accesibles para los
-                    mexicanos también, y que las buenas vibraciones han regresado.</p>
+                    <p>La extraordinaria ciudad de Guanajuato, patrimonio mundial de la Unesco, fue fundada en 1559 debido a los ricos yacimientos de plata y oro de la región. Los opulentos edificios coloniales, las impresionantes plazas llenas de árboles y las casas de colores brillantes se amontonan en las empinadas laderas de un estrecho barranco donde se encuentran excelentes museos, hermosos teatros y un mercado fino en las calles empedradas. Las carreteras principales de la ciudad giran alrededor de las laderas y se sumergen en largos túneles subterráneos y húmedos, antes ríos.</p>
                 </div>
                 <div  class="col-sm-3">
                     <img id="img-info-der" src="{{asset('img/destinos/mazatlan/palmera_der.png')}}" alt="palmera derecha">       

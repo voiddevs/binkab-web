@@ -276,15 +276,16 @@
                
                 <div class="modal-dialog modal-dialog-scrollable" role="document" style="height:570px">
                     <div class="modal-content"  >
-                        <div class="modal-header img-modal" style="background-image: url({{asset('img/destinos/mazatlan/recomendacion/donde-1.jpg')}});" >
+                        <div class="modal-header img-modal" style="background-image: url({{asset('img/destinos/mazatlan/recomendacion/modal/modal-1.jpg')}});" >
                             <button type="button" class="close" data-dismiss="modal"><img class="img-close" src="{{asset('img/close.png')}}" alt=""></button>
                         </div>
                         <div class="modal-header" >
-                            <h5 class="modal-title" id="exampleModalScrollableTitle">Modal title</h5>
+                            <h5 class="modal-title" id="exampleModalScrollableTitle">La Marea - Restaurant</h5>
                         </div>
                         <div class="modal-body">
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est natus pariatur itaque quisquam corporis debitis tempora, neque autem vel laudantium blanditiis sequi modi quis quae fugit cum magni reprehenderit repellendus.
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam maiores qui quos fuga, atque voluptate! Ut adipisci sunt quas, in laboriosam cumque sed, sequi blanditiis iste repudiandae nisi recusandae debitis.
+                            <p>Bienvenidos a La Marea, prometemos una experiencia única y relajada que ofrece algo diferente a todos nuestros clientes locales y extranjeros. Venga y disfrute de nuestra terraza y su hermosa vista al pacífico.
+                            <br><br>Disfrute de familiares y amigos nuestros deliciosos platillos, espectaculares  bebidas  y un servicio único.
+                            <br><br>En La Marea ofrecemos una experiencia culinaria memorable y única. Nuestro menú esta inspirado en los platillos favoritos tradicionales preparaos con ingredientes mexicanos, frescos y de gran calidad.
                             </p>
                         </div>
                     </div>
@@ -297,11 +298,11 @@
                 <div class="modal-dialog modal-dialog-scrollable" role="document" style="height:570px">
                     <div class="modal-content"  >
                        
-                        <div class="modal-header img-modal" style="background-image: url({{asset('img/destinos/mazatlan/recomendacion/donde-2.jpg')}});" >
+                        <div class="modal-header img-modal" style="background-image: url({{asset('img/destinos/mazatlan/recomendacion/modal/modal-2.jpg')}});" >
                             <button type="button" class="close" data-dismiss="modal"><img class="img-close" src="{{asset('img/close.png')}}" alt=""></button>
                         </div>
                         <div class="modal-header" >
-                            <h5 class="modal-title" id="exampleModalScrollableTitle">Modal title</h5>
+                            <h5 class="modal-title" id="exampleModalScrollableTitle">Acuario Mazatlán - Recreación</h5>
                         </div>
                         <div class="modal-body">
                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est natus pariatur itaque quisquam corporis debitis tempora, neque autem vel laudantium blanditiis sequi modi quis quae fugit cum magni reprehenderit repellendus.

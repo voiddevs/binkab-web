@@ -198,7 +198,7 @@
                <h2>¿A dónde ir?</h2>
                 <div class="row">
                 <div class="col-sm-12 col-md-12 col-lg-4">
-                    <img id="img-adondeir" src="{{asset('img/destinos/mazatlan/catedral-degradado.png')}}" alt="Catedral Mazatlán">
+                    <img id="img-adondeir" src="{{asset('img/destinos/monterrey/monterrey.png')}}" alt="Monterrey">
                 </div>
                 <div class="col-sm-12 col-md-6 col-lg-4">
                     <ul>

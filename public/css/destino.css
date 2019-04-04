@@ -324,3 +324,5 @@ body{
 .img-modal{padding: 0px 0px 0px 0px;height:200px;    height: 200px; background-position: center;background-repeat: no-repeat;
     background-size: cover;}
 .img-close{width: 20px}
+
+.modal-content{border: none !important;}
