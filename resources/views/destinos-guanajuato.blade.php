@@ -80,23 +80,23 @@
             <div class="swiper-wrapper">
                 <!-- Slides -->
                 <div class="swiper-slide">
-                    <div class="slide-seccion-destino" style="background-image: url({{asset('img/destinos/mazatlan/slide-1.jpg')}})"></div>
+                    <div class="slide-seccion-destino" style="background-image: url({{asset('img/destinos/guanajuato/slide-1.jpg')}})"></div>
                     <p class="titulo-seccion">Turismo</p>
                 </div>
                 <div class="swiper-slide">
-                    <div class="slide-seccion-destino" style="background-image: url({{asset('img/destinos/mazatlan/slide-2.jpg')}})"></div>
+                    <div class="slide-seccion-destino" style="background-image: url({{asset('img/destinos/guanajuato/slide-2.jpg')}})"></div>
                     <p class="titulo-seccion">Comida</p>
                 </div>
                 <div class="swiper-slide">
-                    <div class="slide-seccion-destino" style="background-image: url({{asset('img/destinos/mazatlan/slide-3.jpg')}})"></div>
+                    <div class="slide-seccion-destino" style="background-image: url({{asset('img/destinos/guanajuato/slide-3.jpg')}})"></div>
                     <p class="titulo-seccion">Cultural</p>
                 </div>
                 <div class="swiper-slide">
-                    <div class="slide-seccion-destino" style="background-image: url({{asset('img/destinos/mazatlan/slide-4.jpg')}})"></div>
+                    <div class="slide-seccion-destino" style="background-image: url({{asset('img/destinos/guanajuato/slide-4.jpg')}})"></div>
                     <p class="titulo-seccion">Deportes</p>
                 </div>
                 <div class="swiper-slide">
-                    <div class="slide-seccion-destino" style="background-image: url({{asset('img/destinos/mazatlan/slide-5.jpg')}})"></div>
+                    <div class="slide-seccion-destino" style="background-image: url({{asset('img/destinos/guanajuato/slide-5.jpg')}})"></div>
                     <p class="titulo-seccion">Entretenimiento</p>
                 </div>
             </div>
@@ -139,13 +139,7 @@
                     <img id="img-info-izq" src="{{asset('img/destinos/mazatlan/palmera_izq.png')}}" alt="palmera izquierda">
                 </div>
                 <div class="col-sm-6">
-                    <p>Gracias a los 20 km de playas arenosas, Mazatlán se convirtió en uno de los destinos de playa más
-                    atractivos y visitados de México a mediados del siglo XX, antes de que pasara de su apogeo a una
-                    categoría de paquetes turísticos de paquete medio. Recientemente, sin embargo, el núcleo
-                    histórico de Mazatlán, conocido como neoclásico tropical, ha sido restaurado y poblado por la
-                    clase creativa. El resultado es una ciudad costera con mucho encanto. Una nueva carretera
-                    audazmente diseñada desde el interior significa que las playas ahora son más accesibles para los
-                    mexicanos también, y que las buenas vibraciones han regresado.</p>
+                    <p>La extraordinaria ciudad de Guanajuato, patrimonio mundial de la Unesco, fue fundada en 1559 debido a los ricos yacimientos de plata y oro de la región. Los opulentos edificios coloniales, las impresionantes plazas llenas de árboles y las casas de colores brillantes se amontonan en las empinadas laderas de un estrecho barranco donde se encuentran excelentes museos, hermosos teatros y un mercado fino en las calles empedradas. Las carreteras principales de la ciudad giran alrededor de las laderas y se sumergen en largos túneles subterráneos y húmedos, antes ríos.</p>
                 </div>
                 <div  class="col-sm-3">
                     <img id="img-info-der" src="{{asset('img/destinos/mazatlan/palmera_der.png')}}" alt="palmera derecha">       
@@ -154,7 +148,7 @@
         </div>
     
         <!-- Parallax -->
-        <div style="background-image:url({{asset('img/destinos/mazatlan/parallax.jpg')}});" class="parallax-destino"><div class="filtro-destino"></div></div>
+        <div style="background-image:url({{asset('img/destinos/guanajuato/parallax.jpg')}});" class="parallax-destino"><div class="filtro-destino"></div></div>
 
         <!-- Eventos del destino -->
         <div id="seccion-eventos">
@@ -193,7 +187,6 @@
             </div>
         </div>
 
-          <!-- ¿A dónde ir? -->
          <!-- ¿A dónde ir? -->
          <div id="seccion-adondeir">
                <h2>¿A dónde ir?</h2>
@@ -205,33 +198,33 @@
                     <ul>
                        <!--La Marea-->
                         <li data-toggle="modal" data-target="#laMarea">
-                            <div data-toggle="modal" data-target="#myModal" class="opcion-imagen" style="background-image: url({{asset('img/destinos/mazatlan/recomendacion/donde-1.jpg')}})"></div>
+                            <div data-toggle="modal" data-target="#myModal" class="opcion-imagen" style="background-image: url({{asset('img/destinos/guanajuato/recomendacion/donde-1.jpg')}})"></div>
                             <div class="opcion-info hvr-forward">
-                                <p class="opcion-nombre ">La Marea</p>
-                                <p class="opcion-ubicacion">Restaurant</p>
+                                <p class="opcion-nombre ">Casa de Diego Rivera</p>
+                                <p class="opcion-ubicacion">Museo</p>
                             </div>
                         </li>
                         
                         <!--Acuario-->
                         <li data-toggle="modal" data-target="#acuario">
-                            <div data-toggle="modal" data-target="#myModal" class="opcion-imagen" style="background-image: url({{asset('img/destinos/mazatlan/recomendacion/donde-2.jpg')}})"></div>
+                            <div data-toggle="modal" data-target="#myModal" class="opcion-imagen" style="background-image: url({{asset('img/destinos/guanajuato/recomendacion/donde-2.jpeg')}})"></div>
                             <div class="opcion-info hvr-forward">
-                                <p class="opcion-nombre">Acuario Mazatlán</p>
-                                <p class="opcion-ubicacion">Recreación</p>
+                                <p class="opcion-nombre">Teatro Juárez</p>
+                                <p class="opcion-ubicacion">Teatro</p>
                             </div>
                         </li>
                         <li data-toggle="modal" data-target="#machado">
-                            <div data-toggle="modal" data-target="#myModal" class="opcion-imagen" style="background-image: url({{asset('img/destinos/mazatlan/recomendacion/donde-3.jpg')}})"></div>
+                            <div data-toggle="modal" data-target="#myModal" class="opcion-imagen" style="background-image: url({{asset('img/destinos/guanajuato/recomendacion/donde-3.jpg')}})"></div>
                             <div class="opcion-info hvr-forward">
-                                <p class="opcion-nombre">Plaza Machado</p>
-                                <p class="opcion-ubicacion">Recreación</p>
+                                <p class="opcion-nombre">Museo de las Momias</p>
+                                <p class="opcion-ubicacion">Museo</p>
                             </div>
                         </li>
                         <li data-toggle="modal" data-target="#mazagua">
-                            <div data-toggle="modal" data-target="#myModal" class="opcion-imagen" style="background-image: url({{asset('img/destinos/mazatlan/recomendacion/donde-4.jpg')}})"></div>
+                            <div data-toggle="modal" data-target="#myModal" class="opcion-imagen" style="background-image: url({{asset('img/destinos/guanajuato/recomendacion/donde-4.jpg')}})"></div>
                             <div class="opcion-info hvr-forward">
-                                <p class="opcion-nombre">Mazagua</p>
-                                <p class="opcion-ubicacion">Parque</p>
+                                <p class="opcion-nombre">Las Mercedes</p>
+                                <p class="opcion-ubicacion">Restaurant</p>
                             </div>
                         </li>
                     </ul>
@@ -239,31 +232,31 @@
                 <div class="col-sm-12 col-md-6 col-lg-4">
                     <ul>
                         <li data-toggle="modal" data-target="#presidio">
-                            <div data-toggle="modal" data-target="#myModal" class="opcion-imagen" style="background-image: url({{asset('img/destinos/mazatlan/recomendacion/donde-5.jpg')}})"></div>
+                            <div data-toggle="modal" data-target="#myModal" class="opcion-imagen" style="background-image: url({{asset('img/destinos/guanajuato/recomendacion/donde-5.jpg')}})"></div>
                             <div class="opcion-info hvr-forward">
-                                <p class="opcion-nombre">Presidio</p>
+                                <p class="opcion-nombre">Jardín de los Milagros</p>
                                 <p class="opcion-ubicacion">Restaurant</p>
                             </div>
                         </li>
                         <li data-toggle="modal" data-target="#classico">
-                            <div data-toggle="modal" data-target="#myModal" class="opcion-imagen" style="background-image: url({{asset('img/destinos/mazatlan/recomendacion/donde-6.jpg')}})"></div>
+                            <div data-toggle="modal" data-target="#myModal" class="opcion-imagen" style="background-image: url({{asset('img/destinos/guanajuato/recomendacion/donde-6.jpg')}})"></div>
                             <div class="opcion-info hvr-forward">
-                                <p class="opcion-nombre">Classico</p>
-                                <p class="opcion-ubicacion">Nocturno</p>
+                                <p class="opcion-nombre">Golem</p>
+                                <p class="opcion-ubicacion">Bar</p>
                             </div>
                         </li>
                         <li data-toggle="modal" data-target="#angelaPeralta">
-                            <div data-toggle="modal" data-target="#myModal" class="opcion-imagen" style="background-image: url({{asset('img/destinos/mazatlan/recomendacion/donde-7.jpg')}})"></div>
+                            <div data-toggle="modal" data-target="#myModal" class="opcion-imagen" style="background-image: url({{asset('img/destinos/guanajuato/recomendacion/donde-7.jpg')}})"></div>
                             <div class="opcion-info hvr-forward">
-                                <p class="opcion-nombre">Ángela Peralta</p>
+                                <p class="opcion-nombre">Basílica</p>
                                 <p class="opcion-ubicacion">Cultural</p>
                             </div>
                         </li>
                         <li data-toggle="modal" data-target="#catedral">
-                            <div data-toggle="modal" data-target="#myModal" class="opcion-imagen" style="background-image: url({{asset('img/destinos/mazatlan/recomendacion/donde-8.jpg')}})"></div>
+                            <div data-toggle="modal" data-target="#myModal" class="opcion-imagen" style="background-image: url({{asset('img/destinos/guanajuato/recomendacion/donde-8.jpg')}})"></div>
                             <div class="opcion-info hvr-forward">
-                                <p class="opcion-nombre">Catedral</p>
-                                <p class="opcion-ubicacion">Cultural</p>
+                                <p class="opcion-nombre">Museo del Juguete</p>
+                                <p class="opcion-ubicacion">Museo</p>
                             </div>
                         </li>
                     </ul>
