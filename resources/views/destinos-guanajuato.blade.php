@@ -265,61 +265,59 @@
             
             <!--MODAL-->
             
-            <!--La marea-->
+            <!--Casa de diego rivera-->
             <div style="margin-top:65px;" class="modal fade" id="laMarea" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
                
                 <div class="modal-dialog modal-dialog-scrollable" role="document" style="height:570px">
                     <div class="modal-content"  >
-                        <div class="modal-header img-modal" style="background-image: url({{asset('img/destinos/mazatlan/recomendacion/donde-1.jpg')}});" >
+                        <div class="modal-header img-modal" style="background-image: url({{asset('img/destinos/guanajuato/recomendacion/modal/modalg-1.jpg')}});" >
                             <button type="button" class="close" data-dismiss="modal"><img class="img-close" src="{{asset('img/close.png')}}" alt=""></button>
                         </div>
                         <div class="modal-header" >
-                            <h5 class="modal-title" id="exampleModalScrollableTitle">Modal title</h5>
+                            <h5 class="modal-title" id="exampleModalScrollableTitle">Casa de Diego Rivera - Museo</h5>
                         </div>
                         <div class="modal-body">
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est natus pariatur itaque quisquam corporis debitis tempora, neque autem vel laudantium blanditiis sequi modi quis quae fugit cum magni reprehenderit repellendus.
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam maiores qui quos fuga, atque voluptate! Ut adipisci sunt quas, in laboriosam cumque sed, sequi blanditiis iste repudiandae nisi recusandae debitis.
+                            <p>Abierto como museo en el año de 1975 se ubica en la que fuera la casa natal del famoso pintor mexicano Diego Rivera. Su acervo en exhibición forma parte de la importante colección del Ing. Marte R. Gómez incluyendo desde obras realizadas durante su infancia como “Cabeza clásica”, hasta sus últimas obras realizadas un año antes de su muerte en 1956, como “Paloma de la paz” y “Madame Libet”.
+Adicionalmente, su acervo cuenta con la colección de “Mini estampa”, constituida por obra de artistas reconocidos, como el Maestro José Luis Cuevas entre otros.
                             </p>
                         </div>
                     </div>
                 </div>
             </div>
             
-            <!--Acuario-->
+            <!--Teatro JUAREZ-->
             <div style="margin-top:65px;" class="modal fade" id="acuario" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
                
                 <div class="modal-dialog modal-dialog-scrollable" role="document" style="height:570px">
                     <div class="modal-content"  >
                        
-                        <div class="modal-header img-modal" style="background-image: url({{asset('img/destinos/mazatlan/recomendacion/donde-2.jpg')}});" >
+                        <div class="modal-header img-modal" style="background-image: url({{asset('img/destinos/guanajuato/recomendacion/modal/modalg-2.jpg')}});" >
                             <button type="button" class="close" data-dismiss="modal"><img class="img-close" src="{{asset('img/close.png')}}" alt=""></button>
                         </div>
                         <div class="modal-header" >
-                            <h5 class="modal-title" id="exampleModalScrollableTitle">Modal title</h5>
+                            <h5 class="modal-title" id="exampleModalScrollableTitle">Teatro Juarez - Teatro</h5>
                         </div>
                         <div class="modal-body">
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est natus pariatur itaque quisquam corporis debitis tempora, neque autem vel laudantium blanditiis sequi modi quis quae fugit cum magni reprehenderit repellendus.
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam maiores qui quos fuga, atque voluptate! Ut adipisci sunt quas, in laboriosam cumque sed, sequi blanditiis iste repudiandae nisi recusandae debitis.
+                            <p>El Teatro Juárez es uno de los recintos de su género más bellos del país. Su edificación inició en el año de 1873 bajo el auspicio del General Florencio Antillón en los terrenos ocupados originalmente por el antiguo convento de San Diego de Alcalá.
                             </p>
                         </div>
                     </div>
                 </div>
             </div>
             
-            <!--Machado-->
+            <!--Museo de momias-->
             <div style="margin-top:65px;" class="modal fade" id="machado" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
                
                 <div class="modal-dialog modal-dialog-scrollable" role="document" style="height:570px">
                     <div class="modal-content"  >
-                        <div class="modal-header img-modal" style="background-image: url({{asset('img/destinos/mazatlan/recomendacion/donde-3.jpg')}});" >
+                        <div class="modal-header img-modal" style="background-image: url({{asset('img/destinos/guanajuato/recomendacion/modal/modalg-3.jpg')}});" >
                             <button type="button" class="close" data-dismiss="modal"><img class="img-close" src="{{asset('img/close.png')}}" alt=""></button>
                         </div>
                         <div class="modal-header" >
-                            <h5 class="modal-title" id="exampleModalScrollableTitle">Modal title</h5>
+                            <h5 class="modal-title" id="exampleModalScrollableTitle">Museo de momias</h5>
                         </div>
                         <div class="modal-body">
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est natus pariatur itaque quisquam corporis debitis tempora, neque autem vel laudantium blanditiis sequi modi quis quae fugit cum magni reprehenderit repellendus.
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam maiores qui quos fuga, atque voluptate! Ut adipisci sunt quas, in laboriosam cumque sed, sequi blanditiis iste repudiandae nisi recusandae debitis.
+                            <p>Aquí vas a apreciar los restos momificados de nuestros ancestros geográficos y culturales. La actual colección de momias naturales más grande del mundo, patrimonio cultural del Municipio de Guanajuato, de la que hoy pueden apreciarse en este recinto 57 elementos.! Ut adipisci sunt quas, in laboriosam cumque sed, sequi blanditiis iste repudiandae nisi recusandae debitis.
                             
                             </p>
                         </div>
@@ -327,20 +325,21 @@
                 </div>
             </div>
             
-            <!--Mazagua-->
+            <!--las mercedes-->
             <div style="margin-top:65px;" class="modal fade" id="mazagua" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
                
                 <div class="modal-dialog modal-dialog-scrollable" role="document" style="height:570px">
                     <div class="modal-content"  >
-                        <div class="modal-header img-modal" style="background-image: url({{asset('img/destinos/mazatlan/recomendacion/donde-4.jpg')}});" >
+                        <div class="modal-header img-modal" style="background-image: url({{asset('img/destinos/guanajuato/recomendacion/modal/modalg-4.jpg')}});" >
                             <button type="button" class="close" data-dismiss="modal"><img class="img-close" src="{{asset('img/close.png')}}" alt=""></button>
                         </div>
                         <div class="modal-header" >
-                            <h5 class="modal-title" id="exampleModalScrollableTitle">Modal title</h5>
+                            <h5 class="modal-title" id="exampleModalScrollableTitle">Las Mercedes - Restaurante</h5>
                         </div>
                         <div class="modal-body">
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est natus pariatur itaque quisquam corporis debitis tempora, neque autem vel laudantium blanditiis sequi modi quis quae fugit cum magni reprehenderit repellendus.
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam maiores qui quos fuga, atque voluptate! Ut adipisci sunt quas, in laboriosam cumque sed, sequi blanditiis iste repudiandae nisi recusandae debitis.
+                            <p>El restaurante Las Mercedes, Guanajuato es un restaurante 100% familiar donde degustar platillos con sazón mexicano es lo mejor. Su menú tradicional ha sido pasado de generación en generación y cada día aumenta en calidad, frescura y sabor.
+
+                            Sus platillos son dignos de ser nombrados en importantes revistas gracias a su textura, color, sabor y aroma en los que el pozole es el principal plato a disfrutar seguido de los chiles en nogada acompañados por una cerveza o un caballito de tequila.
                             
                             </p>
                         </div>
@@ -348,20 +347,21 @@
                 </div>
             </div>
             
-            <!--Presidio-->
+            <!--jardin de los milagros-->
             <div style="margin-top:65px;" class="modal fade" id="presidio" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
                
                 <div class="modal-dialog modal-dialog-scrollable" role="document" style="height:570px">
                     <div class="modal-content"  >
-                        <div class="modal-header img-modal" style="background-image: url({{asset('img/destinos/mazatlan/recomendacion/donde-5.jpg')}});" >
+                        <div class="modal-header img-modal" style="background-image: url({{asset('img/destinos/guanajuato/recomendacion/modal/modalg-5.jpg')}});" >
                             <button type="button" class="close" data-dismiss="modal"><img class="img-close" src="{{asset('img/close.png')}}" alt=""></button>
                         </div>
                         <div class="modal-header" >
-                            <h5 class="modal-title" id="exampleModalScrollableTitle">Modal title</h5>
+                            <h5 class="modal-title" id="exampleModalScrollableTitle">El Jardín de los Milagros - Restaurante</h5>
                         </div>
                         <div class="modal-body">
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est natus pariatur itaque quisquam corporis debitis tempora, neque autem vel laudantium blanditiis sequi modi quis quae fugit cum magni reprehenderit repellendus.
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam maiores qui quos fuga, atque voluptate! Ut adipisci sunt quas, in laboriosam cumque sed, sequi blanditiis iste repudiandae nisi recusandae debitis.
+                            <p>El Jardín de Los Milagros, un sitio donde el chef Bricio Domínguez, nacido en Toluca pero guanajuatense por adopción, combina las emociones y la comida. Ubicado en una casona que fue propiedad de Juan Nepomuceno -militar, político y diplomático que participó en la Batalla de El Álamo- se degusta una cocina de generación plagada de sabores y texturas. 
+                            "Mi cocina nace de mi corazón, de lo más profundo de mis sentimientos, de esos rincones que todo el mundo tenemos" Bricio,
+                            Te invitamos a degustar su cocina de autor, con los elementos guanajuatenses.
                             
                             </p>
                         </div>
@@ -369,20 +369,22 @@
                 </div>
             </div>
             
-            <!--Classico-->
+            <!--Golem-->
             <div style="margin-top:65px;" class="modal fade" id="classico" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
                
                 <div class="modal-dialog modal-dialog-scrollable" role="document" style="height:570px">
                     <div class="modal-content"  >
-                        <div class="modal-header img-modal" style="background-image: url({{asset('img/destinos/mazatlan/recomendacion/donde-6.jpg')}});" >
+                        <div class="modal-header img-modal" style="background-image: url({{asset('img/destinos/guanajuato/recomendacion/modal/modalg-6.jpg')}});" >
                             <button type="button" class="close" data-dismiss="modal"><img class="img-close" src="{{asset('img/close.png')}}" alt=""></button>
                         </div>
                         <div class="modal-header" >
-                            <h5 class="modal-title" id="exampleModalScrollableTitle">Modal title</h5>
+                            <h5 class="modal-title" id="exampleModalScrollableTitle">Golem - Bar</h5>
                         </div>
                         <div class="modal-body">
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est natus pariatur itaque quisquam corporis debitis tempora, neque autem vel laudantium blanditiis sequi modi quis quae fugit cum magni reprehenderit repellendus.
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam maiores qui quos fuga, atque voluptate! Ut adipisci sunt quas, in laboriosam cumque sed, sequi blanditiis iste repudiandae nisi recusandae debitis.
+                            <p>Golem es un bar de vino, cerveza, café y té, que incluso es galería, ubicado en el centro de Guanajuato.
+
+                                Si quieres ir a disfrutar de un buen ambiente, con buena música y un buen vino, 
+                                este es el lugar perfecto.
                             
                             </p>
                         </div>
@@ -390,20 +392,19 @@
                 </div>
             </div>
             
-            <!--Angela Peralta-->
+            <!--basilica-->
             <div style="margin-top:65px;" class="modal fade" id="angelaPeralta" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
                
                 <div class="modal-dialog modal-dialog-scrollable" role="document" style="height:570px">
                     <div class="modal-content"  >
-                        <div class="modal-header img-modal" style="background-image: url({{asset('img/destinos/mazatlan/recomendacion/donde-7.jpg')}});" >
+                        <div class="modal-header img-modal" style="background-image: url({{asset('img/destinos/guanajuato/recomendacion/modal/modalg-7.jpg')}});" >
                             <button type="button" class="close" data-dismiss="modal"><img class="img-close" src="{{asset('img/close.png')}}" alt=""></button>
                         </div>
                         <div class="modal-header" >
-                            <h5 class="modal-title" id="exampleModalScrollableTitle">Modal title</h5>
+                            <h5 class="modal-title" id="exampleModalScrollableTitle">Basílica - Cultural</h5>
                         </div>
                         <div class="modal-body">
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est natus pariatur itaque quisquam corporis debitis tempora, neque autem vel laudantium blanditiis sequi modi quis quae fugit cum magni reprehenderit repellendus.
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam maiores qui quos fuga, atque voluptate! Ut adipisci sunt quas, in laboriosam cumque sed, sequi blanditiis iste repudiandae nisi recusandae debitis.
+                            <p>Se le denominó Parroquia de Guanajuato hasta el año de 1957, en que se le elevó a la categoría de la Basílica de Nuestra Señora de Guanajuato. Su construcción se inició en el año de 1771 y se concluyó en 1796, los mineros fueron quienes cubrieron los costos del lugar. En ese año se llevó al templo la  imagen de la Virgen de Guanajuato, la cual dice la tradición, fue donada por el rey Felipe II. Es una magnifica escultura en madera estofada, llama la atención la dulce belleza de los rostros de la Virgen y el Niño y tiene una rica base de plata repujada de estilo barroco.
                             
                             </p>
                         </div>
@@ -411,19 +412,18 @@
                 </div>
             </div>
             
-            <!--Catedral-->
+            <!--Cmuseo de juguete-->
             <div style="margin-top:65px;" class="modal fade" id="catedral" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-scrollable" role="document" style="height:570px">
                     <div class="modal-content"  >
-                        <div class="modal-header img-modal" style="background-image: url({{asset('img/destinos/mazatlan/recomendacion/donde-8.jpg')}});" >
+                        <div class="modal-header img-modal" style="background-image: url({{asset('img/destinos/guanajuato/recomendacion/modal/modalg-8.jpg')}});" >
                             <button type="button" class="close" data-dismiss="modal"><img class="img-close" src="{{asset('img/close.png')}}" alt=""></button>
                         </div>
                         <div class="modal-header" >
-                            <h5 class="modal-title" id="exampleModalScrollableTitle">Modal title</h5>
+                            <h5 class="modal-title" id="exampleModalScrollableTitle">Museo de juguete - Museo</h5>
                         </div>
                         <div class="modal-body">
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est natus pariatur itaque quisquam corporis debitis tempora, neque autem vel laudantium blanditiis sequi modi quis quae fugit cum magni reprehenderit repellendus.
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam maiores qui quos fuga, atque voluptate! Ut adipisci sunt quas, in laboriosam cumque sed, sequi blanditiis iste repudiandae nisi recusandae debitis.
+                            <p>Puedes pasar una hora agradable en el museo del juguete de San Miguel de Allende, de especial interés para los niños y los jóvenes de corazón. Cuenta con tres salas de exposición permanentes: una dedicada a casas de muñecas, otra a animales y el transporte y la tercera sala, llamada “la feria”, contiene máscaras, instrumentos musicales y atracciones de feria en miniatura.
                             </p>
                         </div>
                     </div>
