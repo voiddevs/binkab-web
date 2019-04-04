@@ -73,7 +73,7 @@
         </nav>
 
         <!-- Slider main container -->
-        <div class="swiper-container">
+        <div class="swiper-container" ng-if="mazatlan" >
             <div id="title-destino">
                 <h1>Mazatlán</h1>
                 <p>Sinaloa, México</p>
@@ -104,6 +104,70 @@
             </div>
         </div>
 
+        <div class="swiper-container" ng-if="monterrey" >
+            <div id="title-destino">
+                <h1>Monterrey</h1>
+                <p>Ciudad en México</p>
+            </div>
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <div class="slide-seccion-destino" style="background-image: url({{asset('img/destinos/mazatlan/slide-1.jpg')}})"></div>
+                    <p class="titulo-seccion">Turismo</p>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slide-seccion-destino" style="background-image: url({{asset('img/destinos/mazatlan/slide-2.jpg')}})"></div>
+                    <p class="titulo-seccion">Comida</p>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slide-seccion-destino" style="background-image: url({{asset('img/destinos/mazatlan/slide-3.jpg')}})"></div>
+                    <p class="titulo-seccion">Cultural</p>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slide-seccion-destino" style="background-image: url({{asset('img/destinos/mazatlan/slide-4.jpg')}})"></div>
+                    <p class="titulo-seccion">Deportes</p>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slide-seccion-destino" style="background-image: url({{asset('img/destinos/mazatlan/slide-5.jpg')}})"></div>
+                    <p class="titulo-seccion">Entretenimiento</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="swiper-container" ng-if="guanajuato" >
+            <div id="title-destino">
+                <h1>Guanajuato</h1>
+                <p>Estado mexicano</p>
+            </div>
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <div class="slide-seccion-destino" style="background-image: url({{asset('img/destinos/mazatlan/slide-1.jpg')}})"></div>
+                    <p class="titulo-seccion">Turismo</p>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slide-seccion-destino" style="background-image: url({{asset('img/destinos/mazatlan/slide-2.jpg')}})"></div>
+                    <p class="titulo-seccion">Comida</p>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slide-seccion-destino" style="background-image: url({{asset('img/destinos/mazatlan/slide-3.jpg')}})"></div>
+                    <p class="titulo-seccion">Cultural</p>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slide-seccion-destino" style="background-image: url({{asset('img/destinos/mazatlan/slide-4.jpg')}})"></div>
+                    <p class="titulo-seccion">Deportes</p>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slide-seccion-destino" style="background-image: url({{asset('img/destinos/mazatlan/slide-5.jpg')}})"></div>
+                    <p class="titulo-seccion">Entretenimiento</p>
+                </div>
+            </div>
+        </div>
+
+
         <!-- Ménu de destino -->
         <div id="menu-destino">
             <ul class="nav justify-content-center ">
@@ -133,7 +197,7 @@
                 </li>
             </ul>
         </div>
-        <h1 id="title-seccion">Titulo</h1>
+        <h1 id="title-seccion">@{{lugares[0].nombre}}</h1>
         <div id="contenedor-principal" class="row">
               
         </div>
@@ -178,8 +242,24 @@
 <script>
     var app=angular.module('app',[]);
         app.controller('ctrl',function($scope, $http, $filter, $compile){ 
+            $scope.mazatlan = false;
+            $scope.monterrey = false;
+            $scope.guanajuato = false;
+
             $scope.lugares = {!! json_encode($dataLugares->toArray()) !!}
-            $scope.titulo="hola";
+            
+            if($scope.lugares[0].id_destino==1){
+                $scope.mazatlan=true;
+            }
+            if($scope.lugares[0].id_destino==2){
+                $scope.monterrey=true;
+            }
+            if($scope.lugares[0].id_destino==3){
+                $scope.guanajuato=true;
+            }
+
+
+            
             console.log($scope.lugares);
             $scope.lugarNombre= $scope.lugares[0].nombre
             var myEl = angular.element( document.querySelector( '#contenedor-principal' ) );
@@ -189,7 +269,11 @@
                 +'<div class="col-7">'+'<div class="titulo">'+$scope.lugares[x].nombre+'</div>'
                 +'<div class="telefono">Teléfono: '+$scope.lugares[x].telefono+'</div>'
                 +'<div class="descripcion">Descripción: '+$scope.lugares[x].descripcion+'</div>'
-                +'<div class="ubicacion">'+'<i class="fas fa-map-marked"></i> '+$scope.lugares[x].ubicacion+'</div>'+'</div>'+'</div>'
+                +'<div class="ubicacion">'+'<i class="fas fa-map-marked"></i> '+$scope.lugares[x].ubicacion+'</div>'+'</div>'
+                +"<form action='/vista-actividades/"+$scope.lugares[x].id+"' method='get'>"
+                +"<input  id='button"+x+"' type='submit' value='ver mas' class = 'btn btn-primary' ng-click='seeMore(1)'></input>"
+                +"</form>"+'</div>'
+                +'</div>'
                 ); 
                 /*myEl.append($compile(
                     "<form action='/vista-actividades/"+$scope.lugares[x].id+"' method='get'>"
