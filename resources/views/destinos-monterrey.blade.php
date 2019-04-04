@@ -203,8 +203,8 @@
                 <div class="col-sm-12 col-md-6 col-lg-4">
                     <ul>
                        <!--La Mar del zur-->
-                        <li data-toggle="modal" data-target="#laMarea">
-                            <div data-toggle="modal" data-target="#myModal" class="opcion-imagen" style="background-image: url({{asset('img/destinos/mazatlan/recomendacion/donde-1.jpg')}})"></div>
+                        <li data-toggle="modal" data-target="#marzur">
+                            <div data-toggle="modal" data-target="#myModal" class="opcion-imagen" style="background-image: url({{asset('img/destinos/monterrey/recomendacion/donde-1.jpg')}})"></div>
                             <div class="opcion-info hvr-forward">
                                 <p class="opcion-nombre ">Mar del Zur</p>
                                 <p class="opcion-ubicacion">Restaurant</p>
@@ -212,54 +212,54 @@
                         </li>
                         
                         <!--Acuario-->
-                        <li data-toggle="modal" data-target="#acuario">
-                            <div data-toggle="modal" data-target="#myModal" class="opcion-imagen" style="background-image: url({{asset('img/destinos/mazatlan/recomendacion/donde-2.jpg')}})"></div>
+                        <li data-toggle="modal" data-target="#fundidora">
+                            <div data-toggle="modal" data-target="#myModal" class="opcion-imagen" style="background-image: url({{asset('img/destinos/monterrey/recomendacion/donde-2.jpg')}})"></div>
                             <div class="opcion-info hvr-forward">
-                                <p class="opcion-nombre">Acuario Mazatlán</p>
-                                <p class="opcion-ubicacion">Recreación</p>
-                            </div>
-                        </li>
-                        <li data-toggle="modal" data-target="#machado">
-                            <div data-toggle="modal" data-target="#myModal" class="opcion-imagen" style="background-image: url({{asset('img/destinos/mazatlan/recomendacion/donde-3.jpg')}})"></div>
-                            <div class="opcion-info hvr-forward">
-                                <p class="opcion-nombre">Plaza Machado</p>
-                                <p class="opcion-ubicacion">Recreación</p>
-                            </div>
-                        </li>
-                        <li data-toggle="modal" data-target="#mazagua">
-                            <div data-toggle="modal" data-target="#myModal" class="opcion-imagen" style="background-image: url({{asset('img/destinos/mazatlan/recomendacion/donde-4.jpg')}})"></div>
-                            <div class="opcion-info hvr-forward">
-                                <p class="opcion-nombre">Mazagua</p>
+                                <p class="opcion-nombre">Parque Fundidora</p>
                                 <p class="opcion-ubicacion">Parque</p>
+                            </div>
+                        </li>
+                        <li data-toggle="modal" data-target="#macroplaza">
+                            <div data-toggle="modal" data-target="#myModal" class="opcion-imagen" style="background-image: url({{asset('img/destinos/monterrey/recomendacion/donde-3.jpg')}})"></div>
+                            <div class="opcion-info hvr-forward">
+                                <p class="opcion-nombre">Macroplaza</p>
+                                <p class="opcion-ubicacion">Recreación</p>
+                            </div>
+                        </li>
+                        <li data-toggle="modal" data-target="#cerrosilla">
+                            <div data-toggle="modal" data-target="#myModal" class="opcion-imagen" style="background-image: url({{asset('img/destinos/monterrey/recomendacion/donde-4.jpeg')}})"></div>
+                            <div class="opcion-info hvr-forward">
+                                <p class="opcion-nombre">Cerro de la Silla</p>
+                                <p class="opcion-ubicacion">Recreación</p>
                             </div>
                         </li>
                     </ul>
                 </div>
                 <div class="col-sm-12 col-md-6 col-lg-4">
                     <ul>
-                        <li data-toggle="modal" data-target="#presidio">
-                            <div data-toggle="modal" data-target="#myModal" class="opcion-imagen" style="background-image: url({{asset('img/destinos/mazatlan/recomendacion/donde-5.jpg')}})"></div>
+                        <li data-toggle="modal" data-target="#granpastor">
+                            <div data-toggle="modal" data-target="#myModal" class="opcion-imagen" style="background-image: url({{asset('img/destinos/monterrey/recomendacion/donde-5.jpg')}})"></div>
                             <div class="opcion-info hvr-forward">
-                                <p class="opcion-nombre">Presidio</p>
+                                <p class="opcion-nombre">El Gran Pastor</p>
                                 <p class="opcion-ubicacion">Restaurant</p>
                             </div>
                         </li>
-                        <li data-toggle="modal" data-target="#classico">
-                            <div data-toggle="modal" data-target="#myModal" class="opcion-imagen" style="background-image: url({{asset('img/destinos/mazatlan/recomendacion/donde-6.jpg')}})"></div>
+                        <li data-toggle="modal" data-target="#strana">
+                            <div data-toggle="modal" data-target="#myModal" class="opcion-imagen" style="background-image: url({{asset('img/destinos/monterrey/recomendacion/donde-6.jpg')}})"></div>
                             <div class="opcion-info hvr-forward">
-                                <p class="opcion-nombre">Classico</p>
+                                <p class="opcion-nombre">Strana</p>
                                 <p class="opcion-ubicacion">Nocturno</p>
                             </div>
                         </li>
-                        <li data-toggle="modal" data-target="#angelaPeralta">
-                            <div data-toggle="modal" data-target="#myModal" class="opcion-imagen" style="background-image: url({{asset('img/destinos/mazatlan/recomendacion/donde-7.jpg')}})"></div>
+                        <li data-toggle="modal" data-target="#museoarte">
+                            <div data-toggle="modal" data-target="#myModal" class="opcion-imagen" style="background-image: url({{asset('img/destinos/monterrey/recomendacion/donde-7.jpg')}})"></div>
                             <div class="opcion-info hvr-forward">
-                                <p class="opcion-nombre">Ángela Peralta</p>
+                                <p class="opcion-nombre">Museo de Arte</p>
                                 <p class="opcion-ubicacion">Cultural</p>
                             </div>
                         </li>
                         <li data-toggle="modal" data-target="#catedral">
-                            <div data-toggle="modal" data-target="#myModal" class="opcion-imagen" style="background-image: url({{asset('img/destinos/mazatlan/recomendacion/donde-8.jpg')}})"></div>
+                            <div data-toggle="modal" data-target="#myModal" class="opcion-imagen" style="background-image: url({{asset('img/destinos/monterrey/recomendacion/donde-8.jpg')}})"></div>
                             <div class="opcion-info hvr-forward">
                                 <p class="opcion-nombre">Catedral</p>
                                 <p class="opcion-ubicacion">Cultural</p>
@@ -272,40 +272,39 @@
             <!--MODAL-->
             
             <!--La marea-->
-            <div style="margin-top:65px;" class="modal fade" id="laMarea" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+            <div style="margin-top:65px;" class="modal fade" id="marzur" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
                
                 <div class="modal-dialog modal-dialog-scrollable" role="document" style="height:570px">
                     <div class="modal-content"  >
-                        <div class="modal-header img-modal" style="background-image: url({{asset('img/destinos/mazatlan/recomendacion/donde-1.jpg')}});" >
+                        <div class="modal-header img-modal" style="background-image: url({{asset('img/destinos/monterrey/recomendacion/modal/modal-1.jpg')}});" >
                             <button type="button" class="close" data-dismiss="modal"><img class="img-close" src="{{asset('img/close.png')}}" alt=""></button>
                         </div>
                         <div class="modal-header" >
-                            <h5 class="modal-title" id="exampleModalScrollableTitle">Modal title</h5>
+                            <h5 class="modal-title" id="exampleModalScrollableTitle">Mar del Zur - Restaurant</h5>
                         </div>
                         <div class="modal-body">
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est natus pariatur itaque quisquam corporis debitis tempora, neque autem vel laudantium blanditiis sequi modi quis quae fugit cum magni reprehenderit repellendus.
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam maiores qui quos fuga, atque voluptate! Ut adipisci sunt quas, in laboriosam cumque sed, sequi blanditiis iste repudiandae nisi recusandae debitis.
-                            </p>
+                            <p>Mar del Zur es un restaurante de cocina de autor creado por el Chef Eduardo Wichtendahl Palazuelos.
+                            <br><br>Su fusión de gastronomía mexicana y tailandesa, a la que bautizó como cocina MEX-THAI, rescata el sabor y la pasión con la que se inició la cocina de los tiempos.</p>
                         </div>
                     </div>
                 </div>
             </div>
             
             <!--Acuario-->
-            <div style="margin-top:65px;" class="modal fade" id="acuario" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+            <div style="margin-top:65px;" class="modal fade" id="fundidora" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
                
                 <div class="modal-dialog modal-dialog-scrollable" role="document" style="height:570px">
                     <div class="modal-content"  >
                        
-                        <div class="modal-header img-modal" style="background-image: url({{asset('img/destinos/mazatlan/recomendacion/donde-2.jpg')}});" >
+                        <div class="modal-header img-modal" style="background-image: url({{asset('img/destinos/monterrey/recomendacion/modal/modal-2.jpg')}});" >
                             <button type="button" class="close" data-dismiss="modal"><img class="img-close" src="{{asset('img/close.png')}}" alt=""></button>
                         </div>
                         <div class="modal-header" >
-                            <h5 class="modal-title" id="exampleModalScrollableTitle">Modal title</h5>
+                            <h5 class="modal-title" id="exampleModalScrollableTitle">Parque Fundidora - Parque</h5>
                         </div>
                         <div class="modal-body">
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est natus pariatur itaque quisquam corporis debitis tempora, neque autem vel laudantium blanditiis sequi modi quis quae fugit cum magni reprehenderit repellendus.
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam maiores qui quos fuga, atque voluptate! Ut adipisci sunt quas, in laboriosam cumque sed, sequi blanditiis iste repudiandae nisi recusandae debitis.
+                            <p>Parque Fundidora es un parque urbano incluyente y multifuncional, que contribuye a reforzar el tejido social ofreciendo un espacio verde, seguro, y de acceso 100% gratuito.
+                            <br><br>Se le ha otorgado el título de Museo de Sitio de Arqueología Industrial por el Instituto Nacional de Antropología e Historia, por el valor histórico de las 27 macro estructuras, 127 piezas de maquinaria y herramientas siderúrgicas, hoy piezas museográficas, 16 naves y un sinfín de otros activos que conforman este acervo que representa un patrimonio industrial invaluable para Nuevo León.
                             </p>
                         </div>
                     </div>
@@ -313,105 +312,91 @@
             </div>
             
             <!--Machado-->
-            <div style="margin-top:65px;" class="modal fade" id="machado" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+            <div style="margin-top:65px;" class="modal fade" id="macroplaza" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
                
                 <div class="modal-dialog modal-dialog-scrollable" role="document" style="height:570px">
-                    <div class="modal-content"  >
-                        <div class="modal-header img-modal" style="background-image: url({{asset('img/destinos/mazatlan/recomendacion/donde-3.jpg')}});" >
+                    <div class="modal-content">
+                        <div class="modal-header img-modal" style="background-image: url({{asset('img/destinos/monterrey/recomendacion/modal/modal-3.jpg')}});" >
                             <button type="button" class="close" data-dismiss="modal"><img class="img-close" src="{{asset('img/close.png')}}" alt=""></button>
                         </div>
                         <div class="modal-header" >
-                            <h5 class="modal-title" id="exampleModalScrollableTitle">Modal title</h5>
+                            <h5 class="modal-title" id="exampleModalScrollableTitle">Macroplaza - Recreación</h5>
                         </div>
                         <div class="modal-body">
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est natus pariatur itaque quisquam corporis debitis tempora, neque autem vel laudantium blanditiis sequi modi quis quae fugit cum magni reprehenderit repellendus.
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam maiores qui quos fuga, atque voluptate! Ut adipisci sunt quas, in laboriosam cumque sed, sequi blanditiis iste repudiandae nisi recusandae debitis.
-                            
-                            </p>
+                            <p>Visita la Macroplaza, cuarta plaza más grande del mundo, cuenta con una extensión de 40 hectáreas donde podrás admirar antiguos monumentos, edificios coloniales y bellísimas fuentes para un sano esparcimiento, disfrutar de sus extensas áreas verdes al aire libre y conoce con tu familia uno de los iconos más importantes de nuestro estado.</p>
                         </div>
                     </div>
                 </div>
             </div>
             
             <!--Mazagua-->
-            <div style="margin-top:65px;" class="modal fade" id="mazagua" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+            <div style="margin-top:65px;" class="modal fade" id="cerrosilla" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
                
                 <div class="modal-dialog modal-dialog-scrollable" role="document" style="height:570px">
                     <div class="modal-content"  >
-                        <div class="modal-header img-modal" style="background-image: url({{asset('img/destinos/mazatlan/recomendacion/donde-4.jpg')}});" >
+                        <div class="modal-header img-modal" style="background-image: url({{asset('img/destinos/monterrey/recomendacion/modal/modal-4.jpg')}});" >
                             <button type="button" class="close" data-dismiss="modal"><img class="img-close" src="{{asset('img/close.png')}}" alt=""></button>
                         </div>
                         <div class="modal-header" >
-                            <h5 class="modal-title" id="exampleModalScrollableTitle">Modal title</h5>
+                            <h5 class="modal-title" id="exampleModalScrollableTitle">Cerro de la Silla - Recreación</h5>
                         </div>
                         <div class="modal-body">
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est natus pariatur itaque quisquam corporis debitis tempora, neque autem vel laudantium blanditiis sequi modi quis quae fugit cum magni reprehenderit repellendus.
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam maiores qui quos fuga, atque voluptate! Ut adipisci sunt quas, in laboriosam cumque sed, sequi blanditiis iste repudiandae nisi recusandae debitis.
-                            
-                            </p>
+                            <p>El Cerro de la Silla es una montaña que forma parte del sistema de estribaciones de la Sierra Madre Oriental. Este se encuentra abarcando partes territoriales de los municipios de Guadalupe (31.62%), Monterrey (13.23%) y Juárez (55.15%) Nuevo León, y constituye un ícono de la ciudad de Monterrey y un símbolo para los regiomontanos. Cuenta con 4 picos llamados: Antena, Norte, Sur y La Virgen. Siendo el de mayor altitud el Pico Norte con 1,821 m.s.n.m.</p>
                         </div>
                     </div>
                 </div>
             </div>
             
             <!--Presidio-->
-            <div style="margin-top:65px;" class="modal fade" id="presidio" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+            <div style="margin-top:65px;" class="modal fade" id="granpastor" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
                
                 <div class="modal-dialog modal-dialog-scrollable" role="document" style="height:570px">
                     <div class="modal-content"  >
-                        <div class="modal-header img-modal" style="background-image: url({{asset('img/destinos/mazatlan/recomendacion/donde-5.jpg')}});" >
+                        <div class="modal-header img-modal" style="background-image: url({{asset('img/destinos/monterrey/recomendacion/modal/modal-5.jpg')}});" >
                             <button type="button" class="close" data-dismiss="modal"><img class="img-close" src="{{asset('img/close.png')}}" alt=""></button>
                         </div>
                         <div class="modal-header" >
-                            <h5 class="modal-title" id="exampleModalScrollableTitle">Modal title</h5>
+                            <h5 class="modal-title" id="exampleModalScrollableTitle">El Gran Pastor - Restaurant</h5>
                         </div>
                         <div class="modal-body">
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est natus pariatur itaque quisquam corporis debitis tempora, neque autem vel laudantium blanditiis sequi modi quis quae fugit cum magni reprehenderit repellendus.
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam maiores qui quos fuga, atque voluptate! Ut adipisci sunt quas, in laboriosam cumque sed, sequi blanditiis iste repudiandae nisi recusandae debitis.
-                            
-                            </p>
+                            <p>Para muchos comensales, éste es el restaurante que ofrece el mejor cabrito en Monterrey. Sea o no cierta tal afirmación, definitivamente quedarás satisfecho ya sea que pidas su codiciado cabrito, una carne asada, machito, riñonada, frijoles con veneno o cualquier otro platillo. Su café de olla y postres son también muy recomendados.</p>
                         </div>
                     </div>
                 </div>
             </div>
             
             <!--Classico-->
-            <div style="margin-top:65px;" class="modal fade" id="classico" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+            <div style="margin-top:65px;" class="modal fade" id="strana" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
                
                 <div class="modal-dialog modal-dialog-scrollable" role="document" style="height:570px">
                     <div class="modal-content"  >
-                        <div class="modal-header img-modal" style="background-image: url({{asset('img/destinos/mazatlan/recomendacion/donde-6.jpg')}});" >
+                        <div class="modal-header img-modal" style="background-image: url({{asset('img/destinos/monterrey/recomendacion/modal/modal-6.jpg')}});" >
                             <button type="button" class="close" data-dismiss="modal"><img class="img-close" src="{{asset('img/close.png')}}" alt=""></button>
                         </div>
                         <div class="modal-header" >
-                            <h5 class="modal-title" id="exampleModalScrollableTitle">Modal title</h5>
+                            <h5 class="modal-title" id="exampleModalScrollableTitle">Strana - Nocturno</h5>
                         </div>
                         <div class="modal-body">
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est natus pariatur itaque quisquam corporis debitis tempora, neque autem vel laudantium blanditiis sequi modi quis quae fugit cum magni reprehenderit repellendus.
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam maiores qui quos fuga, atque voluptate! Ut adipisci sunt quas, in laboriosam cumque sed, sequi blanditiis iste repudiandae nisi recusandae debitis.
-                            
-                            </p>
+                        Mezcla perfecta de lujo, entretenimiento y exclusividad. Strana es el lugar donde redefinimos la vida nocturna, un lugar con un ambiente magnético, un espacio donde se viven experiencias únicas e inigualables, el lugar donde eres tú, donde vibras con la mejor música, conoces a tus mejores amigos y vives noches espectaculares. 
+                        <br><br>Somos casa de exclusivos conciertos internacionales que incluyen a estrellas como Tiesto, Avicii, Deadmau5, Nervo, Steve Aoki, Bob Sinclair entre muchos otros. 
                         </div>
                     </div>
                 </div>
             </div>
             
             <!--Angela Peralta-->
-            <div style="margin-top:65px;" class="modal fade" id="angelaPeralta" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+            <div style="margin-top:65px;" class="modal fade" id="museoarte" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
                
                 <div class="modal-dialog modal-dialog-scrollable" role="document" style="height:570px">
                     <div class="modal-content"  >
-                        <div class="modal-header img-modal" style="background-image: url({{asset('img/destinos/mazatlan/recomendacion/donde-7.jpg')}});" >
+                        <div class="modal-header img-modal" style="background-image: url({{asset('img/destinos/monterrey/recomendacion/modal/modal-7.jpg')}});" >
                             <button type="button" class="close" data-dismiss="modal"><img class="img-close" src="{{asset('img/close.png')}}" alt=""></button>
                         </div>
                         <div class="modal-header" >
-                            <h5 class="modal-title" id="exampleModalScrollableTitle">Modal title</h5>
+                            <h5 class="modal-title" id="exampleModalScrollableTitle">Museo de Arte Contemporáneo - Cultural</h5>
                         </div>
                         <div class="modal-body">
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est natus pariatur itaque quisquam corporis debitis tempora, neque autem vel laudantium blanditiis sequi modi quis quae fugit cum magni reprehenderit repellendus.
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam maiores qui quos fuga, atque voluptate! Ut adipisci sunt quas, in laboriosam cumque sed, sequi blanditiis iste repudiandae nisi recusandae debitis.
-                            
-                            </p>
+                            <p>También conocido por su acrónimo MARCO, está ubicado en la ciudad de Monterrey, Nuevo León, México. Es obra del arquitecto mexicano Ricardo Legorreta y fue inaugurado el 28 de junio de 1991. MARCO se fundó con la misión de generar exposiciones y seleccionar proyectos provenientes de otras instituciones, enfocados a ofrecer al público un marco de referencia respecto al momento actual del arte contemporáneo, nacional e internacional. MARCO busca ser la institución cultural promotora de arte contemporáneo más importante de América Latina.</p>
                         </div>
                     </div>
                 </div>
@@ -421,16 +406,14 @@
             <div style="margin-top:65px;" class="modal fade" id="catedral" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-scrollable" role="document" style="height:570px">
                     <div class="modal-content"  >
-                        <div class="modal-header img-modal" style="background-image: url({{asset('img/destinos/mazatlan/recomendacion/donde-8.jpg')}});" >
+                        <div class="modal-header img-modal" style="background-image: url({{asset('img/destinos/monterrey/recomendacion/modal/modal-8.jpg')}});" >
                             <button type="button" class="close" data-dismiss="modal"><img class="img-close" src="{{asset('img/close.png')}}" alt=""></button>
                         </div>
                         <div class="modal-header" >
-                            <h5 class="modal-title" id="exampleModalScrollableTitle">Modal title</h5>
+                            <h5 class="modal-title" id="exampleModalScrollableTitle">Catedral metropolitana - Cultural</h5>
                         </div>
                         <div class="modal-body">
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est natus pariatur itaque quisquam corporis debitis tempora, neque autem vel laudantium blanditiis sequi modi quis quae fugit cum magni reprehenderit repellendus.
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam maiores qui quos fuga, atque voluptate! Ut adipisci sunt quas, in laboriosam cumque sed, sequi blanditiis iste repudiandae nisi recusandae debitis.
-                            </p>
+                            <p>El edificio cuenta con una nave central en forma de cruz latina flanqueada por capillas hornacinas. La nave tiene bóvedas de arista rematada con una cúpula octagonal. El interior es sobrio y ecléctico. Cuenta con una mezcla de estilos arquitectónicos, neoclásico y barroco; este último especialmente en su fachada. La capilla del sagrario cuenta con un frontal de plata repujada. En el coro se encuentra un órgano Merklin de 1893 actualmente dañado y fuera de servicio.</p>
                         </div>
                     </div>
                 </div>
