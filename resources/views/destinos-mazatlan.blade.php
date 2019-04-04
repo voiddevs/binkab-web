@@ -305,8 +305,7 @@
                             <h5 class="modal-title" id="exampleModalScrollableTitle">Acuario Mazatlán - Recreación</h5>
                         </div>
                         <div class="modal-body">
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est natus pariatur itaque quisquam corporis debitis tempora, neque autem vel laudantium blanditiis sequi modi quis quae fugit cum magni reprehenderit repellendus.
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam maiores qui quos fuga, atque voluptate! Ut adipisci sunt quas, in laboriosam cumque sed, sequi blanditiis iste repudiandae nisi recusandae debitis.
+                            <p>En el acuario de Mazatlán vivirás una gran aventura junto a las especies que la fauna marina puede ofrecerte, ven a concocer y a convivir con los lobos marinos.
                             </p>
                         </div>
                     </div>
@@ -318,15 +317,16 @@
                
                 <div class="modal-dialog modal-dialog-scrollable" role="document" style="height:570px">
                     <div class="modal-content"  >
-                        <div class="modal-header img-modal" style="background-image: url({{asset('img/destinos/mazatlan/recomendacion/donde-3.jpg')}});" >
+                        <div class="modal-header img-modal" style="background-image: url({{asset('img/destinos/mazatlan/recomendacion/modal/modal-3.jpg')}});" >
                             <button type="button" class="close" data-dismiss="modal"><img class="img-close" src="{{asset('img/close.png')}}" alt=""></button>
                         </div>
                         <div class="modal-header" >
-                            <h5 class="modal-title" id="exampleModalScrollableTitle">Modal title</h5>
+                            <h5 class="modal-title" id="exampleModalScrollableTitle">La Plazuela Machado - Recreación</h5>
                         </div>
                         <div class="modal-body">
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est natus pariatur itaque quisquam corporis debitis tempora, neque autem vel laudantium blanditiis sequi modi quis quae fugit cum magni reprehenderit repellendus.
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam maiores qui quos fuga, atque voluptate! Ut adipisci sunt quas, in laboriosam cumque sed, sequi blanditiis iste repudiandae nisi recusandae debitis.
+                            <p>Contempla las mansiones coloniales, escucha la música en vivo y observa a la gente desde las cafeterías de esta plaza sofisticada ubicada en el centro histórico de Mazatlán.
+
+                            La Plaza Machado cuenta con arquitectura de influencia francesa y española, y es una de las plazas más atractivas de Mazatlán, así como el principal sitio de actividad social del centro histórico. Visita este lugar para contemplas los edificios antiguos, visitar las cafeterías elegantes y ver las presentaciones de los músicos de la región.
                             
                             </p>
                         </div>
@@ -339,16 +339,17 @@
                
                 <div class="modal-dialog modal-dialog-scrollable" role="document" style="height:570px">
                     <div class="modal-content"  >
-                        <div class="modal-header img-modal" style="background-image: url({{asset('img/destinos/mazatlan/recomendacion/donde-4.jpg')}});" >
+                        <div class="modal-header img-modal" style="background-image: url({{asset('img/destinos/mazatlan/recomendacion/modal/modal-4.jpg')}});" >
                             <button type="button" class="close" data-dismiss="modal"><img class="img-close" src="{{asset('img/close.png')}}" alt=""></button>
                         </div>
                         <div class="modal-header" >
-                            <h5 class="modal-title" id="exampleModalScrollableTitle">Modal title</h5>
+                            <h5 class="modal-title" id="exampleModalScrollableTitle">Mazagua - Recreativo</h5>
                         </div>
                         <div class="modal-body">
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est natus pariatur itaque quisquam corporis debitis tempora, neque autem vel laudantium blanditiis sequi modi quis quae fugit cum magni reprehenderit repellendus.
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam maiores qui quos fuga, atque voluptate! Ut adipisci sunt quas, in laboriosam cumque sed, sequi blanditiis iste repudiandae nisi recusandae debitis.
-                            
+                            <p>Mazagua, el parque acuático familiar de Mazatlán en donde podrás encontrar diversión y esparcimiento para todas las edades, podrás disfrutar el día entero con tu familia , mientras te diviertes en las albercas o toboganes, relajarte y tomar el sol o simplemente tomando un Snack. 
+
+                            Ven a Mazagua y disfruta de todas las atracciones que tenemos para tí. Si te gusta la emoción, aquí no te quedaras las ganas de nada.Vas a poder divertirte a lo grande subiendo, bajando, gritando y nadando en todas nuestras magnificas albercas y toboganes, porque todo esta diseñado para que te la pases genial. 
+
                             </p>
                         </div>
                     </div>
@@ -360,15 +361,15 @@
                
                 <div class="modal-dialog modal-dialog-scrollable" role="document" style="height:570px">
                     <div class="modal-content"  >
-                        <div class="modal-header img-modal" style="background-image: url({{asset('img/destinos/mazatlan/recomendacion/donde-5.jpg')}});" >
+                        <div class="modal-header img-modal" style="background-image: url({{asset('img/destinos/mazatlan/recomendacion/modal/modal-5.jpg')}});" >
                             <button type="button" class="close" data-dismiss="modal"><img class="img-close" src="{{asset('img/close.png')}}" alt=""></button>
                         </div>
                         <div class="modal-header" >
-                            <h5 class="modal-title" id="exampleModalScrollableTitle">Modal title</h5>
+                            <h5 class="modal-title" id="exampleModalScrollableTitle">El Presidio - Restaurant</h5>
                         </div>
                         <div class="modal-body">
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est natus pariatur itaque quisquam corporis debitis tempora, neque autem vel laudantium blanditiis sequi modi quis quae fugit cum magni reprehenderit repellendus.
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam maiores qui quos fuga, atque voluptate! Ut adipisci sunt quas, in laboriosam cumque sed, sequi blanditiis iste repudiandae nisi recusandae debitis.
+                            <p>El Presidio, es un  oasis de la gastronomía . En  este lugar  se le rinde homenaje a lo mejor de la cocina mexicana  fusionando técnicas innovadoras  e ingredientes de otros lugares  lejanos,   logrando así platillos  únicos  muy especiales. Ven y conoce nuestros mejores platillos.
+.
                             
                             </p>
                         </div>
@@ -381,15 +382,14 @@
                
                 <div class="modal-dialog modal-dialog-scrollable" role="document" style="height:570px">
                     <div class="modal-content"  >
-                        <div class="modal-header img-modal" style="background-image: url({{asset('img/destinos/mazatlan/recomendacion/donde-6.jpg')}});" >
+                        <div class="modal-header img-modal" style="background-image: url({{asset('img/destinos/mazatlan/recomendacion/modal/modal-6.jpg')}});" >
                             <button type="button" class="close" data-dismiss="modal"><img class="img-close" src="{{asset('img/close.png')}}" alt=""></button>
                         </div>
                         <div class="modal-header" >
-                            <h5 class="modal-title" id="exampleModalScrollableTitle">Modal title</h5>
+                            <h5 class="modal-title" id="exampleModalScrollableTitle">Classico - Nocturno</h5>
                         </div>
                         <div class="modal-body">
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est natus pariatur itaque quisquam corporis debitis tempora, neque autem vel laudantium blanditiis sequi modi quis quae fugit cum magni reprehenderit repellendus.
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam maiores qui quos fuga, atque voluptate! Ut adipisci sunt quas, in laboriosam cumque sed, sequi blanditiis iste repudiandae nisi recusandae debitis.
+                            <p>Las mejores fiestas y experiencas suceden en Classico Mazatlán, donde la diversion nunca acaba. Si buscas diversión en el puerto, Classico es el lugar ideal para la vida nocturna.
                             
                             </p>
                         </div>
@@ -402,15 +402,14 @@
                
                 <div class="modal-dialog modal-dialog-scrollable" role="document" style="height:570px">
                     <div class="modal-content"  >
-                        <div class="modal-header img-modal" style="background-image: url({{asset('img/destinos/mazatlan/recomendacion/donde-7.jpg')}});" >
+                        <div class="modal-header img-modal" style="background-image: url({{asset('img/destinos/mazatlan/recomendacion/modal/modal-7.jpg')}});" >
                             <button type="button" class="close" data-dismiss="modal"><img class="img-close" src="{{asset('img/close.png')}}" alt=""></button>
                         </div>
                         <div class="modal-header" >
-                            <h5 class="modal-title" id="exampleModalScrollableTitle">Modal title</h5>
+                            <h5 class="modal-title" id="exampleModalScrollableTitle">Angela Peralta - Cultural</h5>
                         </div>
                         <div class="modal-body">
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est natus pariatur itaque quisquam corporis debitis tempora, neque autem vel laudantium blanditiis sequi modi quis quae fugit cum magni reprehenderit repellendus.
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam maiores qui quos fuga, atque voluptate! Ut adipisci sunt quas, in laboriosam cumque sed, sequi blanditiis iste repudiandae nisi recusandae debitis.
+                            <p>El teatro Ángela Peralta uno de los más bellos y auténticos en su género en nuestro país, donde se realizan los mas bellos y fantásticos eventos, disfruta y conoce la cultura mazatleca dentro del teatro principal. 
                             
                             </p>
                         </div>
@@ -422,15 +421,14 @@
             <div style="margin-top:65px;" class="modal fade" id="catedral" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-scrollable" role="document" style="height:570px">
                     <div class="modal-content"  >
-                        <div class="modal-header img-modal" style="background-image: url({{asset('img/destinos/mazatlan/recomendacion/donde-8.jpg')}});" >
+                        <div class="modal-header img-modal" style="background-image: url({{asset('img/destinos/mazatlan/recomendacion/modal/modal-8.jpg')}});" >
                             <button type="button" class="close" data-dismiss="modal"><img class="img-close" src="{{asset('img/close.png')}}" alt=""></button>
                         </div>
                         <div class="modal-header" >
-                            <h5 class="modal-title" id="exampleModalScrollableTitle">Modal title</h5>
+                            <h5 class="modal-title" id="exampleModalScrollableTitle">Catedral - Cultural</h5>
                         </div>
                         <div class="modal-body">
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est natus pariatur itaque quisquam corporis debitis tempora, neque autem vel laudantium blanditiis sequi modi quis quae fugit cum magni reprehenderit repellendus.
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam maiores qui quos fuga, atque voluptate! Ut adipisci sunt quas, in laboriosam cumque sed, sequi blanditiis iste repudiandae nisi recusandae debitis.
+                            <p>Con un diseño arquitectónico estilo barroco, es uno de los símbolos más importantes de ésta ciudad y el principal edificio religioso. La Catedral Basílica de la inmaculada Concepción se encuentra en el Centro Histórico de la ciudad, podrás admirar las 14 esculturas religiosas que embellecen el interior de la iglesia que además es considerada como uno de los más increíbles monumentos arquitectónicos de México.
                             </p>
                         </div>
                     </div>
