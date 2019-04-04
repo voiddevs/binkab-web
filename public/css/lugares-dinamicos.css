@@ -1,20 +1,115 @@
 #contenedor-principal{
-    text-align: center;
-}
-#contenedor-principal2{
-  text-align: center;
-}
-.titulo{
-    font-size: 38px;
-    font-weight: bold;
+    margin: 50px 3em;   
 }
 
-.descripcion{
-    text-align: center;
+#title-seccion{
+    text-align: center; font-size: 40px; border-bottom: 2px solid #610011; width: 350px; line-height: 2em; margin: 0 auto 30px auto; font-family: "Neue Haas Bold"; padding-top: 30px;
+}
+.titulo{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
+    font-family: "Neue Haas Bold";
+}
+.imagen{
+    width: 100%; height: 200px;
+}
+.telefono{
+    text-align: left;
     font-size: 18px;
+    font-family: "Neue Haas";
+}
+.descripcion{
+    font-size: 18px;
+    font-family: "Neue Haas";
     text-align: justify;
 }
 .ubicacion{
     color: green;
+    text-align: left;
+    font-size: 16px;
+    font-family: "Neue Haas";
+    
+}
+
+body{
+    background-color: #ffffff !important;
+}
+
+.swiper-slide{
+    transition: ease all .5s !important;
+}
+
+.swiper-container{
+    height: 70vh;
+}
+
+.slide-seccion-destino{
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    filter: brightness(0.7);
+    transition: ease all .5s !important;
+}
+
+.slide-seccion-destino:hover{
+    filter: brightness(1.1)!important;
+}
+
+@media screen and (min-width: 1000px) {
+    .swiper-slide:hover{
+        width: 40% !important;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .swiper-slide:hover{
+        width: inherit;
+    }
+}
+
+
+
+.titulo-seccion{
+    color: white; font-family: "Neue Haas"; text-align: center; font-size: 30px;
+    position: absolute;
+    bottom: 15px;
+    left: 0px;
+    right: 0;
+    margin: 0 auto;
+}
+
+#title-destino h1{
+    color: white; font-family: "Neue Haas"; text-align: center; font-size: 100px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 240px;;
+    margin: auto;
+    z-index: 3;
+    font-weight: inherit;
+}
+
+#title-destino p{
+    color: white; font-family: "Neue Haas"; text-align: center; font-size: 25px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 345px;
+    margin: auto;
+    z-index: 3;
+}
+
+
+#menu-destino{
+    width: auto;
+    height: auto;
+}
+
+#menu-destino a{
+    color: #000000; font-family: "Neue Haas"; text-align: center; font-size: 18px;
 }
 
