@@ -425,61 +425,61 @@
             <h2>Tours</h2>
             <div class="card-deck">
                 <div class="card">
-                    <img class="card-img-top" src="{{asset('img/destinos/mazatlan/tours/tour-1.jpg')}}" alt="Fun bus">
+                    <img class="card-img-top" src="{{asset('img/destinos/monterrey/tours/tour-1.jpg')}}" alt="Grutas de García">
                     <div class="card-body">
-                    <h5 class="card-title">Fun Bus</h5>
-                    <p class="card-text">Fun Bus Mazatlán es un tour donde podrás conocer lo mejor de Mazatlán, recorriendo cada uno de los monumentos de la zona dorada a lo largo del malecón, desde las changueras hasta el mercado municipal. Visitarás a pie la Catedral, Plaza Machado, Teatro Ángela Peralta y la galería de máscaras para el carnaval; para cerrar con broche de oro una vista panorámica del Faro natural más alto de Latinoamérica.</p>
+                    <h5 class="card-title">Grutas de García y su centro histórico</h5>
+                    <p class="card-text">Durante el recorrido visitaremos el museo de las grutas en donde a través de una proyección podrás darte una idea de lo increíble que será tu recorrido. Otro interesante lugar que visitaremos es el mini zoológico Xempal centro recreativo, posteriormente visitaremos el centro histórico, el museo del Ojo con una muestra de artesanías de todo México.</p>
                     </div>
                 </div>
                 <div class="card">
-                    <img class="card-img-top" src="{{asset('img/destinos/mazatlan/tours/tour-2.jpg')}}" alt="Huana Coa">
+                    <img class="card-img-top" src="{{asset('img/destinos/monterrey/tours/tour-2.jpg')}}" alt="Cascada Cola de Caballo">
                     <div class="card-body">
-                    <h5 class="card-title">Huana Coa Canopy Adventure</h5>
-                    <p class="card-text">Huana Coa Canopy Adventure es un recorrido donde disfrutarás de 12 plataformas para lanzarte en tirolesas, además de sentir la adrenalina a flor de piel, podrás contemplar un paisaje lleno de vida silvestre mientras vuelas entre la selva y campos de agave azul. ¡Una experiencia inolvidable!.</p>
+                    <h5 class="card-title">Cascada Cola de Caballo</h5>
+                    <p class="card-text">Se encuentra localizada aproximadamente a 40 kilómetros al Sur de Monterrey, en el municipio de Villa de Santiago, por la carretera a Cd. Victoria, Tamaulipas. Es una cascada de agua única rodeada de exuberante vegetación, de 27 metros, que cae sobre la Sierra Madre Oriental y debe su nombre a la particular caída de su torrente, el cual recuerda una cola de caballo.</p>
                     </div>
                 </div>
                 <div class="card">
-                    <img class="card-img-top" src="{{asset('img/destinos/mazatlan/tours/tour-3.jpg')}}" alt="Jungle Tour">
+                    <img class="card-img-top" src="{{asset('img/destinos/monterrey/tours/tour-3.jpg')}}" alt="Tour en Monterrey">
                     <div class="card-body">
-                    <h5 class="card-title">Jungle Tour & Playa</h5>
-                    <p class="card-text">Explora los esteros de Mazatlán, una de las áreas poco conocidas de este destino turístico y disfruta del contacto con la naturaleza, la aventura y la observación de aves en una de las áreas más hermosas y poco visitadas de Mazatlán.</p>
+                    <h5 class="card-title">Tour en Monterrey</h5>
+                    <p class="card-text">Conoceremos parte de su historia en un ambiente 100% colonial comenzando por el cerro del obispado, donde tendremos una excelente vista de la ciudad, además conoceremos el centro histórico, la macro plaza, catedral metropolitana, palacio Municipal, fuente de Neptuno, tendremos oportunidad de visitar la zona de las artesanías donde podremos adquirir desde dulces típicos, etc. </p>
                     </div>
                 </div>
                 <div class="card">
-                    <img class="card-img-top" src="{{asset('img/destinos/mazatlan/tours/tour-4.jpg')}}" alt="Santuario de Tortugas">
+                    <img class="card-img-top" src="{{asset('img/destinos/monterrey/tours/tour-4.jpg')}}" alt="Fundidora sobre Ruedas">
                     <div class="card-body">
-                    <h5 class="card-title">Santuario de Tortugas</h5>
-                    <p class="card-text">Vistela Estación de El Verde Camacho en donde ayudará a la Protección de la Tortuga Marina. En el paseo disfrutará de una mini conferencia con el biólogo del campamento,  de un paseo en moto por la playa y si el rió lo permite un paseo en lancha a través de manglares. Finalmente tendrá la oportunidad de liberar una tortuguita al mar.</p>
+                    <h5 class="card-title">Fundidora sobre Ruedas</h5>
+                    <p class="card-text">El parque tiene todo lo necesario para que pases un día en grande, hay tantas actividades y lugares que visitar que un día no será suficiente; es uno de los lugares mas importantes para la recreación familiar y turística. Dentro del parque encontrarás hoteles, un Museo, pista de hielo, campo de béisbol, el parque temático de Plaza Sésamo, La Casa de los Loros, pista de Go Karts y lagos.</p>
                     </div>
                 </div>
             </div>
             <div class="card-deck">
                 <div class="card">
-                    <img class="card-img-top" src="{{asset('img/destinos/mazatlan/tours/tour-5.jpg')}}" alt="Isla de la Piedra">
+                    <img class="card-img-top" src="{{asset('img/destinos/monterrey/tours/tour-5.jpg')}}" alt="Tour a Chipinque">
                     <div class="card-body">
-                    <h5 class="card-title">Isla de la Piedra</h5>
-                    <p class="card-text">Isla de la Piedra es un exclusivo paraíso tropical ubicado frente a las costas de Mazatlan. Viajaremos a bordo de un Catamarán para descubrir sus rincones escondidos como la cueva de los piratas y la roca de los leones marinos entre otros. Si quieres pasar un día inolvidable y divertido en Mazatlán, este es un paseo obligado para tus vacaciones. ¡Disfrútalo!.</p>
+                    <h5 class="card-title">Tour a Chipinque</h5>
+                    <p class="card-text">Ubicado en la Sierra Madre Oriental, dentro de los límites del Parque Nacional Cumbres de Monterrey, es un área natural de 1,791 hectáreas en donde encontraras un gimnasio al aire libre, puedes practicar el ciclismo, el senderismo y la observación de aves. Ademas cuenta con un mariposario, insectario,diversos miradores, áreas recreativas, etc.</p>
                     </div>
                 </div>
                 <div class="card">
-                    <img class="card-img-top" src="{{asset('img/destinos/mazatlan/tours/tour-6.jpg')}}" alt="La Noria y Tequilera Mazatlán">
+                    <img class="card-img-top" src="{{asset('img/destinos/monterrey/tours/tour-6.jpg')}}" alt="Grutas de Bustamante">
                     <div class="card-body">
-                    <h5 class="card-title">La Noria y Tequilera Mazatlán</h5>
-                    <p class="card-text">La Noria y Tequilera Mazatlán, es un recorrido que te llevará por un pueblo colonial de artesanos ubicado a solo 33 kilómetros de Mazatlán, justo en las faldas de la Sierra Madre Occidental. Descubre su artesanía, así como la industria tequilera de esta región del estado de Sinaloa.</p>
+                    <h5 class="card-title">Tour Grutas de Bustamante</h5>
+                    <p class="card-text">Las grutas de Bustamante, también conocidas como las grutas del Palmito, se localizan en la Sierra de Gomas, a 107 kilómetros al noroeste de la ciudad de Monterrey y a siete kilómetros al suroeste de la cabecera del municipio de Bustamante. Formaciones creadas por la naturaleza. Asimismo se puede visitar además la Iglesia el pueblo y una panadería típica con su horno de adobe.</p>
                     </div>
                 </div>
                 <div class="card">
-                    <img class="card-img-top" src="{{asset('img/destinos/mazatlan/tours/tour-7.jpg')}}" alt="Recorrido en Centro Histórico">
+                    <img class="card-img-top" src="{{asset('img/destinos/monterrey/tours/tour-7.jpg')}}" alt="Termas de San Joaquin">
                     <div class="card-body">
-                    <h5 class="card-title">Recorrido en Centro Histórico de Mazatlán</h5>
-                    <p class="card-text">Recorrido en Centro Histórico de Mazatlán, es un paseo donde conocerás las principales atracciones de la ciudad de Mazatlán de una manera divertida y atrevida. Durante este recorrido podrás manejar un vehículo “Ranger de Polaris”, “Rhino de Yamaha” ó “Big Red de Honda”. Además siempre estarás acompañado de un guía, quien abordo de otro vehículo se encargará de llevarlos por las partes más históricas de la ciudad.</p>
+                    <h5 class="card-title">Tour Termas de San Joaquin</h5>
+                    <p class="card-text">Una opción para disfrutar de las bondades de las Termas de San Joaquín, es nuestro balneario. En un espacio contiguo al Hotel, contamos con un área de acceso general, que durante el día permite hacer uso de las instalaciones y vivir una experiencia de bienestar inolvidable.</p>
                     </div>
                 </div>
                 <div class="card">
-                    <img class="card-img-top" src="{{asset('img/destinos/mazatlan/tours/tour-8.jpg')}}" alt="Tour a El Quelite ">
+                    <img class="card-img-top" src="{{asset('img/destinos/monterrey/tours/tour-8.jpg')}}" alt="Cañon de Matacanes">
                     <div class="card-body">
-                    <h5 class="card-title">Tour a El Quelite</h5>
-                    <p class="card-text">Tour a El Quelite Mazatlán, a través de este recorrido conoce uno de los pueblos históricos del Estado de Sinaloa. Tendrás la oportunidad de visitar el mirador, desde donde podrás admirar el “Camino Real” y el “Río El Quelite” además de todo el pueblo desde la altura.</p>
+                    <h5 class="card-title">Tour Cañon de Matacanes</h5>
+                    <p class="card-text">El mejor Tour en Monterrey es el cañon de Matacanes y se encuentra dentro del parque nacional cumbres de monterrey y entre los cañones de la sierra madre en el pueblo magico de Santiago NL, la Aventura inicia en una ruta panorámica 4x4 muy famosa entre jeeperos, rumbo al Campamento Multiaventura de Emoción Extrema en el ejido Potrero Redondo.</p>
                     </div>
                 </div>
             </div>
