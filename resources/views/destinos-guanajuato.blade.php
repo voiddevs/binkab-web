@@ -149,33 +149,33 @@
             <h2>Eventos</h2>
             <div class="row">
                 <div class="col-sm-6 col-md-6 col-lg-3">
-                    <div class="evento" style="background-image: url({{asset('img/eventos/mazatlan/eventos-1.jpg')}})">
-                        <p>Semana de la moto</p>
+                    <div class="evento" style="background-image: url({{asset('img/eventos/guanajuato/eventos-1.jpg')}})">
+                        <p>Festival Cervantino</p>
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-6 col-lg-3">
-                    <div class="evento" style="background-image: url({{asset('img/eventos/mazatlan/eventos-2.jpg')}})">
-                        <p>Festival cultural</p>
+                    <div class="evento" style="background-image: url({{asset('img/eventos/guanajuato/eventos-2.jpg')}})">
+                        <p>Orquesta Sinfónica</p>
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-12 col-lg-6">
-                    <div class="evento" style="background-image: url({{asset('img/eventos/mazatlan/eventos-3.jpg')}})">
-                        <p>Combate naval</p>
+                    <div class="evento" style="background-image: url({{asset('img/eventos/guanajuato/eventos-3.jpeg')}})">
+                        <p>115 Aniversario del Teatro Juárez</p>
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-12 col-lg-6">
-                    <div class="evento" style="background-image: url({{asset('img/eventos/mazatlan/eventos-4.jpg')}})">
-                        <p>Carnaval</p>
+                    <div class="evento" style="background-image: url({{asset('img/eventos/guanajuato/eventos-4.jpg')}})">
+                        <p>Juárez Barroco</p>
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-6 col-lg-3">
-                    <div class="evento" style="background-image: url({{asset('img/eventos/mazatlan/eventos-5.jpg')}})">
-                        <p>Maratón</p>
+                    <div class="evento" style="background-image: url({{asset('img/eventos/guanajuato/eventos-5.jpg')}})">
+                        <p>Pedro y el lobo</p>
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-6 col-lg-3">
-                    <div class="evento" style="background-image: url({{asset('img/eventos/mazatlan/eventos-6.jpg')}})">
-                        <p>Triatlón</p>
+                    <div class="evento" style="background-image: url({{asset('img/eventos/guanajuato/eventos-7.jpg')}})">
+                        <p>Feria De Las Fresas</p>
                     </div>
                 </div>
             </div>
@@ -430,63 +430,85 @@ Adicionalmente, su acervo cuenta con la colección de “Mini estampa”, consti
             <h2>Tours</h2>
             <div class="card-deck">
                 <div class="card">
-                    <img class="card-img-top" src="{{asset('img/destinos/mazatlan/tours/tour-1.jpg')}}" alt="Fun bus">
+                    <img class="card-img-top" src="{{asset('img/destinos/guanajuato/tours/tour-1.jpg')}}" alt="Fun bus">
                     <div class="card-body">
-                    <h5 class="card-title">Fun Bus</h5>
-                    <p class="card-text">Fun Bus Mazatlán es un tour donde podrás conocer lo mejor de Mazatlán, recorriendo cada uno de los monumentos de la zona dorada a lo largo del malecón, desde las changueras hasta el mercado municipal. Visitarás a pie la Catedral, Plaza Machado, Teatro Ángela Peralta y la galería de máscaras para el carnaval; para cerrar con broche de oro una vista panorámica del Faro natural más alto de Latinoamérica.</p>
+                    <h5 class="card-title">Tour Centro Histórico</h5>
+                    <p class="card-text">Tour Centro Histórico Guanajuato, considerado como Patrimonio de la
+                    Humanidad por la UNESCO desde 1989. Es una de las ciudades más
+                    hermosas de México, con grandes edificios, monasterios, callejones y
+                    verdaderos palacios con una hermosa arquitectura colonial construidos en
+                    cantera rosada, verde y morada. Conocerás el Teatro Juárez, el Templo de
+                    San Diego entre otros símbolos de Guanajuato que sin duda alguna te va a
+                    cautivar.</p>
                     </div>
                 </div>
                 <div class="card">
-                    <img class="card-img-top" src="{{asset('img/destinos/mazatlan/tours/tour-2.jpg')}}" alt="Huana Coa">
+                    <img class="card-img-top" src="{{asset('img/destinos/guanajuato/tours/tour-2.jpg')}}" alt="Huana Coa">
                     <div class="card-body">
-                    <h5 class="card-title">Huana Coa Canopy Adventure</h5>
-                    <p class="card-text">Huana Coa Canopy Adventure es un recorrido donde disfrutarás de 12 plataformas para lanzarte en tirolesas, además de sentir la adrenalina a flor de piel, podrás contemplar un paisaje lleno de vida silvestre mientras vuelas entre la selva y campos de agave azul. ¡Una experiencia inolvidable!.</p>
+                    <h5 class="card-title">Cata de chocolate</h5>
+                    <p class="card-text">Cata de Chocolate, en esta vida hay cosas irresistibles como el chocolate y
+                    el mezcal. Ven a disfrutar de una deliciosa cata de chocolate y mezcal
+                    artesanal.
+                    Disfruta en este paseo de una deliciosa cata de chocolates artesanales
+                    acompañados de un original maridaje. Deleita a tu paladar con esta
+                    experiencia gastronómica con la degustación de diferentes chocolates
+                    acompañados de un exquisito y selecto mezcal. Todo esto mientras un
+                    experto te explica las características de cada uno de ellos.</p>
                     </div>
                 </div>
                 <div class="card">
-                    <img class="card-img-top" src="{{asset('img/destinos/mazatlan/tours/tour-3.jpg')}}" alt="Jungle Tour">
+                    <img class="card-img-top" src="{{asset('img/destinos/guanajuato/tours/tour-3.jpg')}}" alt="Santuario de Tortugas">
                     <div class="card-body">
-                    <h5 class="card-title">Jungle Tour & Playa</h5>
-                    <p class="card-text">Explora los esteros de Mazatlán, una de las áreas poco conocidas de este destino turístico y disfruta del contacto con la naturaleza, la aventura y la observación de aves en una de las áreas más hermosas y poco visitadas de Mazatlán.</p>
+                    <h5 class="card-title">Callejoneada en Guanajuato</h5>
+                    <p class="card-text">Callejoneada en Guanajuato, disfruta uno de los recorridos más
+                    tradicionales de esta ciudad acompañado de una estudiantina que narrará
+                    historias y entonará algunas canciones, al mismo tiempo, conocerás las
+                    plazas, callejones y los rincones más románticos de la ciudad. Este paseo
+                    cultural, es ideal para ser parte del ambiente de fiesta.
+                    ¡Diviértete con las ocurrencias de estos músicos y déjate llevar por el
+                    contagioso ritmo de sus melodías!</p>
                     </div>
                 </div>
-                <div class="card">
-                    <img class="card-img-top" src="{{asset('img/destinos/mazatlan/tours/tour-4.jpg')}}" alt="Santuario de Tortugas">
-                    <div class="card-body">
-                    <h5 class="card-title">Santuario de Tortugas</h5>
-                    <p class="card-text">Vistela Estación de El Verde Camacho en donde ayudará a la Protección de la Tortuga Marina. En el paseo disfrutará de una mini conferencia con el biólogo del campamento,  de un paseo en moto por la playa y si el rió lo permite un paseo en lancha a través de manglares. Finalmente tendrá la oportunidad de liberar una tortuguita al mar.</p>
-                    </div>
-                </div>
+                
             </div>
             <div class="card-deck">
                 <div class="card">
-                    <img class="card-img-top" src="{{asset('img/destinos/mazatlan/tours/tour-5.jpg')}}" alt="Isla de la Piedra">
+                    <img class="card-img-top" src="{{asset('img/destinos/guanajuato/tours/tour-4.jpg')}}" alt="Isla de la Piedra">
                     <div class="card-body">
-                    <h5 class="card-title">Isla de la Piedra</h5>
-                    <p class="card-text">Isla de la Piedra es un exclusivo paraíso tropical ubicado frente a las costas de Mazatlan. Viajaremos a bordo de un Catamarán para descubrir sus rincones escondidos como la cueva de los piratas y la roca de los leones marinos entre otros. Si quieres pasar un día inolvidable y divertido en Mazatlán, este es un paseo obligado para tus vacaciones. ¡Disfrútalo!.</p>
+                    <h5 class="card-title">Tour Ruta de la Independencia</h5>
+                    <p class="card-text">Tour Ruta de la Independencia, una buena forma de conocer la historia de
+                    un país es vivirla. Con este tour harás un recorrido por algunos de los
+                    destinos más importantes relacionados a la Independencia de México como
+                    lo son Dolores Hidalgo, Atotonilco y San Miguel de Allende. Aquí podrás
+                    visitar lugares como La Parroquia de Nuestra Señora de Dolores, el Museo
+                    Casa Allende, entre otros así como disfrutar de las deliciosas nieves típicas
+                    de la región. ¡Un tour ideal para celebrar a México!</p>
                     </div>
                 </div>
                 <div class="card">
-                    <img class="card-img-top" src="{{asset('img/destinos/mazatlan/tours/tour-6.jpg')}}" alt="La Noria y Tequilera Mazatlán">
+                    <img class="card-img-top" src="{{asset('img/destinos/guanajuato/tours/tour-5.jpg')}}" alt="La Noria y Tequilera Mazatlán">
                     <div class="card-body">
-                    <h5 class="card-title">La Noria y Tequilera Mazatlán</h5>
-                    <p class="card-text">La Noria y Tequilera Mazatlán, es un recorrido que te llevará por un pueblo colonial de artesanos ubicado a solo 33 kilómetros de Mazatlán, justo en las faldas de la Sierra Madre Occidental. Descubre su artesanía, así como la industria tequilera de esta región del estado de Sinaloa.</p>
+                    <h5 class="card-title">Circuito Día de Muertos 6 días</h5>
+                    <p class="card-text">Circuito Día de Muertos 6 días te lleva a disfrutar de un recorrido lleno de
+                        tradiciones, cultura e historia en donde visitarás Michoacán, Aguascalientes
+                        y Guanajuato.</p>
                     </div>
                 </div>
                 <div class="card">
-                    <img class="card-img-top" src="{{asset('img/destinos/mazatlan/tours/tour-7.jpg')}}" alt="Recorrido en Centro Histórico">
+                    <img class="card-img-top" src="{{asset('img/destinos/guanajuato/tours/tour-6.jpg')}}" alt="Recorrido en Centro Histórico">
                     <div class="card-body">
-                    <h5 class="card-title">Recorrido en Centro Histórico de Mazatlán</h5>
-                    <p class="card-text">Recorrido en Centro Histórico de Mazatlán, es un paseo donde conocerás las principales atracciones de la ciudad de Mazatlán de una manera divertida y atrevida. Durante este recorrido podrás manejar un vehículo “Ranger de Polaris”, “Rhino de Yamaha” ó “Big Red de Honda”. Además siempre estarás acompañado de un guía, quien abordo de otro vehículo se encargará de llevarlos por las partes más históricas de la ciudad.</p>
+                    <h5 class="card-title">Tour a Alhóndiga de Granaditas</h5>
+                    <p class="card-text">Tour a Alhóndiga de Granaditas y más Museos, ven a conocer los museos
+                        imprescindibles de cualquier visita a Guanajuato. Descubre la historia,
+                        ciudades y artistas que con sus obras han dado pie a que la oferta cultural
+                        del estado de Guanajuato sea interminable. 
+                        El recorrido incluye un paseo por los principales museos y edificios de la
+                        Ciudad de Guanajuato: El Museo regional de la Alhóndiga de Granaditas, El
+                        Museo Casa Diego Rivera, El Museo de Olga consta y Chávez Morado, El
+                        Museo del Pueblo, El Museo Iconográfico del Quijote.</p>
                     </div>
                 </div>
-                <div class="card">
-                    <img class="card-img-top" src="{{asset('img/destinos/mazatlan/tours/tour-8.jpg')}}" alt="Tour a El Quelite ">
-                    <div class="card-body">
-                    <h5 class="card-title">Tour a El Quelite</h5>
-                    <p class="card-text">Tour a El Quelite Mazatlán, a través de este recorrido conoce uno de los pueblos históricos del Estado de Sinaloa. Tendrás la oportunidad de visitar el mirador, desde donde podrás admirar el “Camino Real” y el “Río El Quelite” además de todo el pueblo desde la altura.</p>
-                    </div>
-                </div>
+                
             </div>
         </div>
 
@@ -496,63 +518,53 @@ Adicionalmente, su acervo cuenta con la colección de “Mini estampa”, consti
             <div class="tz-gallery">
                 <div class="row">
                     <div class="col-sm-6 col-md-4 col-lg-3">
-                        <a class="lightbox" href="{{asset('img/destinos/mazatlan/galeria/MAZ-1.jpg')}}">
-                            <div class="imagen-galeria" style="background-image: url({{asset('img/destinos/mazatlan/galeria/MAZ-1.jpg')}})"></div>
+                        <a class="lightbox" href="{{asset('img/destinos/guanajuato/galeria/GUAN-1.jpg')}}">
+                            <div class="imagen-galeria" style="background-image: url({{asset('img/destinos/guanajuato/galeria/GUAN-1.jpg')}})"></div>
                         </a>
                     </div>
                     <div class="col-sm-6 col-md-4 col-lg-3">
-                        <a class="lightbox" href="{{asset('img/destinos/mazatlan/galeria/MAZ-2.jpg')}}">
-                            <div class="imagen-galeria" style="background-image: url({{asset('img/destinos/mazatlan/galeria/MAZ-2.jpg')}})"></div>
+                        <a class="lightbox" href="{{asset('img/destinos/guanajuato/galeria/GUAN-2.jpg')}}">
+                            <div class="imagen-galeria" style="background-image: url({{asset('img/destinos/guanajuato/galeria/GUAN-2.jpg')}})"></div>
                         </a>
                     </div>
                     <div class="col-sm-6 col-md-4 col-lg-3">
-                        <a class="lightbox" href="{{asset('img/destinos/mazatlan/galeria/MAZ-6.jpg')}}">
-                            <div class="imagen-galeria" style="background-image: url({{asset('img/destinos/mazatlan/galeria/MAZ-6.jpg')}})"></div>
+                        <a class="lightbox" href="{{asset('img/destinos/guanajuato/galeria/GUAN-6.jpg')}}">
+                            <div class="imagen-galeria" style="background-image: url({{asset('img/destinos/guanajuato/galeria/GUAN-6.jpg')}})"></div>
                         </a>
                     </div>
                     <div class="col-sm-6 col-md-4 col-lg-3">
-                        <a class="lightbox" href="{{asset('img/destinos/mazatlan/galeria/MAZ-4.jpg')}}">
-                            <div class="imagen-galeria" style="background-image: url({{asset('img/destinos/mazatlan/galeria/MAZ-4.jpg')}})"></div>
+                        <a class="lightbox" href="{{asset('img/destinos/guanajuato/galeria/GUAN-4.jpg')}}">
+                            <div class="imagen-galeria" style="background-image: url({{asset('img/destinos/guanajuato/galeria/GUAN-4.jpg')}})"></div>
                         </a>
                     </div>
                     <div class="col-sm-6 col-md-4 col-lg-3">
-                        <a class="lightbox" href="{{asset('img/destinos/mazatlan/galeria/MAZ-5.jpg')}}">
-                            <div class="imagen-galeria" style="background-image: url({{asset('img/destinos/mazatlan/galeria/MAZ-5.jpg')}})"></div>
+                        <a class="lightbox" href="{{asset('img/destinos/guanajuato/galeria/GUAN-5.jpeg')}}">
+                            <div class="imagen-galeria" style="background-image: url({{asset('img/destinos/guanajuato/galeria/GUAN-5.jpeg')}})"></div>
                         </a>
                     </div> 
                     <div class="col-sm-6 col-md-4 col-lg-3">
-                        <a class="lightbox" href="{{asset('img/destinos/mazatlan/galeria/MAZ-7.jpg')}}">
-                            <div class="imagen-galeria" style="background-image: url({{asset('img/destinos/mazatlan/galeria/MAZ-7.jpg')}})"></div>
+                        <a class="lightbox" href="{{asset('img/destinos/guanajuato/galeria/GUAN-7.jpg')}}">
+                            <div class="imagen-galeria" style="background-image: url({{asset('img/destinos/guanajuato/galeria/GUAN-7.jpg')}})"></div>
                         </a>
                     </div>
                     <div class="col-sm-6 col-md-4 col-lg-3">
-                        <a class="lightbox" href="{{asset('img/destinos/mazatlan/galeria/MAZ-8.jpg')}}">
-                            <div class="imagen-galeria" style="background-image: url({{asset('img/destinos/mazatlan/galeria/MAZ-8.jpg')}})"></div>
+                        <a class="lightbox" href="{{asset('img/destinos/guanajuato/galeria/GUAN-8.jpg')}}">
+                            <div class="imagen-galeria" style="background-image: url({{asset('img/destinos/guanajuato/galeria/GUAN-8.jpg')}})"></div>
                         </a>
                     </div>
                     <div class="col-sm-6 col-md-4 col-lg-3">
-                        <a class="lightbox" href="{{asset('img/destinos/mazatlan/galeria/MAZ-9.jpg')}}">
-                            <div class="imagen-galeria" style="background-image: url({{asset('img/destinos/mazatlan/galeria/MAZ-9.jpg')}})"></div>
+                        <a class="lightbox" href="{{asset('img/destinos/guanajuato/galeria/GUAN-9.jpg')}}">
+                            <div class="imagen-galeria" style="background-image: url({{asset('img/destinos/guanajuato/galeria/GUAN-9.jpg')}})"></div>
                         </a>
                     </div>
                     <div class="col-sm-6 col-md-4 col-lg-3">
-                        <a class="lightbox" href="{{asset('img/destinos/mazatlan/galeria/MAZ-10.jpg')}}">
-                            <div class="imagen-galeria" style="background-image: url({{asset('img/destinos/mazatlan/galeria/MAZ-10.jpg')}})"></div>
+                        <a class="lightbox" href="{{asset('img/destinos/guanajuato/galeria/GUAN-10.jpg')}}">
+                            <div class="imagen-galeria" style="background-image: url({{asset('img/destinos/guanajuato/galeria/GUAN-10.jpg')}})"></div>
                         </a>
                     </div>
                     <div class="col-sm-6 col-md-4 col-lg-3">
-                        <a class="lightbox" href="{{asset('img/destinos/mazatlan/galeria/MAZ-11.jpg')}}">
-                            <div class="imagen-galeria" style="background-image: url({{asset('img/destinos/mazatlan/galeria/MAZ-11.jpg')}})"></div>
-                        </a>
-                    </div>
-                    <div class="col-sm-6 col-md-4 col-lg-3">
-                        <a class="lightbox" href="{{asset('img/destinos/mazatlan/galeria/MAZ-12.jpg')}}">
-                            <div class="imagen-galeria" style="background-image: url({{asset('img/destinos/mazatlan/galeria/MAZ-12.jpg')}})"></div>
-                        </a>
-                    </div>
-                    <div class="col-sm-6 col-md-4 col-lg-3">
-                        <a class="lightbox" href="{{asset('img/destinos/mazatlan/galeria/MAZ-13.jpg')}}">
-                            <div class="imagen-galeria" style="background-image: url({{asset('img/destinos/mazatlan/galeria/MAZ-13.jpg')}})"></div>
+                        <a class="lightbox" href="{{asset('img/destinos/guanajuato/galeria/GUAN-11.jpg')}}">
+                            <div class="imagen-galeria" style="background-image: url({{asset('img/destinos/guanajuato/galeria/GUAN-11.jpg')}})"></div>
                         </a>
                     </div>
                 </div>
