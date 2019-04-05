@@ -567,6 +567,16 @@ Adicionalmente, su acervo cuenta con la colección de “Mini estampa”, consti
                             <div class="imagen-galeria" style="background-image: url({{asset('img/destinos/guanajuato/galeria/GUAN-11.jpg')}})"></div>
                         </a>
                     </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <a class="lightbox" href="{{asset('img/destinos/guanajuato/galeria/GUAN-12.jpg')}}">
+                            <div class="imagen-galeria" style="background-image: url({{asset('img/destinos/guanajuato/galeria/GUAN-12.jpg')}})"></div>
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <a class="lightbox" href="{{asset('img/destinos/guanajuato/galeria/GUAN-13.jpg')}}">
+                            <div class="imagen-galeria" style="background-image: url({{asset('img/destinos/guanajuato/galeria/GUAN-13.jpg')}})"></div>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
