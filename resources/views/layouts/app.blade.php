@@ -50,15 +50,6 @@
                                 </li>
                             @endif
                         @else
-                            <li class="nav-item">
-                                <a class="nav-link" href="/home">Dashboard</a>
-                            </li>
-                            <li class="nav-item">
-                                    <a class="nav-link" href="/lugares/{{ Auth::user()->id }}">Nuevo lugar</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/personal/{{ Auth::user()->id }}">Mis lugares</a>
-                            </li>
                             <li class="nav-item dropdown">
                                
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
