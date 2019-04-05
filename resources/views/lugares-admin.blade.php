@@ -134,17 +134,32 @@
                     var texto2="Activar"
                 }
                     
-                myEl.append(
-                    '<div class="titulo">'+$scope.lugares[x].nombre+'</div>'
-                +'<img  src=" http://127.0.0.1:8000/storage/'+$scope.lugares[x].imagen+'" width="400px" height="300px>'
-                +'<div></div>'
-                +'<div class="telefono">Telefono: '+$scope.lugares[x].telefono+'</div>'
-                +'<div class="descripcion">Descripcion:'+$scope.lugares[x].descripcion+'</div>'
-                +'<div class="ubicacion">'+$scope.lugares[x].ubicacion+'</div>'
+                myEl.append('<div class="container">'+'<div class="row">'
+                +'<div class="col-5">'
+                +'<div class="imagen" style="background-image: url(http://127.0.0.1:8000/storage/'+$scope.lugares[x].imagen+'")></div>'
+                +'</div>'
+                +'<div class="col-7">'
+                +'<div class="titulo">'+$scope.lugares[x].nombre+'</div>'
+                +'<div class="telefono">Teléfono: '+$scope.lugares[x].telefono+'</div>'
+                +'<div class="descripcion">Descripción: '+$scope.lugares[x].descripcion+'</div>'
+                +'<div class="ubicacion">'+'<i class="fas fa-map-marked"></i> '+$scope.lugares[x].ubicacion+'</div>'
+                +'</div>'+'</div>'
+                +'</div>'         
+                            
+                            
+                            
+                            
+                            
+                //+   '<div class="titulo">'+$scope.lugares[x].nombre+'</div>'
+                //+'<img  src=" http://127.0.0.1:8000/storage/'+$scope.lugares[x].imagen+'" width="400px" height="300px>'
+                //+'<div></div>'
+                //+'<div class="telefono">Telefono: '+$scope.lugares[x].telefono+'</div>'
+                //+'<div class="descripcion">Descripcion:'+$scope.lugares[x].descripcion+'</div>'
+                //+'<div class="ubicacion">'+$scope.lugares[x].ubicacion+'</div>'
                 // +'<div class="ubicacion">Estado:'+texto+'</div>'
                 ); 
                 // myEl.append($compile("<button id='button"+x+"' class = 'btn btn-primary' ng-click='update("+$scope.lugares[x].id+","+$scope.lugares[x].status+")'>"+texto2+"</button>")($scope));
-                myEl.append($compile("<input id='button"+x+"' type='button' value='"+texto2+"' class = 'btn btn-primary' ng-click='change($event.target.id);update("+$scope.lugares[x].id+","+$scope.lugares[x].status+")'></input>")($scope));
+                myEl.append($compile("<input id='button"+x+"' type='button' value='"+texto2+"' class = 'btn btn-outline-info btn-lg boton' ng-click='change($event.target.id);update("+$scope.lugares[x].id+","+$scope.lugares[x].status+")'></input>")($scope));
             }
            
             
