@@ -78,7 +78,10 @@ body{
 }
 
 #menu-destino a{
-    color: #000000; font-family: "Neue Haas"; text-align: center; font-size: 18px;
+    color: #000000; font-family: "Neue Haas"; text-align: center; font-size: 18px; transition: ease all .4s;
+}
+#menu-destino a:hover{
+    color: #3490dc;;
 }
 
 #info-destino{
@@ -88,7 +91,7 @@ body{
 }
 
 #info-destino p{
-    color: #000000; font-family: "Neue Haas"; text-align: center; font-size: 23px; margin-top: 100px;
+    color: #000000; font-family: "Neue Haas"; text-align: center; font-size: 23px; margin-top: 100px;margin-bottom: 100px;
 }
 
 @media screen and (max-width: 576px) {
@@ -119,7 +122,7 @@ body{
 .evento{height: 320px; background-size: cover; background-position: center; background-repeat: no-repeat;}
 #seccion-eventos p{color: white; font-family: "Neue Haas Bold"; text-align: left; padding-left: 20px; font-size: 24px;padding-top: 270px }
 #seccion-eventos .row > div{padding: 2px;}
-
+/*
 .evento:before {
     position: absolute;
     top: 50%;
@@ -152,7 +155,7 @@ body{
 .evento:hover:after,
 .evento:hover:before {
     opacity: 1;
-}
+}*/
 
 .gallery-container {
     background-color: #fff;
