@@ -22,8 +22,9 @@ class Lugares extends Controller
         // $data=$lugar::where('id_usuario', '=', 1)->get();
         // return view('actividades', compact('data'));
         $lugar=new Lugar();
-        $dataLugares=$lugar::where('id_categoria', '=', $id)->where('status', '=', 1)->where('id_destino', '=', 1)->join('categorias','categorias.id_categorias','=','lugares.id_categoria')->get();
-        return view('lugares-dinamicos', compact('dataLugares'));
+        $dataLugares2=$lugar::where('id_categoria', '=', $id)->where('status', '=', 1)->where('id_destino', '=', 1)->join('categorias','categorias.id_categorias','=','lugares.id_categoria')->get();
+        $dataLugares=$lugar::where('id_categoria', '=', $id)->where('status', '=', 1)->where('id_destino', '=', 1)->get();
+        return view('lugares-dinamicos', compact('dataLugares','dataLugares2'));
     }
 
     /**

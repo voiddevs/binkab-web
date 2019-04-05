@@ -196,7 +196,7 @@
                 </li>
             </ul>
         </div>
-        <h1 id="title-seccion">@{{lugares[0].nombre}}</h1>
+        <h1 id="title-seccion">@{{lugares2[0].nombre}}</h1>
         <div id="contenedor-principal" class="row">
               
         </div>
@@ -246,7 +246,8 @@
             $scope.guanajuato = false;
 
             $scope.lugares = {!! json_encode($dataLugares->toArray()) !!}
-            
+            $scope.lugares2 = {!! json_encode($dataLugares2->toArray()) !!}
+
             if($scope.lugares[0].id_destino==1){
                 $scope.mazatlan=true;
             }
@@ -263,8 +264,10 @@
             $scope.lugarNombre= $scope.lugares[0].nombre
             var myEl = angular.element( document.querySelector( '#contenedor-principal' ) );
             for(var x=0; x<$scope.lugares.length;x++){
-                myEl.append('<div class="col-sm-12 col-md-6 col-lg-6">'+'<div class="row">'+
-                '<div class="col-5">'+'<div class="imagen" style="background-image: url("http://127.0.0.1:8000/storage/'+$scope.lugares[x].imagen+'")>'+'</div>'+'</div>'
+                myEl.append('<div class="col-sm-12 col-md-6 col-lg-6">'+'<div class="row">'
+                +'<div class="col-5">'
+                +'<div class="imagen" style="background-image: url(http://127.0.0.1:8000/storage/'+$scope.lugares[x].imagen+'")></div>'
+                +'</div>'
                 +'<div class="col-7">'+'<div class="titulo">'+$scope.lugares[x].nombre+'</div>'
                 +'<div class="telefono">Teléfono: '+$scope.lugares[x].telefono+'</div>'
                 +'<div class="descripcion">Descripción: '+$scope.lugares[x].descripcion+'</div>'
