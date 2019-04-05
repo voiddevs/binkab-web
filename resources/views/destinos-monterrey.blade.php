@@ -103,6 +103,7 @@
         </div>
 
         <!-- Ménu de destino -->
+        <!-- 
         <div id="menu-destino">
             <ul class="nav justify-content-center ">
                 <li class="nav-item">
@@ -130,7 +131,7 @@
                     <a class="nav-link" href="#">Tours</a>
                 </li>
             </ul>
-        </div>
+        </div> -->
 
         <!-- Sección Información -->
         <div class="container-fluid" id="info-destino">
