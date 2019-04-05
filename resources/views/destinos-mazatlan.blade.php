@@ -123,12 +123,7 @@
                 <li class="nav-item">
                     <a class="nav-link" href="/lugares-dinamicos/6">Souvenirs</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Eventos</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Tours</a>
-                </li>
+
             </ul>
         </div>
 

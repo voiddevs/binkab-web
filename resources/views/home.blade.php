@@ -1,6 +1,32 @@
 @extends('layouts.app')
 
 @section('content')
+    <div class="container">
+        <h1>Dashboard</h1>
+        <h5>Bienvenido {{ Auth::user()->name }}</h5>
+        @if (session('status'))
+            <div class="alert alert-success" role="alert">
+                {{ session('status') }}
+            </div>
+        @endif
+        <div class="row" style="margin-top: 50px;">
+            <div class="col-sm-12 col-md-6 col-lg-6 text-center bg-dark text-white overflow-hidden">
+                <div class="my-3 py-3">
+                <h2 class="display-5">Nuevo Lugar</h2>
+                <a href="/lugares/{{ Auth::user()->id }}"><p class="lead hvr-icon-wobble-horizontal">Agrega lugares <i class="fa fa-arrow-right hvr-icon"></i></p></a>
+                </div>
+                <div class="bg-light shadow-sm mx-auto" style="background-image:url({{asset('img/dashboard/dashboard-1.jpg')}}); background-position: center; background-size: cover; height: 300px; border-radius: 21px 21px 0 0;"></div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-6 text-center bg-light overflow-hidden">
+                <div class="my-3 p-3">
+                <h2 class="display-5">Mis Lugares</h2>
+                <a href="/personal/{{ Auth::user()->id }}"><p class="lead hvr-icon-wobble-horizontal">Ve tus lugares <i class="fa fa-arrow-right hvr-icon"></i></p></a>
+                </div>
+                <div class="bg-dark shadow-sm mx-auto" style="background-image:url({{asset('img/dashboard/dashboard-2.jpg')}}); background-position: center; background-size: cover; height: 300px; border-radius: 21px 21px 0 0;"></div>
+            </div>
+        </div>
+    </div>
+<!-- 
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
@@ -18,5 +44,5 @@
             </div>
         </div>
     </div>
-</div>
+</div> -->
 @endsection

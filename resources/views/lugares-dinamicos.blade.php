@@ -4,17 +4,16 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
+    <title>Secciones - BinKab</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="{{asset('css/lugares-dinamicos.css')}}">
     <link rel="stylesheet" href="{{asset('css/basics.css')}}">
     <link rel="stylesheet" href="{{asset('css/swiper.css')}}">
     <link rel="stylesheet" href="{{asset('css/app.css')}}">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<script src="{{asset('js/app.js')}}"></script>
 </head>
 <body ng-app="app">
 <div ng-controller="ctrl">
@@ -107,29 +106,29 @@
         <div class="swiper-container" ng-if="monterrey" >
             <div id="title-destino">
                 <h1>Monterrey</h1>
-                <p>Ciudad en México</p>
+                <p>Nuevo León, México</p>
             </div>
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
                 <!-- Slides -->
                 <div class="swiper-slide">
-                    <div class="slide-seccion-destino" style="background-image: url({{asset('img/destinos/mazatlan/slide-1.jpg')}})"></div>
+                    <div class="slide-seccion-destino" style="background-image: url({{asset('img/destinos/monterrey/slide-1.jpg')}})"></div>
                     <p class="titulo-seccion">Turismo</p>
                 </div>
                 <div class="swiper-slide">
-                    <div class="slide-seccion-destino" style="background-image: url({{asset('img/destinos/mazatlan/slide-2.jpg')}})"></div>
+                    <div class="slide-seccion-destino" style="background-image: url({{asset('img/destinos/monterrey/slide-2.jpg')}})"></div>
                     <p class="titulo-seccion">Comida</p>
                 </div>
                 <div class="swiper-slide">
-                    <div class="slide-seccion-destino" style="background-image: url({{asset('img/destinos/mazatlan/slide-3.jpg')}})"></div>
+                    <div class="slide-seccion-destino" style="background-image: url({{asset('img/destinos/monterrey/slide-3.jpg')}})"></div>
                     <p class="titulo-seccion">Cultural</p>
                 </div>
                 <div class="swiper-slide">
-                    <div class="slide-seccion-destino" style="background-image: url({{asset('img/destinos/mazatlan/slide-4.jpg')}})"></div>
+                    <div class="slide-seccion-destino" style="background-image: url({{asset('img/destinos/monterrey/slide-4.jpg')}})"></div>
                     <p class="titulo-seccion">Deportes</p>
                 </div>
                 <div class="swiper-slide">
-                    <div class="slide-seccion-destino" style="background-image: url({{asset('img/destinos/mazatlan/slide-5.jpg')}})"></div>
+                    <div class="slide-seccion-destino" style="background-image: url({{asset('img/destinos/monterrey/slide-5.jpg')}})"></div>
                     <p class="titulo-seccion">Entretenimiento</p>
                 </div>
             </div>
@@ -139,29 +138,29 @@
         <div class="swiper-container" ng-if="guanajuato" >
             <div id="title-destino">
                 <h1>Guanajuato</h1>
-                <p>Estado mexicano</p>
+                <p>Guanajuato, México</p>
             </div>
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
                 <!-- Slides -->
                 <div class="swiper-slide">
-                    <div class="slide-seccion-destino" style="background-image: url({{asset('img/destinos/mazatlan/slide-1.jpg')}})"></div>
+                    <div class="slide-seccion-destino" style="background-image: url({{asset('img/destinos/guanajuato/slide-1.jpg')}})"></div>
                     <p class="titulo-seccion">Turismo</p>
                 </div>
                 <div class="swiper-slide">
-                    <div class="slide-seccion-destino" style="background-image: url({{asset('img/destinos/mazatlan/slide-2.jpg')}})"></div>
+                    <div class="slide-seccion-destino" style="background-image: url({{asset('img/destinos/guanajuato/slide-2.jpg')}})"></div>
                     <p class="titulo-seccion">Comida</p>
                 </div>
                 <div class="swiper-slide">
-                    <div class="slide-seccion-destino" style="background-image: url({{asset('img/destinos/mazatlan/slide-3.jpg')}})"></div>
+                    <div class="slide-seccion-destino" style="background-image: url({{asset('img/destinos/guanajuato/slide-3.jpg')}})"></div>
                     <p class="titulo-seccion">Cultural</p>
                 </div>
                 <div class="swiper-slide">
-                    <div class="slide-seccion-destino" style="background-image: url({{asset('img/destinos/mazatlan/slide-4.jpg')}})"></div>
+                    <div class="slide-seccion-destino" style="background-image: url({{asset('img/destinos/guanajuato/slide-4.jpg')}})"></div>
                     <p class="titulo-seccion">Deportes</p>
                 </div>
                 <div class="swiper-slide">
-                    <div class="slide-seccion-destino" style="background-image: url({{asset('img/destinos/mazatlan/slide-5.jpg')}})"></div>
+                    <div class="slide-seccion-destino" style="background-image: url({{asset('img/destinos/guanajuato/slide-5.jpg')}})"></div>
                     <p class="titulo-seccion">Entretenimiento</p>
                 </div>
             </div>
@@ -265,14 +264,14 @@
             var myEl = angular.element( document.querySelector( '#contenedor-principal' ) );
             for(var x=0; x<$scope.lugares.length;x++){
                 myEl.append('<div class="col-sm-12 col-md-6 col-lg-6">'+'<div class="row">'+
-                '<div class="col-5">'+'<img class="imagen" src=" http://127.0.0.1:8000/storage/'+$scope.lugares[x].imagen+'">'+'</div>'
+                '<div class="col-5">'+'<div class="imagen" style="background-image: url("http://127.0.0.1:8000/storage/'+$scope.lugares[x].imagen+'")>'+'</div>'+'</div>'
                 +'<div class="col-7">'+'<div class="titulo">'+$scope.lugares[x].nombre+'</div>'
                 +'<div class="telefono">Teléfono: '+$scope.lugares[x].telefono+'</div>'
                 +'<div class="descripcion">Descripción: '+$scope.lugares[x].descripcion+'</div>'
-                +'<div class="ubicacion">'+'<i class="fas fa-map-marked"></i> '+$scope.lugares[x].ubicacion+'</div>'+'</div>'
+                +'<div class="ubicacion">'+'<i class="fas fa-map-marked"></i> '+$scope.lugares[x].ubicacion+'</div>'
                 +"<form action='/vista-actividades/"+$scope.lugares[x].id+"' method='get'>"
-                +"<input  id='button"+x+"' type='submit' value='ver mas' class = 'btn btn-primary' ng-click='seeMore(1)'></input>"
-                +"</form>"+'</div>'
+                +"<input id='button"+x+"' type='submit' value='Ver más' class = 'btn btn-outline-info btn-lg boton' ng-click='seeMore(1)'></input>"
+                +"</form>"+'</div>'+'</div>'
                 +'</div>'
                 ); 
                 /*myEl.append($compile(
