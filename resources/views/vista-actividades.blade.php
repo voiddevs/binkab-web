@@ -15,6 +15,7 @@
 
     <div class="container" ng-controller="ctrl">
     <h1>Vista Actividades</h1>
+    <div class="titulo">@{{lugares3[0].nombre}}</div>
         <div id="contenedor-principal">
         <p>Fotografias</p>
         </div>
@@ -30,9 +31,10 @@
         app.controller('ctrl',function($scope, $http, $filter, $compile){ 
             $scope.lugares = {!! json_encode($dataLugares->toArray()) !!}
             $scope.lugares2 = {!! json_encode($dataLugares2->toArray()) !!}
+            $scope.lugares3 = {!! json_encode($dataLugares3->toArray()) !!}
             console.log($scope.lugares);
             console.log($scope.lugares2);
-
+            console.log($scope.lugares3);
             var myEl = angular.element( document.querySelector( '#contenedor-principal' ) );
             var myEl2 = angular.element( document.querySelector( '#contenedor-principal2' ) );  
             for(var x=0; x<$scope.lugares.length;x++){

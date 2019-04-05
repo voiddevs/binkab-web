@@ -155,10 +155,11 @@ class Lugares extends Controller
         // $data=$lugar::where('id_usuario', '=', 1)->get();
         // return view('actividades', compact('data'));
         $lugar=new Lugar();
+        $dataLugares3=$lugar::where('lugares.id', '=', $id)->select('lugares.nombre')->get();
         $dataLugares=$lugar::where('lugares.id', '=', $id)->join('fotografias','lugares.id','=','fotografias.id_lugar')->get();
         $dataLugares2=$lugar::where('lugares.id', '=', $id)->join('actividades','lugares.id','=','actividades.id_lugar')->get();
         echo ($id);
-        return view('vista-actividades', compact('dataLugares','dataLugares2'));
+        return view('vista-actividades', compact('dataLugares','dataLugares2','dataLugares3'));
     }
 
     public function indexPersonal($id)
