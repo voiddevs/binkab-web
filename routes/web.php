@@ -84,7 +84,10 @@ Route::get('/login', function () {
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::group(['middleware' => 'admin'], function () {
+    Route::get('/home', 'HomeController@index')->name('home');
+});
+
 
 Route::get('passwords/email','Auth\PasswordController@getEmail');
 Route::post('passwords/email', 'Auth\PasswordController@postEmail');
