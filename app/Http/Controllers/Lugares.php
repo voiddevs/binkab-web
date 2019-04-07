@@ -159,7 +159,7 @@ class Lugares extends Controller
         $dataLugares3=$lugar::where('lugares.id', '=', $id)->select('lugares.nombre')->get();
         $dataLugares=$lugar::where('lugares.id', '=', $id)->join('fotografias','lugares.id','=','fotografias.id_lugar')->get();
         $dataLugares2=$lugar::where('lugares.id', '=', $id)->join('actividades','lugares.id','=','actividades.id_lugar')->get();
-        echo ($id);
+    
         return view('vista-actividades', compact('dataLugares','dataLugares2','dataLugares3'));
     }
 

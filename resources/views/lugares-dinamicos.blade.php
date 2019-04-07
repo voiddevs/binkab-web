@@ -72,7 +72,7 @@
         </nav>
 
         <!-- Slider main container -->
-        <div class="swiper-container" ng-if="mazatlan" >
+        <div class="swiper-container">
             <div id="title-destino">
                 <h1>Mazatlán</h1>
                 <p>Sinaloa, México</p>
@@ -103,14 +103,12 @@
             </div>
         </div>
 
-        <div class="swiper-container" ng-if="monterrey" >
+        <!-- div class="swiper-container" ng-if="monterrey" >
             <div id="title-destino">
                 <h1>Monterrey</h1>
                 <p>Nuevo León, México</p>
             </div>
-            <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
-                <!-- Slides -->
                 <div class="swiper-slide">
                     <div class="slide-seccion-destino" style="background-image: url({{asset('img/destinos/monterrey/slide-1.jpg')}})"></div>
                     <p class="titulo-seccion">Turismo</p>
@@ -140,9 +138,7 @@
                 <h1>Guanajuato</h1>
                 <p>Guanajuato, México</p>
             </div>
-            <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
-                <!-- Slides -->
                 <div class="swiper-slide">
                     <div class="slide-seccion-destino" style="background-image: url({{asset('img/destinos/guanajuato/slide-1.jpg')}})"></div>
                     <p class="titulo-seccion">Turismo</p>
@@ -164,7 +160,7 @@
                     <p class="titulo-seccion">Entretenimiento</p>
                 </div>
             </div>
-        </div>
+        </div>-->
 
 
         <!-- Ménu de destino -->
@@ -187,12 +183,6 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="/lugares-dinamicos/6">Souvenirs</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Eventos</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Tours</a>
                 </li>
             </ul>
         </div>

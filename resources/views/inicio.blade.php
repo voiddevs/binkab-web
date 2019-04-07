@@ -90,14 +90,14 @@
                 </div>
                 <div class="swiper-slide">
                     <div class="slides-home" style="background-image: url({{asset('img/slides/slide-3.jpg')}});">
-                     <h2 class="titulo-slide">Aqui pon tus mamadas galeana</h2>
+                     <h2 class="titulo-slide">El gran desarrollo industrial y económico de México</h2>
                         <a class="vinculo-slide hvr-underline-from-left" href="/destinos/monterrey">Ver más <i class="fas fa-arrow-right"></i></a>
                     </div>
                     <div class="filtro"></div>
                 </div>
                 <div class="swiper-slide">
                     <div class="slides-home" style="background-image: url({{asset('img/slides/slide-4.jpg')}});">
-                        <h2 class="titulo-slide">Aqui pon tus mamadas galeana</h2>
+                        <h2 class="titulo-slide">Conoce su historia y sus colores</h2>
                         <a class="vinculo-slide hvr-underline-from-left" href="/destinos/guanajuato">Ver más <i class="fas fa-arrow-right"></i></a>
                     </div>
                     <div class="filtro"></div>

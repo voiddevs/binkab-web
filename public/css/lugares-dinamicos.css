@@ -1,10 +1,14 @@
 #contenedor-principal{
     margin: 50px 3em;   
 }
+#contenedor-principal2{
+    margin: 50px 3em;   
+}
 
 #title-seccion{
     text-align: center; font-size: 40px; border-bottom: 2px solid #610011; width: 350px; line-height: 2em; margin: 0 auto 30px auto; font-family: "Neue Haas Bold"; padding-top: 30px;
 }
+.title-actividad{text-align: center; font-size: 40px; line-height: 2em; margin: 0 auto 30px auto; font-family: "Neue Haas Bold"; padding-top: 30px;}
 .titulo{
     font-size: 20px;
     font-weight: bold;
@@ -30,12 +34,22 @@
     font-family: "Neue Haas";
     text-align: justify;
 }
+.descripcion2{
+    width: 400px;
+    font-family: "Neue Haas";
+    text-align: justify;
+    font-size: 20px;
+}
 .ubicacion{
     color: green;
     text-align: left;
     font-size: 16px;
     font-family: "Neue Haas";
     
+}
+.imagen-actividad{
+    width: 400px;
+    height: 300px;
 }
 
 body{
