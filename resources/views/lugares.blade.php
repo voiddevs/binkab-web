@@ -19,6 +19,7 @@
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/user.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 </head>
@@ -78,10 +79,11 @@
                 </div>
             </div>
         </nav>
-        <div id="contenedor-principal">
+        <div id="contenedor">
         </div>
 		<div class="container" id="btnSubmit">
         <input type="text" id="permiso" value="{{ Auth::user()->permiso }}" style="visibility: hidden">
+        <h1  class="title-verlugares">Nuevo Lugar</h1>
 			<form action="{{ url('/save')}}" method="post" enctype="multipart/form-data">
             {{ csrf_field() }}
             <div class="form-row formulario">
@@ -140,8 +142,8 @@
             if($scope.permiso == 2 && $scope.lugares2 >=1){
                 var element = document.getElementById("btnSubmit");
                 element.remove();
-                var myEl = angular.element( document.querySelector( '#contenedor-principal' ) );
-                myEl.append('<div>Lo sentimos, necesita adquirir la membresia de 2 o mas lugares para seguir agregando mas lugares!!</div>'
+                var myEl = angular.element( document.querySelector( '#contenedor' ) );
+                myEl.append('<h1>Lo sentimos <i class="far fa-sad-tear"></i><br>Necesita adquirir la membresia de 2 o mas lugares para seguir agregando mas lugares.</h1><br><br><a href="/home"><p class="lead hvr-icon-wobble-horizontal">Regresa a dashboard <i class="fa fa-arrow-right hvr-icon"></i></p></a>'
                 );
             }
             

@@ -19,11 +19,12 @@
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/user.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 </head>
 <body ng-app="app">
-    <div class="container" ng-controller="ctrl">
+    <div ng-controller="ctrl">
     <nav class="navbar navbar-expand-md navbar-light navbar-laravel">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
@@ -78,9 +79,11 @@
                 </div>
             </div>
         </nav>
-    <h1>Vista Administrador</h1>
-    <input type="text" id="permiso" value="{{ Auth::user()->permiso }}" style="visibility: hidden">
-        <div id="contenedor-principal">
+        <div class="container">
+        <h1 class="title-verlugares">Admin control</h1>
+        <input type="text" id="permiso" value="{{ Auth::user()->permiso }}" style="visibility: hidden">
+            <div id="contenedor-principal">
+            </div>
         </div>
 	</div>
     <script src="{{asset('js/angular.js')}}" type="text/javascript"></script>
@@ -143,10 +146,10 @@
                 +'<div class="imagen" style="background-image: url(http://127.0.0.1:8000/storage/'+$scope.lugares[x].imagen+'")></div>'
                 +'</div>'
                 +'<div class="col-7">'
-                +'<div class="titulo">'+$scope.lugares[x].nombre+'</div>'
-                +'<div class="telefono">Teléfono: '+$scope.lugares[x].telefono+'</div>'
-                +'<div class="descripcion">Descripción: '+$scope.lugares[x].descripcion+'</div>'
-                +'<div class="ubicacion">'+'<i class="fas fa-map-marked"></i> '+$scope.lugares[x].ubicacion+'</div>'
+                +'<h2>'+$scope.lugares[x].nombre+'</h2>'
+                +'<h5>Teléfono: '+$scope.lugares[x].telefono+'</h5>'
+                +'<p>Descripción: '+$scope.lugares[x].descripcion+'</p>'
+                +'<p>'+'<i class="fas fa-map-marked"></i> '+$scope.lugares[x].ubicacion+'</p>'
                 +'</div>'+'</div>'
                 +'</div>'         
                             
@@ -169,7 +172,7 @@
                             
         }else{
             var myEl = angular.element( document.querySelector( '#contenedor-principal' ) );
-            myEl.append('<div>Lo sentimos, esta vista es solo para administradores ):</div>'
+            myEl.append('<div id="contenedor"><h1>Lo sentimos <i class="far fa-sad-tear"></i><br>Esta ruta es unicamente para el admnistrador.</h1><br><br><a href="/home"><p class="lead hvr-icon-wobble-horizontal">Regresa a dashboard <i class="fa fa-arrow-right hvr-icon"></i></p></a></div>'
             
         );
         }
