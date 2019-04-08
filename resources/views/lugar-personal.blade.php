@@ -95,22 +95,23 @@
             $scope.lugarNombre= $scope.lugares[0].nombre
             var myEl = angular.element( document.querySelector( '#contenedor-principal' ) );
             for(var x=0; x<$scope.lugares.length;x++){
-                myEl.append(
-                    '<div class="titulo">'+$scope.lugares[x].nombre+'</div>'
-                +'<img  src=" http://127.0.0.1:8000/storage/'+$scope.lugares[x].imagen+'" width="400px" height="300px>'
-                +'<div class="telefono"></div>'
+                myEl.append('<div>'
+                +'<div class="titulo">'+$scope.lugares[x].nombre+'</div>'
+                +'<div class="imagen" style="background-image: url(http://127.0.0.1:8000/storage/'+$scope.lugares[x].imagen+'")></div>'
                 +'<div class="telefono">Telefono: '+$scope.lugares[x].telefono+'</div>'
                 +'<div class="descripcion">Descripcion:'+$scope.lugares[x].descripcion+'</div>'
                 +'<div class="ubicacion">'+$scope.lugares[x].ubicacion+'</div>'
-                ); 
-                myEl.append($compile(
-                    "<form action='/fotografias/"+$scope.lugares[x].id+"' method='get'>"
+                + "<form action='/fotografias/"+$scope.lugares[x].id+"' method='get'>"
                     +"<input  id='button"+x+"' type='submit' value='Agregar Fotografias' class = 'btn btn-primary' ng-click='seeMore(1)'></input>"
                     +"</form>"
                     +"<form action='/actividades/"+$scope.lugares[x].id+"' method='get'>"
                     +"<input  id='button"+x+"' type='submit' value='Agregar Actividades' class = 'btn btn-primary' ng-click='seeMore(1)'></input>"
                     +"</form>"
-                    )($scope));
+                    +'</div>'
+                ); 
+                // myEl.append($compile(
+                   
+                //     )($scope));
             }
 
 
