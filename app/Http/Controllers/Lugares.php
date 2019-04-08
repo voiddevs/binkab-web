@@ -180,6 +180,7 @@ class Lugares extends Controller
 
         $lugar=new Lugar();
         $dataLugares=$id;
-        return view('lugares', compact('dataLugares'));
+        $dataLugares2=$lugar::where('lugares.id_usuario', '=', $id)->join('users','users.id','=','lugares.id_usuario')->get();
+        return view('lugares', compact('dataLugares','dataLugares2'));
     }
 }

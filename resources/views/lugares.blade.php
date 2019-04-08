@@ -77,8 +77,11 @@
                     </ul>
                 </div>
             </div>
-		</nav>
-		<div class="container">
+        </nav>
+        <div id="contenedor-principal">
+        </div>
+		<div class="container" id="btnSubmit">
+        <input type="text" id="permiso" value="{{ Auth::user()->permiso }}" style="visibility: hidden">
 			<form action="{{ url('/save')}}" method="post" enctype="multipart/form-data">
 			{{ csrf_field() }}
 				<label for="nombre">{{'Nombre'}}</label>
@@ -115,7 +118,7 @@
 					</div>
 				</div>
 
-				<input type="submit" value="agregar" ng-click="savePhone()">
+				<input type="submit" value="agregar"  ng-click="savePhone()">
 				<input type="number" name="idUsuario" id="idUsuario" value="@{{lugares}}" class="form-control" style="visibility: hidden">	
 			</form>
 		</div>
@@ -126,7 +129,21 @@
 <script>
     var app=angular.module('app',[]);
         app.controller('ctrl',function($scope, $http, $filter){ 
-			$scope.lugares = {!! json_encode($dataLugares) !!}
+            $scope.permiso=  angular.element( document.querySelector( '#permiso' ) ).val();
+            console.log($scope.permiso);    
+            $scope.lugares = {!! json_encode($dataLugares) !!}
+            $scope.lugares2 = {!! json_encode($dataLugares2) !!}
+            $scope.lugares2  = $scope.lugares2.length;
             console.log($scope.lugares);
+            console.log($scope.lugares2);
+
+            if($scope.permiso == 2 && $scope.lugares2 >=1){
+                var element = document.getElementById("btnSubmit");
+                element.remove();
+                var myEl = angular.element( document.querySelector( '#contenedor-principal' ) );
+                myEl.append('<div>Lo sentimos, necesita adquirir la membresia de 2 o mas lugares para seguir agregando mas lugares!!</div>'
+                );
+            }
+            
         });
 </script>

@@ -79,6 +79,7 @@
             </div>
         </nav>
     <h1>Vista Administrador</h1>
+    <input type="text" id="permiso" value="{{ Auth::user()->permiso }}" style="visibility: hidden">
         <div id="contenedor-principal">
         </div>
 	</div>
@@ -88,6 +89,11 @@
 <script>
     var app=angular.module('app',[]);
         app.controller('ctrl',function($scope, $http, $filter, $compile){ 
+            $scope.permiso=  angular.element( document.querySelector( '#permiso' ) ).val();
+            console.log($scope.permiso);
+            if($scope.permiso == 1){
+
+            // console.log({{ Auth::user()->name }});
             $scope.lugares = {!! json_encode($dataLugares->toArray()) !!}
             console.log($scope.lugares);
             $scope.lugarNombre= $scope.lugares[0].nombre
@@ -160,7 +166,13 @@
                 myEl.append($compile("<input id='button"+x+"' type='button' value='"+texto2+"' class = 'btn btn-outline-info btn-lg boton' ng-click='change($event.target.id);update("+$scope.lugares[x].id+","+$scope.lugares[x].status+")'></input>")($scope));
             }
            
+                            
+        }else{
+            var myEl = angular.element( document.querySelector( '#contenedor-principal' ) );
+            myEl.append('<div>Lo sentimos, esta vista es solo para administradores ):</div>'
             
+        );
+        }
         });
         
 </script>
