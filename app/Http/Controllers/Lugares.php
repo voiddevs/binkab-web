@@ -10,7 +10,6 @@ use Illuminate\Http\Request;
 class Lugares extends Controller
 {
 
-    
     /**
      * Display a listing of the resource.
      *

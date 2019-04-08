@@ -13,17 +13,10 @@ class AdminMiddleware
      * @param  \Closure  $next
      * @return mixed
      */
-    public function handle($request, Closure $next)
-    {
-        if (auth()->check() && auth()->user()->is_admin){
-            return redirect('/'); 
-        }else{
-                        
-            return $next($request);
+    public function handle($request, Closure $next){ 
+          if (auth()->check() && auth()->user()->is_admin)
+        return $next($request);
 
-        }
-       
-
-        
+    return redirect('/');
     }
 }

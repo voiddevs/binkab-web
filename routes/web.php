@@ -15,7 +15,6 @@ Route::get('/', function () {
     return view('inicio');
 });
 
-
 Route::get('/lugares',function(){
 	return view('lugares');
 });
@@ -31,10 +30,11 @@ Route::get('/productos',function(){
 // Route::get('/personal',function(){
 // 	return view('lugar-personal');
 // });
-Route::get('/personal/{id}', 'lugares@indexPersonal');
-Route::get('/actividades/{id}', 'actividades@indexUsuario');
-Route::get('/fotografias/{id}', 'fotografias@indexUsuarioFoto');
-Route::get('/lugares/{id}', 'lugares@indexUsuarioLugar');
+Route::get('/personal/{id}', 'lugares@indexPersonal')->middleware('auth');
+Route::get('/actividades/{id}', 'actividades@indexUsuario')->middleware('auth');
+Route::get('/fotografias/{id}', 'fotografias@indexUsuarioFoto')->middleware('auth');
+Route::get('/lugares/{id}', 'lugares@indexUsuarioLugar')->middleware('auth');
+
 
 Route::post('/save','lugares@store');
 Route::post('/saveActividad','actividades@store');
@@ -83,11 +83,8 @@ Route::get('/login', function () {
 });
 
 Auth::routes();
-
-Route::group(['middleware' => 'admin'], function () {
-    Route::get('/home', 'HomeController@index')->name('home');
-});
-
+    
+Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('passwords/email','Auth\PasswordController@getEmail');
 Route::post('passwords/email', 'Auth\PasswordController@postEmail');
