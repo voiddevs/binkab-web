@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Administrador</title>
+    <title>Nuevo lugar - Binkab</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="{{asset('css/lugares-dinamicos.css')}}">
     <!-- CSRF Token -->
@@ -83,44 +83,44 @@
 		<div class="container" id="btnSubmit">
         <input type="text" id="permiso" value="{{ Auth::user()->permiso }}" style="visibility: hidden">
 			<form action="{{ url('/save')}}" method="post" enctype="multipart/form-data">
-			{{ csrf_field() }}
-				<label for="nombre">{{'Nombre'}}</label>
-				<input type="text" name="nombre" id="nombre" value="" class="form-control">
-
-				<label for="descripcion">{{'Descripcion'}}</label>
-				<input type="text" name="descripcion" id="descripcion" value="" class="form-control">
-
-				<label for="imagen">{{'Imagen'}}</label>
-				<input type="file" name="imagen" id="imagen" value="" class="form-control">	
-
-				<label for="ubicacion">{{'Ubicacion'}}</label>
-				<input type="text" name="ubicacion" id="ubicacion" value="" class="form-control"> 
-
-				<label for="telefono">{{'telefono'}}</label>
-				<input type="text" name="telefono" id="telefono" value="" class="form-control">
-
-
-
-				<div>
-					<label>Categoria</label>
-					<div class="form-group row">
-						<div class="col-sm-10">
+            {{ csrf_field() }}
+            <div class="form-row formulario">
+                <div class="col-sm-12 col-md-6 col-lg-6 form-group">
+                    <label for="nombre">{{'Nombre:'}}</label>
+                    <input type="text" name="nombre" id="nombre" value="" class="form-control">
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-6 form-group">
+                    <label for="telefono">{{'Teléfono:'}}</label>
+                    <input type="text" name="telefono" id="telefono" value="" class="form-control">
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-12 form-group">
+                    <label for="descripcion">{{'Descripción:'}}</label>
+                    <input type="text" name="descripcion" id="descripcion" value="" class="form-control">
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-6 form-group">
+                    <label for="ubicacion">{{'Ubicación:'}}</label>
+                    <input type="text" name="ubicacion" id="ubicacion" value="" class="form-control">
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-6 form-group">
+                    <label>{{'Categoria:'}}</label>
 						<select  name="categoria"   class="form-control" id="categoria"  ng-required="true" class="form-control">
-						<option value="">Selecciona una categoria</option>
-						<option value=1>Area de deportes</option>
-						<option value=2>Cultural</option>
-						<option value=5>Entretenimiento</option>
-						<option value=4>Restaurante</option>
-						<option value=3>Turismo</option>
-						<option value=6>Souvenirs</option>
+                            <option value="">Selecciona una categoria</option>
+                            <option value=1>Area de deportes</option>
+                            <option value=2>Cultural</option>
+                            <option value=5>Entretenimiento</option>
+                            <option value=4>Restaurante</option>
+                            <option value=3>Turismo</option>
+                            <option value=6>Souvenirs</option>
 						</select>
-						</div>
-					</div>
-				</div>
-
-				<input type="submit" value="agregar"  ng-click="savePhone()">
-				<input type="number" name="idUsuario" id="idUsuario" value="@{{lugares}}" class="form-control" style="visibility: hidden">	
-			</form>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-6 form-group">
+                    <label for="imagen">{{'Imagen:'}}</label>
+                    <input type="file" name="imagen" id="imagen" value="" class="form-control-file">	
+                </div>
+            </div>
+            <input class="btn btn-outline-success btn-lg" type="submit" value="Agregar" ng-click="savePhone()">
+			<input class="btn btn-outline-success btn-lg" type="number" name="idUsuario" id="idUsuario" value="@{{lugares}}" class="form-control" style="visibility: hidden">	
+            </form>
 		</div>
 	</div>
     <script src="{{asset('js/angular.js')}}" type="text/javascript"></script>

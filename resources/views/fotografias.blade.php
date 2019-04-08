@@ -78,20 +78,24 @@
                 </div>
             </div>
         </nav>
-
+		<div class="container">
+		<h1 class="title-verlugares">Nueva fotografia</h1>
 		<form action="{{ url('/saveFotografia')}}" method="post" enctype="multipart/form-data">
 		{{ csrf_field() }}
-			<label for="nombre">{{'Nombre'}}</label>
-			<input type="text" name="nombre" id="nombre" value="" class="form-control">
-
-			<label for="imagen">{{'Imagen'}}</label>
-			<input type="file" name="imagen" id="imagen" value="" class="form-control">	
-
-			<input type="number" name="idLugar" id="idLugar" value="@{{lugares}}" class="form-control" style="visibility: hidden">	
-
-			<input type="submit" value="agregar">
+		<div class="form-row formulario">
+			<div class="col-sm-12 col-md-12 col-lg-12 form-group">
+				<label for="nombre">{{'Nombre:'}}</label>
+				<input type="text" name="nombre" id="nombre" value="" class="form-control">
+			</div>
+			<div class="col-sm-12 col-md-6 col-lg-6 form-group">
+				<label for="imagen">{{'Imagen:'}}</label>
+				<input type="file" name="imagen" id="imagen" value="" class="form-control-file">
+			</div>
+		</div>
+			<input class="btn btn-outline-success btn-lg" type="submit" value="Agregar">
+			<input class="btn btn-outline-success btn-lg" type="number" name="idLugar" id="idLugar" value="@{{lugares}}" class="form-control" style="visibility: hidden">	
 		</form>
-
+		</div>
 	</div>
     <script src="{{asset('js/angular.js')}}" type="text/javascript"></script>
 </body>
