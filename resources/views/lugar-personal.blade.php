@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Administrador</title>
+    <title>Mis Lugares - BinKab</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="{{asset('css/lugares-dinamicos.css')}}">
     <!-- CSRF Token -->
@@ -79,7 +79,7 @@
             </div>
         </nav>
         <div class="container">
-            <h1>Vista Personal</h1>
+            <h1 class="title-verlugares">Mis Lugares</h1>
             <div id="contenedor-principal"></div>
         </div>
 	</div>
