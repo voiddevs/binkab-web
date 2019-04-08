@@ -10,6 +10,13 @@
             </div>
         @endif
         <div class="row" style="margin-top: 50px;">
+            <div class="col-sm-12 col-md-12 col-lg-12 text-center text-white bg-secondary overflow-hidden" ng-if="permisos">
+                <div class="my-3 p-3">
+                <h2 class="display-5">Control Administrador</h2>
+                <a href="/lugares-admin"><p class="lead hvr-icon-wobble-horizontal">Ve tu control <i class="fa fa-arrow-right hvr-icon"></i></p></a>
+                </div>
+                <div class="bg-dark shadow-sm mx-auto" style="background-image:url({{asset('img/dashboard/dashboard-3.jpg')}}); background-position: center; background-size: cover; height: 300px; border-radius: 21px 21px 0 0;"></div>
+            </div>
             <div class="col-sm-12 col-md-6 col-lg-6 text-center bg-dark text-white overflow-hidden">
                 <div class="my-3 py-3">
                 <h2 class="display-5">Nuevo Lugar</h2>
@@ -21,13 +28,6 @@
                 <div class="my-3 p-3">
                 <h2 class="display-5">Mis Lugares</h2>
                 <a href="/personal/{{ Auth::user()->id }}"><p class="lead hvr-icon-wobble-horizontal">Ve tus lugares <i class="fa fa-arrow-right hvr-icon"></i></p></a>
-                </div>
-                <div class="bg-dark shadow-sm mx-auto" style="background-image:url({{asset('img/dashboard/dashboard-2.jpg')}}); background-position: center; background-size: cover; height: 300px; border-radius: 21px 21px 0 0;"></div>
-            </div>
-            <div class="col-sm-12 col-md-6 col-lg-6 text-center bg-light overflow-hidden" ng-if="permisos">
-                <div class="my-3 p-3">
-                <h2 class="display-5">Vista administrador</h2>
-                <a href="/lugares-admin"><p class="lead hvr-icon-wobble-horizontal">admin <i class="fa fa-arrow-right hvr-icon"></i></p></a>
                 </div>
                 <div class="bg-dark shadow-sm mx-auto" style="background-image:url({{asset('img/dashboard/dashboard-2.jpg')}}); background-position: center; background-size: cover; height: 300px; border-radius: 21px 21px 0 0;"></div>
             </div>
