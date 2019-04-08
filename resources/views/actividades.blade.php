@@ -85,15 +85,15 @@
 		<div class="form-row formulario">
 			<div class="col-sm-12 col-md-12 col-lg-12 form-group">
 				<label for="nombre">{{'Nombre'}}</label>
-				<input type="text" name="nombre" id="nombre" value="" class="form-control">
+				<input type="text" name="nombre" id="nombre" maxlength="30" required onkeypress="return inputCaracteres(event)" value="" class="form-control">
 			</div>
 			<div class="col-sm-12 col-md-12 col-lg-12 form-group">
 				<label for="descripcion">{{'Descripcion'}}</label>
-				<input type="text" name="descripcion" id="descripcion" value="" class="form-control">
+				<input type="text" name="descripcion" id="descripcion" maxlength="300" required onkeypress="return inputCaracteres(event)" value="" class="form-control">
 			</div>
 			<div class="col-sm-12 col-md-6 col-lg-6 form-group">
 				<label for="imagen">{{'Imagen'}}</label>
-				<input type="file" name="imagen" id="imagen" value="" class="form-control-file">
+				<input type="file" name="imagen" id="imagen" required value="" class="form-control-file">
 			</div>
 			
 			<!-- <label for="idLugar">{{'ID lugar'}}</label>
@@ -113,4 +113,21 @@
 			$scope.lugares = {!! json_encode($dataLugares) !!}
             console.log($scope.lugares);
         });
+    function inputCaracteres(e){ 
+    letrasAdmit = " áéíóúabcdefghijklmnñopqrstuvwxyz123456789.-?#$¿¡!:,%'";//Teclas que se pondrán presionar
+    exepciones = "8-32-39-46"; //(BackSpace , flecha izquierda, flecha derecha, Supr).
+    tecla_especial = false;
+    key = e.keyCode || e.which;
+    teclaPress = String.fromCharCode(key).toLowerCase();
+    for(var i in exepciones){
+        if(key == exepciones[i]){
+            tecla_especial = true;
+            break;
+        }
+    }
+    if(letrasAdmit.indexOf(teclaPress)==-1 && !tecla_especial){
+        console.log("Tecla no admitida");
+        return false;
+    }
+}
 </script>
