@@ -130,7 +130,7 @@ class Lugares extends Controller
      */
     public function destroy($id)
     {
-        //
+        Lugar::find($id)->delete();
     }
     // public function idClient($idClient2){
     //     $idClient=$idClient2;

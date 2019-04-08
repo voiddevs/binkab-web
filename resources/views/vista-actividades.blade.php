@@ -245,19 +245,21 @@
             $scope.lugares = {!! json_encode($dataLugares->toArray()) !!}
             $scope.lugares2 = {!! json_encode($dataLugares2->toArray()) !!}
 
-            if($scope.lugares[0].id_destino==1){
-                $scope.mazatlan=true;
-            }
-            if($scope.lugares[0].id_destino==2){
-                $scope.monterrey=true;
-            }
-            if($scope.lugares[0].id_destino==3){
-                $scope.guanajuato=true;
-            }
+            // if($scope.lugares[0].id_destino==1){
+            //     $scope.mazatlan=true;
+            // }
+            // if($scope.lugares[0].id_destino==2){
+            //     $scope.monterrey=true;
+            // }
+            // if($scope.lugares[0].id_destino==3){
+            //     $scope.guanajuato=true;
+            // }
 
             $scope.lugares = {!! json_encode($dataLugares->toArray()) !!}
             $scope.lugares2 = {!! json_encode($dataLugares2->toArray()) !!}
             $scope.lugares3 = {!! json_encode($dataLugares3->toArray()) !!}
+            
+                
             console.log($scope.lugares);
             console.log($scope.lugares2);
             console.log($scope.lugares3);

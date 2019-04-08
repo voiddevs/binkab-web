@@ -66,7 +66,7 @@ Route::get('/vista-actividades/{id}', 'lugares@indexJoin');
 // Route::get('/lugares-dinamicos', 'fotografias@index');
 // Route::get('/lugares-dinamicos', 'lugares@index');
 // Route::get('/lugares-dinamicos', 'actividades@index');
-
+Route::delete('/borrar/{id}','lugares@destroy');
 
 Route::put('/lugaresUpdate/{id}','lugares@update');
 Route::resource('lugar','Lugares');

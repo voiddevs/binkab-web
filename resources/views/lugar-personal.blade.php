@@ -96,7 +96,7 @@
             $scope.lugarNombre= $scope.lugares[0].nombre
             var myEl = angular.element( document.querySelector( '#contenedor-principal' ) );
             for(var x=0; x<$scope.lugares.length;x++){
-                myEl.append('<div class="container">'+'<div class="row">'+'<div class="col-5">'
+                myEl.append($compile('<div class="container">'+'<div class="row">'+'<div class="col-5">'
                 +'<div class="imagen" style="background-image: url(http://127.0.0.1:8000/storage/'+$scope.lugares[x].imagen+'")></div>'
                 +'</div>'+'<div class="col-7">'+'<h2>'+$scope.lugares[x].nombre+'</h2>'
                 +'<h5>Teléfono: '+$scope.lugares[x].telefono+'</h5>'
@@ -107,13 +107,27 @@
                     +"</form>"
                     +"<form class='form-group' action='/actividades/"+$scope.lugares[x].id+"' method='get'>"
                     +"<input  id='button"+x+"' type='submit' value='Agregar Actividades' class = 'btn btn-outline-info btn-lg boton2' ng-click='seeMore(1)'></input>"
-                    +"</form>"+'</div>'
+                    +"</form>"
+                    + "<form class='form-group' >"
+                    +"<input id='button"+x+"' type='submit' value='X' class = 'btn btn-outline-danger btn-lg boton2' ng-click='delete("+$scope.lugares[x].id+")'></input>"
+                    +"</form>"
+                    +'</div>'
                     +'</div>'+'</div>'+'</div>'
-                ); 
+                    )($scope)); 
                 // myEl.append($compile(
                    
                 //     )($scope));
             }
+
+            $scope.delete=function(id){
+			$http.delete('/borrar/'+id).then(
+				function(response){
+					alert("Eliminado Correctamente");
+					console.log(response);
+				},function(errorResponse){
+				}
+			);
+	}
 
 
 

@@ -110,6 +110,15 @@
                 else elem.value = "Desactivar";
             }
 
+            $scope.delete=function(id){
+			$http.delete('/borrar/'+id).then(
+				function(response){
+					alert("Eliminado Correctamente");
+					console.log(response);
+				},function(errorResponse){
+				}
+			);
+	}
             $scope.update = function(idUs,statusUs){
                 $scope.array={
                     id:idUs,
@@ -166,7 +175,10 @@
                 // +'<div class="ubicacion">Estado:'+texto+'</div>'
                 ); 
                 // myEl.append($compile("<button id='button"+x+"' class = 'btn btn-primary' ng-click='update("+$scope.lugares[x].id+","+$scope.lugares[x].status+")'>"+texto2+"</button>")($scope));
-                myEl.append($compile("<input id='button"+x+"' type='button' value='"+texto2+"' class = 'btn btn-outline-info btn-lg boton' ng-click='change($event.target.id);update("+$scope.lugares[x].id+","+$scope.lugares[x].status+")'></input>")($scope));
+                myEl.append($compile('<div class="row">'
+                + "<form class='form-group' >"+"<input id='button"+x+"' type='button' value='"+texto2+"' class = 'btn btn-outline-info btn-lg boton3' ng-click='change($event.target.id);update("+$scope.lugares[x].id+","+$scope.lugares[x].status+")'></input>"
+                    +"<input id='button"+x+"' type='submit' value='X' class = 'btn btn-outline-danger btn-lg boton3' ng-click='delete("+$scope.lugares[x].id+")'></input>"
+                    +"</form>"+'</div>')($scope));
             }
            
                             
