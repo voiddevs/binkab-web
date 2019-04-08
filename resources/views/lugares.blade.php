@@ -84,28 +84,28 @@
 		<div class="container" id="btnSubmit">
         <input type="text" id="permiso" value="{{ Auth::user()->permiso }}" style="visibility: hidden">
         <h1  class="title-verlugares">Nuevo Lugar</h1>
-			<form action="{{ url('/save')}}" method="post" enctype="multipart/form-data">
+			<form name="lugares" action="{{ url('/save')}}" method="post" enctype="multipart/form-data">
             {{ csrf_field() }}
             <div class="form-row formulario">
                 <div class="col-sm-12 col-md-6 col-lg-6 form-group">
                     <label for="nombre">{{'Nombre:'}}</label>
-                    <input type="text" name="nombre" id="nombre" value="" class="form-control">
+                    <input type="text" name="nombre" id="nombre" required maxlength="30" value="" onkeypress="return inputCaracteres(event)" class="form-control">
                 </div>
                 <div class="col-sm-12 col-md-6 col-lg-6 form-group">
                     <label for="telefono">{{'Teléfono:'}}</label>
-                    <input type="text" name="telefono" id="telefono" value="" class="form-control">
+                    <input type="number" name="telefono" id="telefono" maxlength="10" oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength)" required onkeydown="return event.keyCode !== 69" value="" class="form-control">
                 </div>
                 <div class="col-sm-12 col-md-12 col-lg-12 form-group">
                     <label for="descripcion">{{'Descripción:'}}</label>
-                    <input type="text" name="descripcion" id="descripcion" value="" class="form-control">
+                    <input type="text" name="descripcion" id="descripcion" required onkeypress="return inputCaracteres(event)" maxlength="500" value="" class="form-control">
                 </div>
                 <div class="col-sm-12 col-md-6 col-lg-6 form-group">
                     <label for="ubicacion">{{'Ubicación:'}}</label>
-                    <input type="text" name="ubicacion" id="ubicacion" value="" class="form-control">
+                    <input type="text" name="ubicacion" id="ubicacion" required onkeypress="return inputCaracteres(event)"  maxlength="100" value="" class="form-control">
                 </div>
                 <div class="col-sm-12 col-md-6 col-lg-6 form-group">
                     <label>{{'Categoria:'}}</label>
-						<select  name="categoria"   class="form-control" id="categoria"  ng-required="true" class="form-control">
+						<select  name="categoria"   class="form-control" id="categoria"  required class="form-control">
                             <option value="">Selecciona una categoria</option>
                             <option value=1>Area de deportes</option>
                             <option value=2>Cultural</option>
@@ -117,10 +117,10 @@
                 </div>
                 <div class="col-sm-12 col-md-6 col-lg-6 form-group">
                     <label for="imagen">{{'Imagen:'}}</label>
-                    <input type="file" name="imagen" id="imagen" value="" class="form-control-file">	
+                    <input type="file" name="imagen" id="imagen" value="" required class="form-control-file">	
                 </div>
             </div>
-            <input class="btn btn-outline-success btn-lg" type="submit" value="Agregar" ng-click="savePhone()">
+            <input class="btn btn-outline-success btn-lg" type="submit" ng-disabled="!lugares.$valid" value="Agregar" ng-click="savePhone()">
 			<input class="btn btn-outline-success btn-lg" type="number" name="idUsuario" id="idUsuario" value="@{{lugares}}" class="form-control" style="visibility: hidden">	
             </form>
 		</div>
@@ -148,4 +148,25 @@
             }
             
         });
+        
+
+function inputCaracteres(e){ 
+    letrasAdmit = " áéíóúabcdefghijklmnñopqrstuvwxyz123456789._-?#$()¿¡!:,%&'";//Teclas que se pondrán presionar
+    exepciones = "8-32-39-46"; //(BackSpace , flecha izquierda, flecha derecha, Supr).
+    tecla_especial = false;
+    key = e.keyCode || e.which;
+    teclaPress = String.fromCharCode(key).toLowerCase();
+    for(var i in exepciones){
+        if(key == exepciones[i]){
+            tecla_especial = true;
+            break;
+        }
+    }
+    if(letrasAdmit.indexOf(teclaPress)==-1 && !tecla_especial){
+        console.log("Tecla no admitida");
+        return false;
+    }
+} 
+
+    
 </script>
